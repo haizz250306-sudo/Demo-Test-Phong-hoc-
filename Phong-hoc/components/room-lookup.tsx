@@ -149,6 +149,7 @@ export function RoomLookup() {
   const [bookings, setBookings] = useState<Record<string, Booking>>({})
   const [activeRoomId, setActiveRoomId] = useState<string | null>(null)
   const [filter, setFilter] = useState<Filter>("all")
+  const [selectedRoomPrefix, setSelectedRoomPrefix] = useState("all")
 
   // Đồng hồ thời gian thực: cập nhật mỗi giây.
   useEffect(() => {
@@ -177,6 +178,25 @@ export function RoomLookup() {
   const visibleRooms = useMemo(
     () => (filter === "all" ? views : views.filter((r) => r.status === filter)),
     [views, filter],
+  )
+
+  const groupedRooms = useMemo(() => {
+    const groups = new Map<string, RoomView[]>()
+    for (const room of visibleRooms) {
+      const prefix = room.id.charAt(0).toUpperCase()
+      const group = groups.get(prefix) ?? []
+      group.push(room)
+      groups.set(prefix, group)
+    }
+    return [...groups.entries()].sort(([a], [b]) => a.localeCompare(b))
+  }, [visibleRooms])
+
+  const filteredGroups = useMemo(
+    () =>
+      selectedRoomPrefix === "all"
+        ? groupedRooms
+        : groupedRooms.filter(([prefix]) => prefix === selectedRoomPrefix),
+    [groupedRooms, selectedRoomPrefix],
   )
 
   const activeRoom = activeRoomId ? views.find((r) => r.id === activeRoomId) ?? null : null
@@ -292,21 +312,86 @@ export function RoomLookup() {
         </FilterChip>
       </div>
 
+      <div className="mt-4 flex flex-wrap items-center gap-2" role="tablist" aria-label="Chọn dãy phòng">
+        <span className="text-sm font-medium text-muted-foreground">Dãy:</span>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={selectedRoomPrefix === "all"}
+          onClick={() => setSelectedRoomPrefix("all")}
+          className={[
+            "rounded-full border px-3.5 py-1.5 text-sm font-semibold transition-all",
+            selectedRoomPrefix === "all"
+              ? "border-primary bg-primary text-primary-foreground shadow-sm"
+              : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+          ].join(" ")}
+        >
+          Tất cả
+        </button>
+        {groupedRooms.map(([prefix, rooms]) => (
+          <button
+            key={`student-prefix-${prefix}`}
+            type="button"
+            role="tab"
+            aria-selected={selectedRoomPrefix === prefix}
+            onClick={() => setSelectedRoomPrefix(prefix)}
+            className={[
+              "flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-sm font-semibold transition-all",
+              selectedRoomPrefix === prefix
+                ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+            ].join(" ")}
+          >
+            Dãy {prefix}
+            <span
+              className={
+                selectedRoomPrefix === prefix
+                  ? "rounded-full bg-white/20 px-1.5 text-xs"
+                  : "rounded-full bg-muted px-1.5 text-xs text-muted-foreground"
+              }
+            >
+              {rooms.length}
+            </span>
+          </button>
+        ))}
+      </div>
+
       <section aria-label="Lưới phòng học" className="mt-4">
-        {visibleRooms.length === 0 ? (
+        {filteredGroups.length === 0 ? (
           <div className="flex flex-col items-center justify-center gap-2 rounded-2xl border border-dashed border-border bg-white/40 py-14 text-center">
             <DoorOpen className="size-8 text-muted-foreground" />
             <p className="text-sm text-muted-foreground">Không có phòng nào ở trạng thái này tại thời điểm hiện tại.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 md:gap-4 xl:grid-cols-5">
-            {visibleRooms.map((room) => (
-              <RoomCard
-                key={room.id}
-                room={room}
-                onOpen={() => setActiveRoomId(room.id)}
-                onCancel={() => handleCancelBooking(room.id)}
-              />
+          <div className="space-y-5">
+            {filteredGroups.map(([prefix, rooms]) => (
+              <section
+                key={prefix}
+                aria-labelledby={`room-group-${prefix}`}
+                className="rounded-2xl border border-white/60 bg-white/35 p-3 shadow-[0_8px_30px_rgb(15,23,42,0.03)] backdrop-blur-sm md:p-4"
+              >
+                <div className="mb-3 flex items-center gap-3">
+                  <div className="flex size-9 items-center justify-center rounded-xl bg-primary text-sm font-bold text-primary-foreground shadow-sm">
+                    {prefix}
+                  </div>
+                  <div>
+                    <h3 id={`room-group-${prefix}`} className="text-sm font-bold text-foreground">
+                      Khu phòng {prefix}
+                    </h3>
+                    <p className="text-xs text-muted-foreground">{rooms.length} phòng trong khu</p>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 md:gap-4 xl:grid-cols-5">
+                  {rooms.map((room) => (
+                    <RoomCard
+                      key={room.id}
+                      room={room}
+                      onOpen={() => setActiveRoomId(room.id)}
+                      onCancel={() => handleCancelBooking(room.id)}
+                    />
+                  ))}
+                </div>
+              </section>
             ))}
           </div>
         )}
