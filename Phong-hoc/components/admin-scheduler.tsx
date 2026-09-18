@@ -25,21 +25,22 @@ import {
   type ScheduleResult,
   type Shift,
   type AltSlot,
+  type CampusFilter,
   DAYS,
   DAY_LABELS,
   DAY_SHORT,
   SHIFTS,
   SHIFT_LABELS,
   SHIFT_PERIODS,
-  createRooms,
-  createInitialClasses,
   createClassId,
   autoSchedule,
   findAlternatives,
   rangeTime,
+  CAMPUS_LABELS,
 } from "@/lib/scheduling"
+import { SHEET_CLASSES, SHEET_ROOMS } from "@/lib/schedule-data"
 
-const ROOMS = createRooms()
+const ROOMS = SHEET_ROOMS
 
 const SHIFT_ICON: Record<Shift, React.ReactNode> = {
   morning: <Sun className="size-4" />,
@@ -59,12 +60,21 @@ function capacityTone(capacity: number): string {
   return "bg-emerald-500/10 text-emerald-700"
 }
 
+function buildingOrder(building?: string): string {
+  if (!building) return "ZZZ"
+  if (building === "HoiTruong") return "ZZZ"
+  if (building.includes("-")) return building.split("-").at(-1) ?? building
+  return building
+}
+
 export function AdminScheduler() {
-  const [classes, setClasses] = useState<ClassInfo[]>(createInitialClasses)
+  const [classes, setClasses] = useState<ClassInfo[]>(SHEET_CLASSES)
   const [result, setResult] = useState<ScheduleResult | null>(null)
   const [selectedDay, setSelectedDay] = useState<number>(2)
   const [editingClassId, setEditingClassId] = useState<string | null>(null)
   const [newClassIds, setNewClassIds] = useState<string[]>([])
+  const [selectedCampus, setSelectedCampus] = useState<CampusFilter>("all")
+  const [selectedBuilding, setSelectedBuilding] = useState<string>("all")
 
   const roomById = useMemo(() => {
     const map = new Map(ROOMS.map((r) => [r.id, r]))
@@ -99,7 +109,7 @@ export function AdminScheduler() {
   }
 
   function handleResetData() {
-    setClasses(createInitialClasses())
+    setClasses(SHEET_CLASSES)
     setResult(null)
     setEditingClassId(null)
     setNewClassIds([])
@@ -111,6 +121,7 @@ export function AdminScheduler() {
     setResult((prev) => {
       if (!prev) return prev
       return {
+        ...prev,
         assignments: [
           ...prev.assignments,
           {
@@ -136,6 +147,7 @@ export function AdminScheduler() {
     setResult((prev) => {
       if (!prev) return prev
       return {
+        ...prev,
         assignments: prev.assignments.map((assignment) =>
           assignment.classId === classId
             ? {
@@ -157,8 +169,30 @@ export function AdminScheduler() {
 
   const dayAssignments = useMemo(() => {
     if (!result) return []
-    return result.assignments.filter((a) => a.day === selectedDay)
-  }, [result, selectedDay])
+    return result.assignments.filter(
+      (assignment) =>
+        assignment.day === selectedDay &&
+        (selectedCampus === "all" || roomById.get(assignment.roomId)?.campus === selectedCampus) &&
+        (selectedBuilding === "all" || roomById.get(assignment.roomId)?.building === selectedBuilding),
+    )
+  }, [result, selectedDay, selectedCampus, selectedBuilding, roomById])
+
+  const buildingGroups = useMemo(
+    () =>
+      [
+        { campus: "36 Xuân La" as const, label: "Cơ sở 36 Xuân La" },
+        { campus: "371 Nguyễn Hoàng Tôn" as const, label: "Cơ sở 371 Nguyễn Hoàng Tôn" },
+      ].map((group) => ({
+        ...group,
+        buildings: [...new Set(
+          ROOMS
+            .filter((room) => room.campus === group.campus)
+            .map((room) => room.building)
+            .filter((value): value is string => Boolean(value)),
+        )].sort((a, b) => buildingOrder(a).localeCompare(buildingOrder(b), "vi")),
+      })),
+    [],
+  )
 
   const assignedCountByDay = useMemo(() => {
     const map = new Map<number, number>()
@@ -181,7 +215,7 @@ export function AdminScheduler() {
               {classes.length} lớp trong thời khóa biểu · {ROOMS.length} phòng khả dụng
             </p>
             <p className="text-xs text-muted-foreground">
-              Thuật toán: xếp Thứ 2 → Thứ 7, ưu tiên sĩ số lớn, phòng vừa đủ (best-fit) theo 3 ca.
+              Multi-pass Best-Fit: giữ nguyên TKB K23–K25, ưu tiên lớp ≥150, sau đó lớp lớn/nhỏ; phần còn lại là vùng dự trù K26.
             </p>
           </div>
         </div>
@@ -226,6 +260,97 @@ export function AdminScheduler() {
             value={result.assignments.reduce((s, a) => s + (classById.get(a.classId)?.size ?? 0), 0)}
             tone="amber"
           />
+        </section>
+      )}
+
+      <section aria-label="Chọn cơ sở phòng học" className="rounded-2xl border border-white/60 bg-white/60 p-4 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
+        <div className="mb-3 flex items-center gap-2 text-sm font-bold text-foreground">
+          <Layers className="size-4 text-primary" />
+          Khu vực phòng học
+        </div>
+        <div className="grid gap-2 sm:grid-cols-3">
+          {(Object.keys(CAMPUS_LABELS) as CampusFilter[]).map((campus) => {
+            const count = campus === "all" ? ROOMS.length : ROOMS.filter((room) => room.campus === campus).length
+            return (
+              <button
+                key={campus}
+                type="button"
+                onClick={() => {
+                  setSelectedCampus(campus)
+                  setSelectedBuilding("all")
+                }}
+                className={[
+                  "rounded-xl border px-4 py-3 text-left text-sm font-semibold transition-all",
+                  selectedCampus === campus
+                    ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                    : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+                ].join(" ")}
+              >
+                <span className="block">{CAMPUS_LABELS[campus]}</span>
+                <span className={selectedCampus === campus ? "text-primary-foreground/75" : "text-muted-foreground"}>
+                  {count} phòng
+                </span>
+              </button>
+            )
+          })}
+        </div>
+        <div className="mt-4 space-y-3 border-t border-border/70 pt-4">
+          <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">Chọn tòa</p>
+          <button
+            type="button"
+            onClick={() => setSelectedBuilding("all")}
+            className={[
+              "rounded-full border px-3.5 py-1.5 text-sm font-semibold transition-all",
+              selectedBuilding === "all"
+                ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+            ].join(" ")}
+          >
+            Tất cả tòa
+          </button>
+          {buildingGroups
+            .filter((group) => selectedCampus === "all" || group.campus === selectedCampus)
+            .map((group) => (
+              <div key={group.campus} className="rounded-xl border border-border/70 bg-card/60 p-3">
+                <p className="mb-2 text-xs font-bold text-muted-foreground">{group.label}</p>
+                <div className="flex flex-wrap gap-2">
+                  {group.buildings.map((building) => (
+                    <button
+                      key={building}
+                      type="button"
+                      onClick={() => setSelectedBuilding(building)}
+                      className={[
+                        "rounded-full border px-3 py-1.5 text-xs font-semibold transition-all",
+                        selectedBuilding === building
+                          ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                          : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+                      ].join(" ")}
+                    >
+                      {building === "HoiTruong" ? "Hội trường" : `Tòa ${buildingOrder(building)}`}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+        </div>
+      </section>
+
+      {result && (
+        <section className="rounded-2xl border border-amber-200 bg-amber-50/70 p-4 text-sm text-amber-900">
+          <div className="flex items-center gap-2 font-bold">
+            <AlertTriangle className="size-4" />
+            Vùng dự trù K26
+          </div>
+          <p className="mt-1 text-xs leading-5">
+            Hệ thống khóa các phòng chưa dùng của K23–K25 theo từng Thứ + ca; mục tiêu ca sáng và chiều là tối thiểu 18 phòng.
+          </p>
+          {result.reserveWarnings.length > 0 ? (
+            <ul className="mt-2 list-disc pl-5 text-xs">
+              {result.reserveWarnings.slice(0, 4).map((warning) => <li key={warning}>{warning}</li>)}
+            </ul>
+          ) : (
+            <p className="mt-2 text-xs font-semibold text-emerald-700">Tất cả khung sáng/chiều đều đạt mức dự trù tối thiểu.</p>
+          )}
         </section>
       )}
 

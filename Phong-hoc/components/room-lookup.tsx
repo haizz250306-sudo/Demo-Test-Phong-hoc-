@@ -16,6 +16,8 @@ import {
   ListFilter,
   CalendarDays,
 } from "lucide-react"
+import { autoSchedule, CAMPUS_LABELS, rangeTime, type CampusFilter, type RoomInfo } from "@/lib/scheduling"
+import { SHEET_CLASSES, SHEET_ROOMS } from "@/lib/schedule-data"
 
 type RoomStatus = "available" | "in-class" | "booked"
 
@@ -24,6 +26,8 @@ type ClassBlock = { start: string; end: string; name: string }
 type RoomBase = {
   id: string
   capacity: number
+  building?: string
+  campus?: RoomInfo["campus"]
   blocks: ClassBlock[]
 }
 
@@ -32,6 +36,8 @@ type Booking = { until: string; borrower: string }
 type RoomView = {
   id: string
   capacity: number
+  building?: string
+  campus?: RoomInfo["campus"]
   status: RoomStatus
   className?: string
   classEnd?: string
@@ -52,28 +58,30 @@ const WEEKDAY_LABELS = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "T
  * so với các khối giờ này.
  */
 function createRoomSchedules(): RoomBase[] {
-  return [
-    { id: "A101", capacity: 40, blocks: [{ start: "07:00", end: "08:40", name: "Tiếng Anh chuyên ngành 1" }, { start: "13:00", end: "14:40", name: "Phương pháp NCKH" }] },
-    { id: "A102", capacity: 60, blocks: [{ start: "08:40", end: "10:20", name: "Tin học văn phòng" }, { start: "14:40", end: "16:20", name: "Thống kê ứng dụng" }] },
-    { id: "A103", capacity: 100, blocks: [{ start: "07:00", end: "09:30", name: "Triết học Mác - Lênin" }, { start: "13:00", end: "15:30", name: "Chính sách công" }] },
-    { id: "A104", capacity: 40, blocks: [{ start: "09:30", end: "11:10", name: "Kỹ năng soạn thảo văn bản" }, { start: "18:00", end: "19:40", name: "Anh văn B1 (VB2)" }] },
-    { id: "A105", capacity: 60, blocks: [{ start: "07:00", end: "08:40", name: "Quản trị Văn phòng" }, { start: "15:30", end: "17:10", name: "Quản lý dự án công" }] },
-    { id: "A106", capacity: 100, blocks: [{ start: "07:50", end: "10:20", name: "Kinh tế chính trị" }, { start: "13:50", end: "16:20", name: "Luật Hành chính" }] },
-    { id: "A107", capacity: 40, blocks: [{ start: "13:00", end: "14:40", name: "Văn bản & Lưu trữ học" }] },
-    { id: "A108", capacity: 60, blocks: [{ start: "07:00", end: "09:30", name: "Tư tưởng Hồ Chí Minh" }, { start: "18:00", end: "20:30", name: "Bồi dưỡng nghiệp vụ" }] },
-    { id: "A109", capacity: 100, blocks: [{ start: "08:40", end: "11:10", name: "Khoa học quản lý" }] },
-    { id: "A110", capacity: 40, blocks: [{ start: "09:30", end: "11:10", name: "Đạo đức công vụ" }, { start: "13:00", end: "14:40", name: "Kỹ năng giao tiếp công vụ" }] },
-    { id: "B101", capacity: 60, blocks: [{ start: "07:00", end: "08:40", name: "Lịch sử Đảng CSVN" }, { start: "14:40", end: "16:20", name: "Quản lý nhân sự khu vực công" }] },
-    { id: "B102", capacity: 100, blocks: [{ start: "07:50", end: "10:20", name: "Chính trị học đại cương" }, { start: "13:00", end: "15:30", name: "Tài chính công" }] },
-    { id: "B103", capacity: 40, blocks: [{ start: "15:30", end: "17:10", name: "Kinh tế học công cộng" }] },
-    { id: "B104", capacity: 60, blocks: [{ start: "07:00", end: "08:40", name: "Nhập môn Hành chính học" }, { start: "18:00", end: "19:40", name: "Anh văn B1 (VB2)" }] },
-    { id: "B105", capacity: 100, blocks: [{ start: "07:00", end: "09:30", name: "Xã hội học đại cương" }, { start: "13:50", end: "16:20", name: "Chuyên đề thực tế" }] },
-    { id: "B106", capacity: 40, blocks: [{ start: "09:30", end: "11:10", name: "Tiếng Anh chuyên ngành 2" }] },
-    { id: "B107", capacity: 60, blocks: [{ start: "13:00", end: "14:40", name: "Quản lý dự án công" }] },
-    { id: "B108", capacity: 100, blocks: [{ start: "07:50", end: "10:20", name: "Luật Hiến pháp" }, { start: "13:00", end: "15:30", name: "Tổ chức bộ máy nhà nước" }] },
-    { id: "B109", capacity: 40, blocks: [{ start: "18:00", end: "19:40", name: "Anh văn B1 (VB2)" }] },
-    { id: "B110", capacity: 60, blocks: [{ start: "07:00", end: "08:40", name: "Tâm lý học quản lý" }, { start: "13:00", end: "14:40", name: "Kỹ năng soạn thảo văn bản" }] },
-  ]
+  const result = autoSchedule(SHEET_CLASSES, SHEET_ROOMS)
+  const classById = new Map(SHEET_CLASSES.map((item) => [item.id, item]))
+  const roomById = new Map(SHEET_ROOMS.map((item) => [item.id, item]))
+  const blocksByRoom = new Map<string, ClassBlock[]>()
+
+  for (const assignment of result.assignments) {
+    const cls = classById.get(assignment.classId)
+    if (!cls) continue
+    const blocks = blocksByRoom.get(assignment.roomId) ?? []
+    blocks.push({
+      start: rangeTime(assignment.startPeriod, assignment.startPeriod).split(" - ")[0],
+      end: rangeTime(assignment.startPeriod, assignment.endPeriod).split(" - ")[1],
+      name: cls.name,
+    })
+    blocksByRoom.set(assignment.roomId, blocks)
+  }
+
+  return (SHEET_ROOMS as RoomInfo[]).map((room) => ({
+    id: room.id,
+    capacity: room.capacity,
+    building: room.building,
+    campus: room.campus,
+    blocks: blocksByRoom.get(room.id) ?? [],
+  }))
 }
 
 function toMinutes(hhmm: string): number {
@@ -107,6 +115,8 @@ function computeRoomView(base: RoomBase, nowMin: number, booking?: Booking): Roo
     return {
       id: base.id,
       capacity: base.capacity,
+      building: base.building,
+      campus: base.campus,
       status: "booked",
       borrower: booking.borrower,
       bookedUntil: booking.until,
@@ -119,6 +129,8 @@ function computeRoomView(base: RoomBase, nowMin: number, booking?: Booking): Roo
     return {
       id: base.id,
       capacity: base.capacity,
+      building: base.building,
+      campus: base.campus,
       status: "in-class",
       className: current.name,
       classEnd: current.end,
@@ -129,6 +141,8 @@ function computeRoomView(base: RoomBase, nowMin: number, booking?: Booking): Roo
   return {
     id: base.id,
     capacity: base.capacity,
+    building: base.building,
+    campus: base.campus,
     status: "available",
     nextClass: nextClassAfter(base, nowMin),
   }
@@ -142,6 +156,26 @@ function nextClassAfter(base: RoomBase, nowMin: number): string | null {
 }
 
 type Filter = "all" | "available" | "in-class" | "booked"
+type BuildingFilter = "all" | string
+
+function campusOrder(campus?: RoomInfo["campus"]): number {
+  return campus === "36 Xuân La" ? 0 : campus === "371 Nguyễn Hoàng Tôn" ? 1 : 2
+}
+
+function buildingOrder(building?: string): string {
+  if (!building) return "ZZZ"
+  if (building === "HoiTruong") return "ZZZ"
+  if (building.includes("-")) return building.split("-").at(-1) ?? building
+  return building
+}
+
+function roomOrder(a: RoomView, b: RoomView): number {
+  const campusDifference = campusOrder(a.campus) - campusOrder(b.campus)
+  if (campusDifference !== 0) return campusDifference
+  const buildingDifference = buildingOrder(a.building).localeCompare(buildingOrder(b.building), "vi")
+  if (buildingDifference !== 0) return buildingDifference
+  return a.id.localeCompare(b.id, "en", { numeric: true })
+}
 
 export function RoomLookup() {
   const schedules = useMemo(() => createRoomSchedules(), [])
@@ -149,6 +183,8 @@ export function RoomLookup() {
   const [bookings, setBookings] = useState<Record<string, Booking>>({})
   const [activeRoomId, setActiveRoomId] = useState<string | null>(null)
   const [filter, setFilter] = useState<Filter>("all")
+  const [campus, setCampus] = useState<CampusFilter>("all")
+  const [building, setBuilding] = useState<BuildingFilter>("all")
 
   // Đồng hồ thời gian thực: cập nhật mỗi giây.
   useEffect(() => {
@@ -175,16 +211,42 @@ export function RoomLookup() {
   )
 
   const visibleRooms = useMemo(
-    () => (filter === "all" ? views : views.filter((r) => r.status === filter)),
-    [views, filter],
+    () =>
+      views
+        .filter(
+        (room) =>
+          (campus === "all" || room.campus === campus) &&
+          (building === "all" || room.building === building) &&
+          (filter === "all" || room.status === filter),
+        )
+        .sort(roomOrder),
+    [views, filter, campus, building],
   )
 
   const activeRoom = activeRoomId ? views.find((r) => r.id === activeRoomId) ?? null : null
+  const buildingGroups = useMemo(
+    () =>
+      [
+        { campus: "36 Xuân La" as const, label: "Cơ sở 36 Xuân La" },
+        { campus: "371 Nguyễn Hoàng Tôn" as const, label: "Cơ sở 371 Nguyễn Hoàng Tôn" },
+      ].map((group) => ({
+        ...group,
+        buildings: [...new Set(
+          schedules
+            .filter((room) => room.campus === group.campus)
+            .map((room) => room.building)
+            .filter((value): value is string => Boolean(value)),
+        )].sort((a, b) => buildingOrder(a).localeCompare(buildingOrder(b), "vi")),
+      })),
+    [schedules],
+  )
 
   function handleReset() {
     setBookings({})
     setActiveRoomId(null)
     setFilter("all")
+    setCampus("all")
+    setBuilding("all")
   }
 
   function handleCancelBooking(id: string) {
@@ -257,6 +319,67 @@ export function RoomLookup() {
         <StatCard icon={<KeyRound className="size-5" />} label="Đang mượn" value={stats.booked} tone="amber" />
       </section>
 
+      <section aria-label="Chọn cơ sở" className="mt-6">
+        <div className="mb-2 flex items-center gap-2 text-sm font-semibold text-foreground">
+          <Building2 className="size-4 text-primary" />
+          Chọn cơ sở
+        </div>
+        <div className="grid gap-2 sm:grid-cols-3">
+          {(Object.keys(CAMPUS_LABELS) as CampusFilter[]).map((item) => {
+            const count = item === "all" ? views.length : views.filter((room) => room.campus === item).length
+            return (
+              <button
+                key={item}
+                type="button"
+                onClick={() => {
+                  setCampus(item)
+                  setBuilding("all")
+                }}
+                className={[
+                  "rounded-xl border px-4 py-3 text-left text-sm font-semibold transition-all",
+                  campus === item
+                    ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                    : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+                ].join(" ")}
+              >
+                <span className="block">{CAMPUS_LABELS[item]}</span>
+                <span className={campus === item ? "text-primary-foreground/75" : "text-muted-foreground"}>
+                  {count} phòng
+                </span>
+              </button>
+            )
+          })}
+        </div>
+      </section>
+
+      <section aria-label="Chọn tòa nhà" className="mt-4 rounded-2xl border border-white/60 bg-white/60 p-4 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
+        <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-foreground">
+          <Building2 className="size-4 text-primary" />
+          Chọn tòa
+        </div>
+        <div className="space-y-3">
+          <div className="flex flex-wrap items-center gap-2">
+            <BuildingChip active={building === "all"} onClick={() => setBuilding("all")}>
+              Tất cả tòa
+            </BuildingChip>
+          </div>
+          {buildingGroups
+            .filter((group) => campus === "all" || group.campus === campus)
+            .map((group) => (
+              <div key={group.campus} className="rounded-xl border border-border/70 bg-card/60 p-3">
+                <p className="mb-2 text-xs font-bold uppercase tracking-wide text-muted-foreground">{group.label}</p>
+                <div className="flex flex-wrap gap-2">
+                  {group.buildings.map((item) => (
+                    <BuildingChip key={item} active={building === item} onClick={() => setBuilding(item)}>
+                      {item === "HoiTruong" ? "Hội trường" : `Tòa ${buildingOrder(item)}`}
+                    </BuildingChip>
+                  ))}
+                </div>
+              </div>
+            ))}
+        </div>
+      </section>
+
       {/* Bộ lọc trạng thái phòng */}
       <div className="mt-6 flex flex-wrap items-center gap-2">
         <span className="flex items-center gap-1.5 text-sm font-medium text-muted-foreground">
@@ -298,18 +421,15 @@ export function RoomLookup() {
             <DoorOpen className="size-8 text-muted-foreground" />
             <p className="text-sm text-muted-foreground">Không có phòng nào ở trạng thái này tại thời điểm hiện tại.</p>
           </div>
-        ) : (
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 md:gap-4 xl:grid-cols-5">
-            {visibleRooms.map((room) => (
-              <RoomCard
-                key={room.id}
-                room={room}
-                onOpen={() => setActiveRoomId(room.id)}
-                onCancel={() => handleCancelBooking(room.id)}
-              />
-            ))}
-          </div>
-        )}
+        ) : campus === "all" && building === "all" ? (
+            <GroupedRoomGrid
+              rooms={visibleRooms}
+              onOpen={(id) => setActiveRoomId(id)}
+              onCancel={handleCancelBooking}
+            />
+          ) : (
+            <RoomGrid rooms={visibleRooms} onOpen={(id) => setActiveRoomId(id)} onCancel={handleCancelBooking} />
+          )}
       </section>
 
       {activeRoom && activeRoom.status === "available" && (
@@ -392,6 +512,31 @@ function FilterChip({
   )
 }
 
+function BuildingChip({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean
+  onClick: () => void
+  children: React.ReactNode
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={[
+        "rounded-full border px-3.5 py-1.5 text-sm font-semibold transition-all",
+        active
+          ? "border-primary bg-primary text-primary-foreground shadow-sm"
+          : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+      ].join(" ")}
+    >
+      {children}
+    </button>
+  )
+}
+
 const ROOM_STYLES: Record<RoomStatus, { card: string; badge: string; badgeText: string; dot: string }> = {
   available: {
     card: "border-emerald-200 bg-emerald-50/80 hover:border-emerald-300 hover:shadow-emerald-500/10 cursor-pointer",
@@ -413,6 +558,66 @@ const ROOM_STYLES: Record<RoomStatus, { card: string; badge: string; badgeText: 
   },
 }
 
+function RoomGrid({
+  rooms,
+  onOpen,
+  onCancel,
+}: {
+  rooms: RoomView[]
+  onOpen: (id: string) => void
+  onCancel: (id: string) => void
+}) {
+  return (
+    <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 md:gap-4 xl:grid-cols-5">
+      {rooms.map((room) => (
+        <RoomCard key={room.id} room={room} onOpen={() => onOpen(room.id)} onCancel={() => onCancel(room.id)} />
+      ))}
+    </div>
+  )
+}
+
+function GroupedRoomGrid({
+  rooms,
+  onOpen,
+  onCancel,
+}: {
+  rooms: RoomView[]
+  onOpen: (id: string) => void
+  onCancel: (id: string) => void
+}) {
+  const campusGroups = [
+    { campus: "36 Xuân La" as const, label: "Cơ sở 36 Xuân La", tone: "border-sky-200 bg-sky-50/70" },
+    {
+      campus: "371 Nguyễn Hoàng Tôn" as const,
+      label: "Cơ sở 371 Nguyễn Hoàng Tôn",
+      tone: "border-violet-200 bg-violet-50/70",
+    },
+  ]
+
+  return (
+    <div className="space-y-6">
+      {campusGroups.map((group) => {
+        const campusRooms = rooms.filter((room) => room.campus === group.campus)
+        if (campusRooms.length === 0) return null
+        return (
+          <section key={group.campus} aria-label={group.label}>
+            <div className={`mb-3 flex items-center justify-between rounded-xl border px-4 py-3 ${group.tone}`}>
+              <div>
+                <h3 className="font-bold text-foreground">{group.label}</h3>
+                <p className="text-xs text-muted-foreground">Sắp xếp theo tòa và mã phòng</p>
+              </div>
+              <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-bold text-foreground">
+                {campusRooms.length} phòng
+              </span>
+            </div>
+            <RoomGrid rooms={campusRooms} onOpen={onOpen} onCancel={onCancel} />
+          </section>
+        )
+      })}
+    </div>
+  )
+}
+
 function RoomCard({ room, onOpen, onCancel }: { room: RoomView; onOpen: () => void; onCancel: () => void }) {
   const style = ROOM_STYLES[room.status]
   const isAvailable = room.status === "available"
@@ -425,6 +630,9 @@ function RoomCard({ room, onOpen, onCancel }: { room: RoomView; onOpen: () => vo
           <div className="mt-0.5 flex items-center gap-1 text-xs text-muted-foreground">
             <Users className="size-3.5" />
             {room.capacity} chỗ
+          </div>
+          <div className="mt-1 text-[11px] text-muted-foreground">
+            {room.campus} · {room.building}
           </div>
         </div>
         <span className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold ${style.badge}`}>
