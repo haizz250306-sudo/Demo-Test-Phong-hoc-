@@ -25,21 +25,22 @@ import {
   type ScheduleResult,
   type Shift,
   type AltSlot,
+  type CampusFilter,
   DAYS,
   DAY_LABELS,
   DAY_SHORT,
   SHIFTS,
   SHIFT_LABELS,
   SHIFT_PERIODS,
-  createRooms,
-  createInitialClasses,
   createClassId,
   autoSchedule,
   findAlternatives,
   rangeTime,
+  CAMPUS_LABELS,
 } from "@/lib/scheduling"
+import { SHEET_CLASSES, SHEET_ROOMS } from "@/lib/schedule-data"
 
-const ROOMS = createRooms()
+const ROOMS = SHEET_ROOMS
 
 const SHIFT_ICON: Record<Shift, React.ReactNode> = {
   morning: <Sun className="size-4" />,
@@ -59,24 +60,21 @@ function capacityTone(capacity: number): string {
   return "bg-emerald-500/10 text-emerald-700"
 }
 
-function groupAssignmentsByRoomPrefix(assignments: import("@/lib/scheduling").Assignment[]) {
-  const groups = new Map<string, import("@/lib/scheduling").Assignment[]>()
-  for (const assignment of assignments) {
-    const prefix = assignment.roomId.charAt(0).toUpperCase()
-    const group = groups.get(prefix) ?? []
-    group.push(assignment)
-    groups.set(prefix, group)
-  }
-  return [...groups.entries()].sort(([a], [b]) => a.localeCompare(b))
+function buildingOrder(building?: string): string {
+  if (!building) return "ZZZ"
+  if (building === "HoiTruong") return "ZZZ"
+  if (building.includes("-")) return building.split("-").at(-1) ?? building
+  return building
 }
 
 export function AdminScheduler() {
-  const [classes, setClasses] = useState<ClassInfo[]>(createInitialClasses)
+  const [classes, setClasses] = useState<ClassInfo[]>(SHEET_CLASSES)
   const [result, setResult] = useState<ScheduleResult | null>(null)
   const [selectedDay, setSelectedDay] = useState<number>(2)
   const [editingClassId, setEditingClassId] = useState<string | null>(null)
   const [newClassIds, setNewClassIds] = useState<string[]>([])
-  const [selectedRoomPrefix, setSelectedRoomPrefix] = useState<string>("all")
+  const [selectedCampus, setSelectedCampus] = useState<CampusFilter>("all")
+  const [selectedBuilding, setSelectedBuilding] = useState<string>("all")
 
   const roomById = useMemo(() => {
     const map = new Map(ROOMS.map((r) => [r.id, r]))
@@ -111,7 +109,7 @@ export function AdminScheduler() {
   }
 
   function handleResetData() {
-    setClasses(createInitialClasses())
+    setClasses(SHEET_CLASSES)
     setResult(null)
     setEditingClassId(null)
     setNewClassIds([])
@@ -123,6 +121,7 @@ export function AdminScheduler() {
     setResult((prev) => {
       if (!prev) return prev
       return {
+        ...prev,
         assignments: [
           ...prev.assignments,
           {
@@ -148,6 +147,7 @@ export function AdminScheduler() {
     setResult((prev) => {
       if (!prev) return prev
       return {
+        ...prev,
         assignments: prev.assignments.map((assignment) =>
           assignment.classId === classId
             ? {
@@ -170,11 +170,29 @@ export function AdminScheduler() {
   const dayAssignments = useMemo(() => {
     if (!result) return []
     return result.assignments.filter(
-      (a) =>
-        a.day === selectedDay &&
-        (selectedRoomPrefix === "all" || a.roomId.startsWith(selectedRoomPrefix)),
+      (assignment) =>
+        assignment.day === selectedDay &&
+        (selectedCampus === "all" || roomById.get(assignment.roomId)?.campus === selectedCampus) &&
+        (selectedBuilding === "all" || roomById.get(assignment.roomId)?.building === selectedBuilding),
     )
-  }, [result, selectedDay, selectedRoomPrefix])
+  }, [result, selectedDay, selectedCampus, selectedBuilding, roomById])
+
+  const buildingGroups = useMemo(
+    () =>
+      [
+        { campus: "36 Xuân La" as const, label: "Cơ sở 36 Xuân La" },
+        { campus: "371 Nguyễn Hoàng Tôn" as const, label: "Cơ sở 371 Nguyễn Hoàng Tôn" },
+      ].map((group) => ({
+        ...group,
+        buildings: [...new Set(
+          ROOMS
+            .filter((room) => room.campus === group.campus)
+            .map((room) => room.building)
+            .filter((value): value is string => Boolean(value)),
+        )].sort((a, b) => buildingOrder(a).localeCompare(buildingOrder(b), "vi")),
+      })),
+    [],
+  )
 
   const assignedCountByDay = useMemo(() => {
     const map = new Map<number, number>()
@@ -197,7 +215,7 @@ export function AdminScheduler() {
               {classes.length} lớp trong thời khóa biểu · {ROOMS.length} phòng khả dụng
             </p>
             <p className="text-xs text-muted-foreground">
-              Thuật toán: xếp Thứ 2 → Thứ 7, ưu tiên sĩ số lớn, phòng vừa đủ (best-fit) theo 3 ca.
+              Multi-pass Best-Fit: giữ nguyên TKB K23–K25, ưu tiên lớp ≥150, sau đó lớp lớn/nhỏ; phần còn lại là vùng dự trù K26.
             </p>
           </div>
         </div>
@@ -221,8 +239,6 @@ export function AdminScheduler() {
         </div>
       </div>
 
-      <RoomDirectory selectedPrefix={selectedRoomPrefix} onSelectPrefix={setSelectedRoomPrefix} />
-
       {result && (
         <section className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4" aria-label="Kết quả sắp xếp">
           <ResultStat icon={<Layers className="size-5" />} label="Tổng lớp" value={classes.length} tone="navy" />
@@ -244,6 +260,97 @@ export function AdminScheduler() {
             value={result.assignments.reduce((s, a) => s + (classById.get(a.classId)?.size ?? 0), 0)}
             tone="amber"
           />
+        </section>
+      )}
+
+      <section aria-label="Chọn cơ sở phòng học" className="rounded-2xl border border-white/60 bg-white/60 p-4 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
+        <div className="mb-3 flex items-center gap-2 text-sm font-bold text-foreground">
+          <Layers className="size-4 text-primary" />
+          Khu vực phòng học
+        </div>
+        <div className="grid gap-2 sm:grid-cols-3">
+          {(Object.keys(CAMPUS_LABELS) as CampusFilter[]).map((campus) => {
+            const count = campus === "all" ? ROOMS.length : ROOMS.filter((room) => room.campus === campus).length
+            return (
+              <button
+                key={campus}
+                type="button"
+                onClick={() => {
+                  setSelectedCampus(campus)
+                  setSelectedBuilding("all")
+                }}
+                className={[
+                  "rounded-xl border px-4 py-3 text-left text-sm font-semibold transition-all",
+                  selectedCampus === campus
+                    ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                    : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+                ].join(" ")}
+              >
+                <span className="block">{CAMPUS_LABELS[campus]}</span>
+                <span className={selectedCampus === campus ? "text-primary-foreground/75" : "text-muted-foreground"}>
+                  {count} phòng
+                </span>
+              </button>
+            )
+          })}
+        </div>
+        <div className="mt-4 space-y-3 border-t border-border/70 pt-4">
+          <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">Chọn tòa</p>
+          <button
+            type="button"
+            onClick={() => setSelectedBuilding("all")}
+            className={[
+              "rounded-full border px-3.5 py-1.5 text-sm font-semibold transition-all",
+              selectedBuilding === "all"
+                ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+            ].join(" ")}
+          >
+            Tất cả tòa
+          </button>
+          {buildingGroups
+            .filter((group) => selectedCampus === "all" || group.campus === selectedCampus)
+            .map((group) => (
+              <div key={group.campus} className="rounded-xl border border-border/70 bg-card/60 p-3">
+                <p className="mb-2 text-xs font-bold text-muted-foreground">{group.label}</p>
+                <div className="flex flex-wrap gap-2">
+                  {group.buildings.map((building) => (
+                    <button
+                      key={building}
+                      type="button"
+                      onClick={() => setSelectedBuilding(building)}
+                      className={[
+                        "rounded-full border px-3 py-1.5 text-xs font-semibold transition-all",
+                        selectedBuilding === building
+                          ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                          : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+                      ].join(" ")}
+                    >
+                      {building === "HoiTruong" ? "Hội trường" : `Tòa ${buildingOrder(building)}`}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ))}
+        </div>
+      </section>
+
+      {result && (
+        <section className="rounded-2xl border border-amber-200 bg-amber-50/70 p-4 text-sm text-amber-900">
+          <div className="flex items-center gap-2 font-bold">
+            <AlertTriangle className="size-4" />
+            Vùng dự trù K26
+          </div>
+          <p className="mt-1 text-xs leading-5">
+            Hệ thống khóa các phòng chưa dùng của K23–K25 theo từng Thứ + ca; mục tiêu ca sáng và chiều là tối thiểu 18 phòng.
+          </p>
+          {result.reserveWarnings.length > 0 ? (
+            <ul className="mt-2 list-disc pl-5 text-xs">
+              {result.reserveWarnings.slice(0, 4).map((warning) => <li key={warning}>{warning}</li>)}
+            </ul>
+          ) : (
+            <p className="mt-2 text-xs font-semibold text-emerald-700">Tất cả khung sáng/chiều đều đạt mức dự trù tối thiểu.</p>
+          )}
         </section>
       )}
 
@@ -324,63 +431,48 @@ export function AdminScheduler() {
                   {shiftItems.length === 0 ? (
                     <p className="py-6 text-center text-xs text-muted-foreground">Chưa có lớp nào trong ca này.</p>
                   ) : (
-                    <div className="space-y-3">
-                      {groupAssignmentsByRoomPrefix(shiftItems).map(([prefix, assignments]) => (
-                        <div key={prefix} className="rounded-xl border border-border bg-card/50 p-2.5">
-                          <div className="mb-2 flex items-center gap-2">
-                            <span className="flex size-6 items-center justify-center rounded-lg bg-primary text-[11px] font-bold text-primary-foreground">
-                              {prefix}
-                            </span>
-                            <span className="text-xs font-bold text-foreground">Khu phòng {prefix}</span>
-                            <span className="text-[11px] text-muted-foreground">
-                              ({assignments.length} lớp)
-                            </span>
-                          </div>
-                          <ul className="flex flex-col gap-2.5">
-                            {assignments.map((a) => {
-                              const cls = classById.get(a.classId)
-                              const room = roomById.get(a.roomId)
-                              if (!cls || !room) return null
-                              return (
-                                <li
-                                  key={a.classId}
-                                  className="rounded-xl border border-border bg-card p-3 shadow-sm transition-shadow hover:shadow-md"
-                                >
-                                  <div className="flex items-start justify-between gap-2">
-                                    <p className="text-pretty text-sm font-semibold leading-tight text-foreground">
-                                      {cls.name}
-                                    </p>
-                                    <span className={`shrink-0 rounded-lg px-2 py-1 text-xs font-bold ${capacityTone(room.capacity)}`}>
-                                      {room.name}
-                                    </span>
-                                  </div>
-                                  <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
-                                    <span className="inline-flex items-center gap-1">
-                                      <Users className="size-3.5" />
-                                      {cls.size}/{room.capacity} chỗ
-                                    </span>
-                                    <span className="inline-flex items-center gap-1">
-                                      <CalendarDays className="size-3.5" />
-                                      Tiết {a.startPeriod}
-                                      {a.endPeriod !== a.startPeriod ? `–${a.endPeriod}` : ""}
-                                    </span>
-                                    <span className="font-mono">{rangeTime(a.startPeriod, a.endPeriod)}</span>
-                                  </div>
-                                  <AssignmentEditor
-                                    assignment={a}
-                                    classInfo={cls}
-                                    assignments={result.assignments}
-                                    open={editingClassId === cls.id}
-                                    onToggle={() => setEditingClassId((current) => (current === cls.id ? null : cls.id))}
-                                    onMove={handleMoveClass}
-                                  />
-                                </li>
-                              )
-                            })}
-                          </ul>
-                        </div>
-                      ))}
-                    </div>
+                    <ul className="flex flex-col gap-2.5">
+                      {shiftItems.map((a) => {
+                        const cls = classById.get(a.classId)
+                        const room = roomById.get(a.roomId)
+                        if (!cls || !room) return null
+                        return (
+                          <li
+                            key={a.classId}
+                            className="rounded-xl border border-border bg-card p-3 shadow-sm transition-shadow hover:shadow-md"
+                          >
+                            <div className="flex items-start justify-between gap-2">
+                              <p className="text-pretty text-sm font-semibold leading-tight text-foreground">
+                                {cls.name}
+                              </p>
+                              <span className={`shrink-0 rounded-lg px-2 py-1 text-xs font-bold ${capacityTone(room.capacity)}`}>
+                                {room.name}
+                              </span>
+                            </div>
+                            <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
+                              <span className="inline-flex items-center gap-1">
+                                <Users className="size-3.5" />
+                                {cls.size}/{room.capacity} chỗ
+                              </span>
+                              <span className="inline-flex items-center gap-1">
+                                <CalendarDays className="size-3.5" />
+                                Tiết {a.startPeriod}
+                                {a.endPeriod !== a.startPeriod ? `–${a.endPeriod}` : ""}
+                              </span>
+                              <span className="font-mono">{rangeTime(a.startPeriod, a.endPeriod)}</span>
+                            </div>
+                            <AssignmentEditor
+                              assignment={a}
+                              classInfo={cls}
+                              assignments={result.assignments}
+                              open={editingClassId === cls.id}
+                              onToggle={() => setEditingClassId((current) => (current === cls.id ? null : cls.id))}
+                              onMove={handleMoveClass}
+                            />
+                          </li>
+                        )
+                      })}
+                    </ul>
                   )}
                 </div>
               )
@@ -394,108 +486,6 @@ export function AdminScheduler() {
       {/* Danh sách lớp trong TKB */}
       <ClassListPanel classes={classes} onRemove={handleRemoveClass} />
     </div>
-  )
-}
-
-function RoomDirectory({
-  selectedPrefix,
-  onSelectPrefix,
-}: {
-  selectedPrefix: string
-  onSelectPrefix: (prefix: string) => void
-}) {
-  const groupedRooms = useMemo(() => {
-    const groups = new Map<string, typeof ROOMS>()
-    for (const room of ROOMS) {
-      const prefix = room.id.charAt(0).toUpperCase()
-      const group = groups.get(prefix) ?? []
-      group.push(room)
-      groups.set(prefix, group)
-    }
-    return [...groups.entries()].sort(([a], [b]) => a.localeCompare(b))
-  }, [])
-
-  return (
-    <section
-      aria-label="Danh mục phòng học"
-      className="rounded-2xl border border-white/60 bg-white/60 p-5 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl"
-    >
-      <div className="mb-4 flex items-center justify-between gap-3">
-        <div>
-          <h2 className="text-base font-bold text-foreground">Danh mục phòng học</h2>
-          <p className="text-xs text-muted-foreground">Phòng được chia theo khu để dễ theo dõi sức chứa.</p>
-        </div>
-        <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
-          {ROOMS.length} phòng
-        </span>
-      </div>
-      <div className="mb-4 flex flex-wrap gap-2" role="tablist" aria-label="Chọn dãy phòng">
-        <button
-          type="button"
-          role="tab"
-          aria-selected={selectedPrefix === "all"}
-          onClick={() => onSelectPrefix("all")}
-          className={[
-            "rounded-xl border px-3.5 py-2 text-sm font-semibold transition-colors",
-            selectedPrefix === "all"
-              ? "border-primary bg-primary text-primary-foreground"
-              : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
-          ].join(" ")}
-        >
-          Tất cả dãy
-        </button>
-        {groupedRooms.map(([prefix, rooms]) => (
-          <button
-            key={`filter-${prefix}`}
-            type="button"
-            role="tab"
-            aria-selected={selectedPrefix === prefix}
-            onClick={() => onSelectPrefix(prefix)}
-            className={[
-              "inline-flex items-center gap-2 rounded-xl border px-3.5 py-2 text-sm font-semibold transition-colors",
-              selectedPrefix === prefix
-                ? "border-primary bg-primary text-primary-foreground"
-                : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
-            ].join(" ")}
-          >
-            Dãy {prefix}
-            <span className={selectedPrefix === prefix ? "rounded-full bg-white/20 px-1.5 text-xs" : "rounded-full bg-muted px-1.5 text-xs text-muted-foreground"}>
-              {rooms.length}
-            </span>
-          </button>
-        ))}
-      </div>
-      <div className="space-y-3">
-        {groupedRooms.map(([prefix, rooms]) => (
-          <div
-            key={prefix}
-            className={[
-              "rounded-xl border border-border bg-card/60 p-3",
-              selectedPrefix !== "all" && selectedPrefix !== prefix ? "hidden" : "",
-            ].join(" ")}
-          >
-            <div className="mb-2 flex items-center gap-2">
-              <span className="flex size-7 items-center justify-center rounded-lg bg-primary text-xs font-bold text-primary-foreground">
-                {prefix}
-              </span>
-              <span className="text-sm font-bold text-foreground">Khu phòng {prefix}</span>
-              <span className="text-xs text-muted-foreground">({rooms.length} phòng)</span>
-            </div>
-            <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10">
-              {rooms.map((room) => (
-                <div
-                  key={room.id}
-                  className="rounded-lg border border-border bg-background px-2.5 py-2 text-center"
-                >
-                  <p className="text-sm font-bold text-foreground">{room.name}</p>
-                  <p className="text-[11px] text-muted-foreground">{room.capacity} chỗ</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
   )
 }
 
