@@ -379,10 +379,7 @@ function buildOccupancy(assignments: Assignment[]): OccupancyMap {
   return occupancy
 }
 
-/**
- * Với 1 lớp bị đẩy ra ngoài, chỉ quét phòng còn trống trong đúng Thứ + ca + tiết
- * của TKB ban hành. Không gợi ý đổi lịch; trả về tối đa `limit` phòng thay thế.
- */
+/** Tìm các phòng và khung ngày/ca còn trống để xếp thủ công lớp chưa được phân bổ. */
 export function findAlternatives(
   cls: ClassInfo,
   rooms: RoomInfo[],
@@ -395,25 +392,26 @@ export function findAlternatives(
     .sort((a, b) => a.capacity - b.capacity)
   const results: AltSlot[] = []
 
-  const day = cls.day
-  const shift = cls.shift
-  const shiftPeriods = SHIFT_PERIODS[shift]
-  const fixedStart = cls.startPeriod
-  if (cls.periods > shiftPeriods.length) return results
-  for (const room of fitRooms) {
-    const used = occupancy.get(occKey(day, room.id)) ?? new Set<number>()
-    const start = fixedStart ?? findFreeBlock(used, shiftPeriods, cls.periods)
-    const end = cls.endPeriod ?? (start === null ? null : start + cls.periods - 1)
-    if (start !== null && end !== null && [...Array(end - start + 1)].every((_, index) => !used.has(start + index))) {
-      results.push({
-        day,
-        shift,
-        roomId: room.id,
-        startPeriod: start,
-        endPeriod: end,
-      })
+  for (const day of DAYS) {
+    for (const shift of SHIFTS) {
+      const shiftPeriods = SHIFT_PERIODS[shift]
+      if (cls.periods > shiftPeriods.length) continue
+      for (const room of fitRooms) {
+        const used = occupancy.get(occKey(day, room.id)) ?? new Set<number>()
+        const isOriginalSlot = day === cls.day && shift === cls.shift
+        const fixedStart = isOriginalSlot ? cls.startPeriod : undefined
+        const start = fixedStart ?? findFreeBlock(used, shiftPeriods, cls.periods)
+        const end = isOriginalSlot
+          ? cls.endPeriod ?? (start === null ? null : start + cls.periods - 1)
+          : start === null
+            ? null
+            : start + cls.periods - 1
+        if (start !== null && end !== null && [...Array(end - start + 1)].every((_, index) => !used.has(start + index))) {
+          results.push({ day, shift, roomId: room.id, startPeriod: start, endPeriod: end })
+        }
+        if (results.length >= limit) return results
       }
-    if (results.length >= limit) return results
+    }
   }
   return results
 }

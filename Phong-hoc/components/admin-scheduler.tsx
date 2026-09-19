@@ -353,6 +353,7 @@ export function AdminScheduler() {
             label="Bị đẩy ra ngoài"
             value={result.unassigned.length}
             tone="red"
+            onClick={() => document.getElementById("unassigned-classes")?.scrollIntoView({ behavior: "smooth", block: "start" })}
           />
           <ResultStat
             icon={<Users className="size-5" />}
@@ -719,11 +720,13 @@ function ResultStat({
   label,
   value,
   tone,
+  onClick,
 }: {
   icon: React.ReactNode
   label: string
   value: number
   tone: "navy" | "green" | "red" | "amber"
+  onClick?: () => void
 }) {
   const tones = {
     navy: "text-primary bg-primary/10",
@@ -731,14 +734,22 @@ function ResultStat({
     red: "text-red-600 bg-red-500/10",
     amber: "text-amber-600 bg-amber-500/10",
   } as const
-  return (
-    <div className="flex items-center gap-3 rounded-2xl border border-white/60 bg-white/60 p-4 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
+  const content = (
+    <>
       <div className={`flex size-10 shrink-0 items-center justify-center rounded-xl ${tones[tone]}`}>{icon}</div>
       <div className="leading-tight">
         <div className="text-2xl font-bold tabular-nums text-foreground">{value}</div>
         <div className="text-xs text-muted-foreground">{label}</div>
       </div>
-    </div>
+    </>
+  )
+  const className = "flex items-center gap-3 rounded-2xl border border-white/60 bg-white/60 p-4 text-left shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl"
+  return onClick ? (
+    <button type="button" onClick={onClick} className={`${className} cursor-pointer transition-shadow hover:shadow-md`}>
+      {content}
+    </button>
+  ) : (
+    <div className={className}>{content}</div>
   )
 }
 
@@ -1160,7 +1171,7 @@ function UnassignedPanel({
   }
 
   return (
-    <div className="rounded-2xl border border-red-200 bg-red-50/60 p-5">
+    <div id="unassigned-classes" className="scroll-mt-6 rounded-2xl border border-red-200 bg-red-50/60 p-5">
       <div className="mb-4 flex items-center gap-2">
         <AlertTriangle className="size-5 text-red-600" />
         <h3 className="text-base font-bold text-red-800">
