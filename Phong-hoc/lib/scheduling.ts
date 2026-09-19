@@ -277,10 +277,16 @@ function isHallRoom(room: RoomInfo): boolean {
  * 4. Lớp không đủ phòng / hết chỗ -> đẩy ra danh sách "ngoài".
  */
 export function autoSchedule(classes: ClassInfo[], rooms: RoomInfo[]): ScheduleResult {
+  const roomFitCount = (cls: ClassInfo): number =>
+    rooms.filter((room) => (cls.size >= 150 || !isHallRoom(room)) && room.capacity >= cls.size).length
+
   const sorted = [...classes].sort((a, b) => {
     if (a.day !== b.day) return a.day - b.day
     if (a.shift !== b.shift) return SHIFTS.indexOf(a.shift) - SHIFTS.indexOf(b.shift)
-    if (a.size >= 150 !== b.size >= 150) return a.size >= 150 ? -1 : 1
+    const aFitCount = roomFitCount(a)
+    const bFitCount = roomFitCount(b)
+    if (aFitCount !== bFitCount) return aFitCount - bFitCount
+    if (a.periods !== b.periods) return b.periods - a.periods
     return b.size - a.size
   })
 
