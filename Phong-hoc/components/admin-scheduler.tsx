@@ -26,6 +26,7 @@ import {
   type Shift,
   type AltSlot,
   type CampusFilter,
+  type CohortFilter,
   DAYS,
   DAY_LABELS,
   DAY_SHORT,
@@ -37,6 +38,7 @@ import {
   findAlternatives,
   rangeTime,
   CAMPUS_LABELS,
+  COHORT_LABELS,
 } from "@/lib/scheduling"
 import { SHEET_CLASSES, SHEET_ROOMS } from "@/lib/schedule-data"
 
@@ -75,6 +77,7 @@ export function AdminScheduler() {
   const [newClassIds, setNewClassIds] = useState<string[]>([])
   const [selectedCampus, setSelectedCampus] = useState<CampusFilter>("all")
   const [selectedBuilding, setSelectedBuilding] = useState<string>("all")
+  const [selectedCohort, setSelectedCohort] = useState<CohortFilter>("all")
 
   const roomById = useMemo(() => {
     const map = new Map(ROOMS.map((r) => [r.id, r]))
@@ -172,10 +175,11 @@ export function AdminScheduler() {
     return result.assignments.filter(
       (assignment) =>
         assignment.day === selectedDay &&
+        (selectedCohort === "all" || classById.get(assignment.classId)?.cohort === selectedCohort) &&
         (selectedCampus === "all" || roomById.get(assignment.roomId)?.campus === selectedCampus) &&
         (selectedBuilding === "all" || roomById.get(assignment.roomId)?.building === selectedBuilding),
     )
-  }, [result, selectedDay, selectedCampus, selectedBuilding, roomById])
+  }, [result, selectedDay, selectedCohort, selectedCampus, selectedBuilding, roomById, classById])
 
   const buildingGroups = useMemo(
     () =>
@@ -196,13 +200,57 @@ export function AdminScheduler() {
 
   const assignedCountByDay = useMemo(() => {
     const map = new Map<number, number>()
-    if (result) for (const a of result.assignments) map.set(a.day, (map.get(a.day) ?? 0) + 1)
+    if (result) {
+      for (const assignment of result.assignments) {
+        const room = roomById.get(assignment.roomId)
+        const cls = classById.get(assignment.classId)
+        if (
+          (selectedCohort === "all" || cls?.cohort === selectedCohort) &&
+          (selectedCampus === "all" || room?.campus === selectedCampus) &&
+          (selectedBuilding === "all" || room?.building === selectedBuilding)
+        ) {
+          map.set(assignment.day, (map.get(assignment.day) ?? 0) + 1)
+        }
+      }
+    }
     return map
-  }, [result])
+  }, [result, selectedCohort, selectedCampus, selectedBuilding, roomById, classById])
 
   return (
     <div className="space-y-6">
       <AddClassForm onAdd={handleAddClass} />
+
+      <section aria-label="Chọn khóa xem lịch phòng" className="rounded-2xl border border-white/60 bg-white/60 p-4 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
+        <div className="mb-3 flex items-center gap-2 text-sm font-bold text-foreground">
+          <CalendarDays className="size-4 text-primary" />
+          Lịch phòng theo khóa
+        </div>
+        <p className="mb-3 text-xs text-muted-foreground">
+          Chọn một khóa để chỉ xem các phòng đã được phân bổ cho khóa đó.
+        </p>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+          {(Object.keys(COHORT_LABELS) as CohortFilter[]).map((cohort) => (
+            <button
+              key={cohort}
+              type="button"
+              onClick={() => setSelectedCohort(cohort)}
+              className={[
+                "rounded-xl border px-3 py-2.5 text-sm font-semibold transition-all",
+                selectedCohort === cohort
+                  ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                  : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+              ].join(" ")}
+            >
+              {COHORT_LABELS[cohort]}
+            </button>
+          ))}
+        </div>
+        {selectedCohort === "K26" && classes.every((item) => item.cohort !== "K26") && (
+          <p className="mt-3 text-xs text-amber-700">
+            Chưa có dữ liệu thời khóa biểu Khóa 26 trong Google Sheet hiện tại.
+          </p>
+        )}
+      </section>
 
       {/* Điều khiển & tổng quan */}
       <div className="flex flex-col gap-4 rounded-2xl border border-white/60 bg-white/60 p-5 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl md:flex-row md:items-center md:justify-between">
@@ -407,8 +455,20 @@ export function AdminScheduler() {
             })}
           </div>
 
-          {/* Lịch tuần theo ca */}
-          <section aria-label={`Lịch ${DAY_LABELS[selectedDay]}`} className="grid gap-4 lg:grid-cols-3">
+          {/* Lịch phòng theo ca */}
+          <section aria-label={`Lịch phòng ${COHORT_LABELS[selectedCohort]} ${DAY_LABELS[selectedDay]}`}>
+            <div className="mb-4 flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-primary/15 bg-primary/5 px-4 py-3">
+              <div>
+                <p className="text-sm font-bold text-primary">Lịch phòng học đã phân bổ</p>
+                <p className="text-xs text-muted-foreground">
+                  {COHORT_LABELS[selectedCohort]} · {DAY_LABELS[selectedDay]}
+                </p>
+              </div>
+              <span className="rounded-full bg-primary px-3 py-1 text-xs font-bold text-primary-foreground">
+                {dayAssignments.length} lớp đã có phòng
+              </span>
+            </div>
+            <div className="grid gap-4 lg:grid-cols-3">
             {SHIFTS.map((shift) => {
               const shiftItems = dayAssignments
                 .filter((a) => a.shift === shift)
@@ -477,14 +537,15 @@ export function AdminScheduler() {
                 </div>
               )
             })}
+            </div>
           </section>
 
           <UnassignedPanel result={result} onPlace={handlePlaceClass} />
         </>
       )}
 
-      {/* Danh sách lớp trong TKB */}
-      <ClassListPanel classes={classes} onRemove={handleRemoveClass} />
+      {/* Danh sách lớp chỉ dùng trước khi chạy xếp phòng. Sau đó ưu tiên hiển thị lịch phòng. */}
+      {!result && <ClassListPanel classes={classes} onRemove={handleRemoveClass} />}
     </div>
   )
 }

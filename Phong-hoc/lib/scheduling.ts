@@ -99,6 +99,16 @@ export const CAMPUS_LABELS = {
 
 export type CampusFilter = keyof typeof CAMPUS_LABELS
 
+export type CohortFilter = "all" | "K23" | "K24" | "K25" | "K26"
+
+export const COHORT_LABELS: Record<CohortFilter, string> = {
+  all: "Tất cả khóa",
+  K23: "Khóa 23",
+  K24: "Khóa 24",
+  K25: "Khóa 25",
+  K26: "Khóa 26",
+}
+
 /** Các tiết thuộc từng ca. Sáng 1-5, Chiều 6-10, Tối 11-13. */
 export const SHIFT_PERIODS: Record<Shift, number[]> = {
   morning: [1, 2, 3, 4, 5],
