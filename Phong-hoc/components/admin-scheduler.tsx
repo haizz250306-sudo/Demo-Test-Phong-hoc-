@@ -19,6 +19,7 @@ import {
   Sun,
   CloudSun,
   Moon,
+  Building2,
 } from "lucide-react"
 import {
   type ClassInfo,
@@ -324,14 +325,15 @@ export function AdminScheduler() {
         </section>
       )}
 
-      <section aria-label="Chọn cơ sở phòng học" className="rounded-2xl border border-white/60 bg-white/60 p-4 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
-        <div className="mb-3 flex items-center gap-2 text-sm font-bold text-foreground">
-          <Layers className="size-4 text-primary" />
+      <section aria-label="Chọn cơ sở phòng học" className="rounded-2xl border border-white/60 bg-white/60 p-5 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
+        <div className="mb-4 flex items-center gap-2 text-sm font-bold text-foreground">
+          <Building2 className="size-4 text-primary" />
           Khu vực phòng học
         </div>
-        <div className="grid gap-2 sm:grid-cols-3">
+        <div className="grid gap-3 md:grid-cols-3">
           {(Object.keys(CAMPUS_LABELS) as CampusFilter[]).map((campus) => {
             const count = campus === "all" ? ROOMS.length : ROOMS.filter((room) => room.campus === campus).length
+            const isAll = campus === "all"
             return (
               <button
                 key={campus}
@@ -341,21 +343,45 @@ export function AdminScheduler() {
                   setSelectedBuilding("all")
                 }}
                 className={[
-                  "rounded-xl border px-4 py-3 text-left text-sm font-semibold transition-all",
+                  "group relative min-h-24 overflow-hidden rounded-2xl border p-4 text-left transition-all",
                   selectedCampus === campus
-                    ? "border-primary bg-primary text-primary-foreground shadow-sm"
-                    : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+                    ? isAll
+                      ? "border-primary bg-primary text-primary-foreground shadow-md"
+                      : campus === "36 Xuân La"
+                        ? "border-sky-300 bg-sky-100 text-sky-950 shadow-md"
+                        : "border-violet-300 bg-violet-100 text-violet-950 shadow-md"
+                    : "border-border bg-card text-foreground hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md",
                 ].join(" ")}
               >
-                <span className="block">{CAMPUS_LABELS[campus]}</span>
-                <span className={selectedCampus === campus ? "text-primary-foreground/75" : "text-muted-foreground"}>
-                  {count} phòng
+                <span className="relative block text-sm font-bold">{CAMPUS_LABELS[campus]}</span>
+                <span
+                  className={[
+                    "relative mt-2 block text-2xl font-bold tabular-nums",
+                    selectedCampus === campus
+                      ? isAll
+                        ? "text-primary-foreground"
+                        : campus === "36 Xuân La"
+                          ? "text-sky-800"
+                          : "text-violet-800"
+                      : "text-foreground",
+                  ].join(" ")}
+                >
+                  {count}
+                </span>
+                <span
+                  className={
+                    selectedCampus === campus && isAll
+                      ? "text-xs text-primary-foreground/75"
+                      : "text-xs text-muted-foreground"
+                  }
+                >
+                  phòng khả dụng
                 </span>
               </button>
             )
           })}
         </div>
-        <div className="mt-4 space-y-3 border-t border-border/70 pt-4">
+        <div className="mt-5 space-y-3 border-t border-border/70 pt-4">
           <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">Chọn tòa</p>
           <button
             type="button"
