@@ -140,27 +140,32 @@ export function AdminScheduler() {
 
   // Xếp thủ công 1 lớp bị đẩy ra ngoài vào phòng đủ điều kiện đã chọn.
   function handlePlaceClass(cls: ClassInfo, alt: AltSlot) {
+    const updatedAssignment = {
+      classId: cls.id,
+      roomId: alt.roomId,
+      day: alt.day,
+      shift: alt.shift,
+      startPeriod: alt.startPeriod,
+      endPeriod: alt.endPeriod,
+    }
     setClasses((prev) => prev.map((c) => (c.id === cls.id ? { ...c, day: alt.day, shift: alt.shift } : c)))
     setResult((prev) => {
       if (!prev) return prev
       return {
         ...prev,
-        assignments: [
-          ...prev.assignments,
-          {
-            classId: cls.id,
-            roomId: alt.roomId,
-            day: alt.day,
-            shift: alt.shift,
-            startPeriod: alt.startPeriod,
-            endPeriod: alt.endPeriod,
-          },
-        ],
+        assignments: [...prev.assignments, updatedAssignment],
         unassigned: prev.unassigned.filter((u) => u.classInfo.id !== cls.id),
       }
     })
+    const room = roomById.get(alt.roomId)
     setSelectedDay(alt.day)
+    setSelectedCampus(room?.campus ?? "all")
+    setSelectedBuilding(room?.building ?? "all")
+    setSelectedCohort(cls.cohort ?? "all")
     setEditingClassId(null)
+    window.setTimeout(() => {
+      document.getElementById(`assignment-${cls.id}`)?.scrollIntoView({ behavior: "smooth", block: "center" })
+    }, 0)
   }
 
   function handleMoveClass(classId: string, alt: AltSlot) {
