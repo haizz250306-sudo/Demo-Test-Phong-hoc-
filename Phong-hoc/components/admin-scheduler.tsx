@@ -112,7 +112,11 @@ export function AdminScheduler() {
       return `Môn "${cls.name.trim()}" đã có trong danh sách lớp. Vui lòng nhập môn khác.`
     }
 
-    const newClass = { ...cls, id: createClassId() }
+    let newClassId = createClassId()
+    while (classes.some((item) => item.id === newClassId)) {
+      newClassId = createClassId()
+    }
+    const newClass = { ...cls, id: newClassId }
     const nextClasses = [...classes, newClass]
     setClasses(nextClasses)
     setResult(autoSchedule(nextClasses, ROOMS))
