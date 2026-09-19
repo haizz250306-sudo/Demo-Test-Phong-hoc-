@@ -1063,6 +1063,19 @@ function AlternativeColumns({
   alternatives: AltSlot[]
   onSelect: (alternative: AltSlot) => void
 }) {
+  const campuses = [
+    {
+      campus: "36 Xuân La" as const,
+      label: "Cơ sở 36 Xuân La",
+      tone: "border-sky-200 bg-sky-50/70 text-sky-800",
+    },
+    {
+      campus: "371 Nguyễn Hoàng Tôn" as const,
+      label: "Cơ sở 371 Nguyễn Hoàng Tôn",
+      tone: "border-violet-200 bg-violet-50/70 text-violet-800",
+    },
+  ]
+
   return (
     <div className="grid min-w-[960px] grid-cols-6 gap-3">
       {DAYS.map((day) => {
@@ -1074,20 +1087,34 @@ function AlternativeColumns({
               <p className="py-3 text-xs leading-4 text-muted-foreground">Không có slot phù hợp</p>
             ) : (
               <div className="flex max-h-[52vh] flex-col gap-2 overflow-y-auto pr-1">
-                {dayAlternatives.map((alternative, index) => (
-                  <button
-                    key={`${alternative.day}-${alternative.shift}-${alternative.roomId}-${alternative.startPeriod}-${index}`}
-                    type="button"
-                    onClick={() => onSelect(alternative)}
-                    className="rounded-lg border border-primary/20 bg-background px-3 py-2.5 text-left text-xs font-medium text-foreground transition-colors hover:border-primary hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                  >
-                    <span className="font-bold">{alternative.roomId}</span>
-                    <span className="block text-muted-foreground">
-                      {SHIFT_LABELS[alternative.shift]} · tiết {alternative.startPeriod}
-                      {alternative.endPeriod !== alternative.startPeriod ? `–${alternative.endPeriod}` : ""}
-                    </span>
-                  </button>
-                ))}
+                {campuses.map((group) => {
+                  const campusAlternatives = dayAlternatives.filter(
+                    (alternative) => ROOMS.find((room) => room.id === alternative.roomId)?.campus === group.campus,
+                  )
+                  if (campusAlternatives.length === 0) return null
+                  return (
+                    <section key={group.campus} className="space-y-1.5">
+                      <div className={`rounded-lg border px-2.5 py-1.5 text-[11px] font-bold ${group.tone}`}>
+                        {group.label}
+                        <span className="ml-1 font-medium opacity-75">({campusAlternatives.length} phòng)</span>
+                      </div>
+                      {campusAlternatives.map((alternative, index) => (
+                        <button
+                          key={`${alternative.day}-${alternative.shift}-${alternative.roomId}-${alternative.startPeriod}-${index}`}
+                          type="button"
+                          onClick={() => onSelect(alternative)}
+                          className="w-full rounded-lg border border-primary/20 bg-background px-3 py-2.5 text-left text-xs font-medium text-foreground transition-colors hover:border-primary hover:bg-primary/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                        >
+                          <span className="font-bold">{alternative.roomId}</span>
+                          <span className="block text-muted-foreground">
+                            {SHIFT_LABELS[alternative.shift]} · tiết {alternative.startPeriod}
+                            {alternative.endPeriod !== alternative.startPeriod ? `–${alternative.endPeriod}` : ""}
+                          </span>
+                        </button>
+                      ))}
+                    </section>
+                  )
+                })}
               </div>
             )}
           </div>
