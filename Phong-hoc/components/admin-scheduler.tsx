@@ -932,6 +932,7 @@ function NewClassesPanel({
       <ul className="mt-4 grid gap-2 md:grid-cols-2">
         {classes.map((classInfo) => {
           const assignment = result.assignments.find((item) => item.classId === classInfo.id)
+          const assignedRoom = assignment ? ROOMS.find((room) => room.id === assignment.roomId) : undefined
           const isAssigned = Boolean(assignment)
           return (
             <li key={classInfo.id} className="flex items-center justify-between gap-3 rounded-xl border border-sky-200 bg-white/70 px-3 py-2.5">
@@ -945,6 +946,11 @@ function NewClassesPanel({
                 <span className={`rounded-full px-2 py-1 text-xs font-bold ${isAssigned ? "bg-emerald-100 text-emerald-700" : "bg-red-100 text-red-700"}`}>
                   {isAssigned ? `Đã xếp ${assignment?.roomId}` : "Chưa xếp"}
                 </span>
+                {assignedRoom?.campus && (
+                  <span className="text-[11px] font-semibold text-muted-foreground">
+                    {assignedRoom.campus}
+                  </span>
+                )}
                 {assignment && (
                   <button
                     type="button"
