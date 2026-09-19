@@ -343,7 +343,7 @@ export function AdminScheduler() {
                   setSelectedBuilding("all")
                 }}
                 className={[
-                  "group relative overflow-hidden rounded-lg border px-3 py-2.5 text-left transition-all",
+                  "group relative h-[59px] overflow-hidden rounded-lg border px-3 py-2 text-left transition-all",
                   selectedCampus === campus
                     ? isAll
                       ? "border-primary bg-primary text-primary-foreground shadow-md"
@@ -353,10 +353,10 @@ export function AdminScheduler() {
                     : "border-border bg-card text-foreground hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md",
                 ].join(" ")}
               >
-                <span className="relative block text-xs font-bold">{CAMPUS_LABELS[campus]}</span>
+                <span className="relative block text-sm font-bold leading-5">{CAMPUS_LABELS[campus]}</span>
                 <span
                   className={[
-                  "relative mt-0.5 block text-lg font-bold tabular-nums",
+                    "relative block text-sm font-semibold leading-5 tabular-nums",
                     selectedCampus === campus
                       ? isAll
                         ? "text-primary-foreground"
@@ -366,16 +366,7 @@ export function AdminScheduler() {
                       : "text-foreground",
                   ].join(" ")}
                 >
-                  {count}
-                </span>
-                <span
-                  className={
-                    selectedCampus === campus && isAll
-                      ? "text-xs text-primary-foreground/75"
-                      : "text-xs text-muted-foreground"
-                  }
-                >
-                  phòng
+                  {count} phòng
                 </span>
               </button>
             )
