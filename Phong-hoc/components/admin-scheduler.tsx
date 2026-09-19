@@ -330,7 +330,7 @@ export function AdminScheduler() {
           <Building2 className="size-4 text-primary" />
           Khu vực phòng học
         </div>
-        <div className="grid gap-2 md:grid-cols-3">
+        <div className="grid max-w-4xl gap-2 md:grid-cols-3">
           {(Object.keys(CAMPUS_LABELS) as CampusFilter[]).map((campus) => {
             const count = campus === "all" ? ROOMS.length : ROOMS.filter((room) => room.campus === campus).length
             const isAll = campus === "all"
@@ -343,7 +343,7 @@ export function AdminScheduler() {
                   setSelectedBuilding("all")
                 }}
                 className={[
-                  "group relative overflow-hidden rounded-xl border px-4 py-3 text-left transition-all",
+                  "group relative overflow-hidden rounded-lg border px-3 py-2 text-left transition-all",
                   selectedCampus === campus
                     ? isAll
                       ? "border-primary bg-primary text-primary-foreground shadow-md"
@@ -353,10 +353,10 @@ export function AdminScheduler() {
                     : "border-border bg-card text-foreground hover:-translate-y-0.5 hover:border-primary/40 hover:shadow-md",
                 ].join(" ")}
               >
-                <span className="relative block text-sm font-bold">{CAMPUS_LABELS[campus]}</span>
+                <span className="relative block text-xs font-bold">{CAMPUS_LABELS[campus]}</span>
                 <span
                   className={[
-                  "relative mt-1 block text-xl font-bold tabular-nums",
+                  "relative mt-0.5 block text-lg font-bold tabular-nums",
                     selectedCampus === campus
                       ? isAll
                         ? "text-primary-foreground"
