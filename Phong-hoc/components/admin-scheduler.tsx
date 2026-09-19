@@ -325,12 +325,12 @@ export function AdminScheduler() {
         </section>
       )}
 
-      <section aria-label="Chọn cơ sở phòng học" className="rounded-2xl border border-white/60 bg-white/60 p-5 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
-        <div className="mb-4 flex items-center gap-2 text-sm font-bold text-foreground">
+      <section aria-label="Chọn cơ sở phòng học" className="rounded-2xl border border-white/60 bg-white/60 p-4 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
+        <div className="mb-3 flex items-center gap-2 text-sm font-bold text-foreground">
           <Building2 className="size-4 text-primary" />
           Khu vực phòng học
         </div>
-        <div className="grid gap-3 md:grid-cols-3">
+        <div className="grid gap-2 md:grid-cols-3">
           {(Object.keys(CAMPUS_LABELS) as CampusFilter[]).map((campus) => {
             const count = campus === "all" ? ROOMS.length : ROOMS.filter((room) => room.campus === campus).length
             const isAll = campus === "all"
@@ -343,7 +343,7 @@ export function AdminScheduler() {
                   setSelectedBuilding("all")
                 }}
                 className={[
-                  "group relative min-h-24 overflow-hidden rounded-2xl border p-4 text-left transition-all",
+                  "group relative overflow-hidden rounded-xl border px-4 py-3 text-left transition-all",
                   selectedCampus === campus
                     ? isAll
                       ? "border-primary bg-primary text-primary-foreground shadow-md"
@@ -356,7 +356,7 @@ export function AdminScheduler() {
                 <span className="relative block text-sm font-bold">{CAMPUS_LABELS[campus]}</span>
                 <span
                   className={[
-                    "relative mt-2 block text-2xl font-bold tabular-nums",
+                  "relative mt-1 block text-xl font-bold tabular-nums",
                     selectedCampus === campus
                       ? isAll
                         ? "text-primary-foreground"
@@ -375,13 +375,13 @@ export function AdminScheduler() {
                       : "text-xs text-muted-foreground"
                   }
                 >
-                  phòng khả dụng
+                  phòng
                 </span>
               </button>
             )
           })}
         </div>
-        <div className="mt-5 space-y-3 border-t border-border/70 pt-4">
+        <div className="mt-4 space-y-3 border-t border-border/70 pt-3">
           <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">Chọn tòa</p>
           <button
             type="button"
