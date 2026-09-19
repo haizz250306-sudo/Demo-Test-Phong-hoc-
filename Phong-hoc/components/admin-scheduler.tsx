@@ -1244,6 +1244,16 @@ function UnassignedItem({
         <div>
           <div className="flex flex-wrap items-center gap-2">
             <p className="text-sm font-bold text-foreground">{classInfo.name}</p>
+            {classInfo.className && (
+              <span className="rounded-md bg-sky-500/10 px-2 py-0.5 text-xs font-semibold text-sky-800">
+                Lớp: {classInfo.className}
+              </span>
+            )}
+            {classInfo.courseCode && (
+              <span className="rounded-md bg-violet-500/10 px-2 py-0.5 text-xs font-medium text-violet-800">
+                {classInfo.courseCode}
+              </span>
+            )}
             <span className="rounded-md bg-red-500/10 px-2 py-0.5 text-xs font-semibold text-red-700">
               {classInfo.size} SV
             </span>
