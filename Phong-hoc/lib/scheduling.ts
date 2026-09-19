@@ -310,12 +310,9 @@ export function autoSchedule(classes: ClassInfo[], rooms: RoomInfo[]): ScheduleR
       continue
     }
 
-    const availableRooms = roomsByCapAsc.filter((room) => {
-      if (cls.size < 150 && isHallRoom(room)) return false
-      return true
-    })
-    const fitRooms = availableRooms.filter((room) => room.capacity >= cls.size)
-    const candidates = fitRooms.length > 0 ? fitRooms : availableRooms.slice().sort((a, b) => b.capacity - a.capacity)
+    const eligibleRooms = roomsByCapAsc.filter((room) => cls.size >= 150 || !isHallRoom(room))
+    const fitRooms = eligibleRooms.filter((room) => room.capacity >= cls.size)
+    const candidates = fitRooms.length > 0 ? fitRooms : eligibleRooms.slice().sort((a, b) => b.capacity - a.capacity)
     let placed = false
     for (const room of candidates) {
       const key = occKey(cls.day, room.id)
