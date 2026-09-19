@@ -547,9 +547,16 @@ export function AdminScheduler() {
                                     className="rounded-xl border border-border bg-card p-3 shadow-sm transition-shadow hover:shadow-md"
                                   >
                                     <div className="flex items-start justify-between gap-2">
-                                      <p className="text-pretty text-sm font-semibold leading-tight text-foreground">
-                                        {cls.name}
-                                      </p>
+                                      <div className="min-w-0">
+                                        <p className="text-pretty text-sm font-semibold leading-tight text-foreground">
+                                          {cls.name}
+                                        </p>
+                                        {cls.className && (
+                                          <p className="mt-1 truncate text-xs font-medium text-muted-foreground">
+                                            Lớp: {cls.className}
+                                          </p>
+                                        )}
+                                      </div>
                                       <span className={`shrink-0 rounded-lg px-2 py-1 text-xs font-bold ${capacityTone(room.capacity)}`}>
                                         {room.name}
                                       </span>
