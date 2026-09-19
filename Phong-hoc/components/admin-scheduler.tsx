@@ -20,6 +20,7 @@ import {
   CloudSun,
   Moon,
   Building2,
+  Search,
 } from "lucide-react"
 import {
   type ClassInfo,
@@ -92,6 +93,7 @@ export function AdminScheduler() {
   const [selectedCampus, setSelectedCampus] = useState<CampusFilter>("all")
   const [selectedBuilding, setSelectedBuilding] = useState<string>("all")
   const [selectedCohort, setSelectedCohort] = useState<CohortFilter>("all")
+  const [scheduleSearch, setScheduleSearch] = useState("")
 
   const roomById = useMemo(() => {
     const map = new Map(ROOMS.map((r) => [r.id, r]))
@@ -194,6 +196,25 @@ export function AdminScheduler() {
         (selectedBuilding === "all" || roomById.get(assignment.roomId)?.building === selectedBuilding),
     )
   }, [result, selectedDay, selectedCohort, selectedCampus, selectedBuilding, roomById, classById])
+
+  const searchResults = useMemo(() => {
+    const query = scheduleSearch.trim().toLocaleLowerCase()
+    if (!result || !query) return []
+
+    return result.assignments
+      .filter((assignment) => {
+        const cls = classById.get(assignment.classId)
+        const room = roomById.get(assignment.roomId)
+        if (!cls || !room) return false
+        if (selectedCohort !== "all" && cls.cohort !== selectedCohort) return false
+        if (selectedCampus !== "all" && room.campus !== selectedCampus) return false
+        if (selectedBuilding !== "all" && room.building !== selectedBuilding) return false
+        return [cls.name, cls.className, cls.courseCode, room.name]
+          .filter(Boolean)
+          .some((value) => value?.toLocaleLowerCase().includes(query))
+      })
+      .sort((a, b) => a.day - b.day || a.startPeriod - b.startPeriod)
+  }, [result, scheduleSearch, selectedCohort, selectedCampus, selectedBuilding, roomById, classById])
 
   const buildingGroups = useMemo(
     () =>
@@ -495,6 +516,67 @@ export function AdminScheduler() {
               <span className="rounded-full bg-primary px-3 py-1 text-xs font-bold text-primary-foreground">
                 {dayAssignments.length} lớp đã có phòng
               </span>
+            </div>
+            <div className="mb-4 rounded-2xl border border-border bg-card p-3 shadow-sm">
+              <label htmlFor="schedule-search" className="mb-2 flex items-center gap-2 text-sm font-bold text-foreground">
+                <Search className="size-4 text-primary" />
+                Tìm môn học hoặc tên lớp
+              </label>
+              <div className="relative">
+                <input
+                  id="schedule-search"
+                  type="search"
+                  value={scheduleSearch}
+                  onChange={(event) => setScheduleSearch(event.target.value)}
+                  placeholder="Nhập tên môn học hoặc tên lớp để xem phòng..."
+                  className="w-full rounded-xl border border-border bg-background px-3 py-2.5 pr-10 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-ring/40"
+                />
+                {scheduleSearch && (
+                  <button
+                    type="button"
+                    onClick={() => setScheduleSearch("")}
+                    aria-label="Xóa tìm kiếm"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 rounded-md p-1 text-muted-foreground hover:bg-accent hover:text-foreground"
+                  >
+                    <X className="size-4" />
+                  </button>
+                )}
+              </div>
+              {scheduleSearch.trim() && (
+                <div className="mt-3">
+                  {searchResults.length === 0 ? (
+                    <p className="rounded-lg bg-muted/50 px-3 py-2 text-xs text-muted-foreground">
+                      Không tìm thấy môn học hoặc lớp phù hợp với bộ lọc hiện tại.
+                    </p>
+                  ) : (
+                    <ul className="grid gap-2 md:grid-cols-2">
+                      {searchResults.map((assignment) => {
+                        const cls = classById.get(assignment.classId)
+                        const room = roomById.get(assignment.roomId)
+                        if (!cls || !room) return null
+                        return (
+                          <li key={`search-${assignment.classId}`} className="rounded-xl border border-primary/15 bg-primary/5 px-3 py-2.5">
+                            <div className="flex items-start justify-between gap-3">
+                              <div className="min-w-0">
+                                <p className="text-sm font-semibold text-foreground">{cls.name}</p>
+                                {cls.className && (
+                                  <p className="mt-0.5 break-words text-xs text-muted-foreground">Lớp: {cls.className}</p>
+                                )}
+                              </div>
+                              <span className={`shrink-0 rounded-lg px-2 py-1 text-xs font-bold ${capacityTone(room.capacity)}`}>
+                                {room.name}
+                              </span>
+                            </div>
+                            <p className="mt-1 text-xs text-muted-foreground">
+                              {DAY_LABELS[assignment.day]} · Ca {SHIFT_LABELS[assignment.shift]} · {room.campus}
+                            </p>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  )}
+                </div>
+              )}
             </div>
             <div className="grid gap-4 lg:grid-cols-3">
             {SHIFTS.map((shift) => {
