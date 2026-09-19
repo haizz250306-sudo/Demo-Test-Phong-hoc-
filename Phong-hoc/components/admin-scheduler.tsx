@@ -190,6 +190,19 @@ export function AdminScheduler() {
     setEditingClassId(null)
   }
 
+  function showAssignment(assignment: import("@/lib/scheduling").Assignment) {
+    const cls = classById.get(assignment.classId)
+    const room = roomById.get(assignment.roomId)
+    if (!cls || !room) return
+    setSelectedDay(assignment.day)
+    setSelectedCampus(room.campus ?? "all")
+    setSelectedBuilding(room.building ?? "all")
+    setSelectedCohort(cls.cohort ?? "all")
+    window.setTimeout(() => {
+      document.getElementById(`assignment-${assignment.classId}`)?.scrollIntoView({ behavior: "smooth", block: "center" })
+    }, 0)
+  }
+
   const dayAssignments = useMemo(() => {
     if (!result) return []
     return result.assignments.filter(
@@ -473,6 +486,7 @@ export function AdminScheduler() {
             classes={newClassIds.map((id) => classById.get(id)).filter((item): item is ClassInfo => Boolean(item))}
             result={result}
             onSchedule={handleSchedule}
+            onShowAssignment={showAssignment}
           />
           {/* Bộ chọn thứ trong tuần */}
           <div className="flex flex-wrap gap-2" role="tablist" aria-label="Thứ trong tuần">
@@ -574,6 +588,13 @@ export function AdminScheduler() {
                             <p className="mt-1 text-xs text-muted-foreground">
                               {DAY_LABELS[assignment.day]} · Ca {SHIFT_LABELS[assignment.shift]} · {room.campus}
                             </p>
+                            <button
+                              type="button"
+                              onClick={() => showAssignment(assignment)}
+                              className="mt-2 text-xs font-semibold text-primary hover:underline"
+                            >
+                              Xem trong lịch
+                            </button>
                           </li>
                         )
                       })}
@@ -630,6 +651,7 @@ export function AdminScheduler() {
                                 return (
                                   <li
                                     key={a.classId}
+                                    id={`assignment-${a.classId}`}
                                     className="rounded-xl border border-border bg-card p-3 shadow-sm transition-shadow hover:shadow-md"
                                   >
                                     <div className="flex items-start justify-between gap-2">
@@ -875,10 +897,12 @@ function NewClassesPanel({
   classes,
   result,
   onSchedule,
+  onShowAssignment,
 }: {
   classes: ClassInfo[]
   result: ScheduleResult
   onSchedule: () => void
+  onShowAssignment: (assignment: import("@/lib/scheduling").Assignment) => void
 }) {
   if (classes.length === 0) return null
 
@@ -917,9 +941,20 @@ function NewClassesPanel({
                   {classInfo.size} SV · {DAY_SHORT[classInfo.day]} · {SHIFT_LABELS[classInfo.shift]} · {classInfo.periods} tiết
                 </p>
               </div>
-              <span className={`shrink-0 rounded-full px-2 py-1 text-xs font-bold ${isAssigned ? "bg-emerald-100 text-emerald-700" : "bg-red-100 text-red-700"}`}>
-                {isAssigned ? `Đã xếp ${assignment?.roomId}` : "Chưa xếp"}
-              </span>
+              <div className="flex shrink-0 flex-col items-end gap-1">
+                <span className={`rounded-full px-2 py-1 text-xs font-bold ${isAssigned ? "bg-emerald-100 text-emerald-700" : "bg-red-100 text-red-700"}`}>
+                  {isAssigned ? `Đã xếp ${assignment?.roomId}` : "Chưa xếp"}
+                </span>
+                {assignment && (
+                  <button
+                    type="button"
+                    onClick={() => onShowAssignment(assignment)}
+                    className="text-xs font-semibold text-primary hover:underline"
+                  >
+                    Xem trong lịch
+                  </button>
+                )}
+              </div>
             </li>
           )
         })}
