@@ -94,6 +94,17 @@ export function AdminScheduler() {
   const [selectedBuilding, setSelectedBuilding] = useState<string>("all")
   const [selectedCohort, setSelectedCohort] = useState<CohortFilter>("all")
   const [scheduleSearch, setScheduleSearch] = useState("")
+  const [highlightedClassId, setHighlightedClassId] = useState<string | null>(null)
+
+  useEffect(() => {
+    function clearHighlight(event: MouseEvent) {
+      const target = event.target
+      if (target instanceof Element && target.closest("[data-assignment-card]")) return
+      setHighlightedClassId(null)
+    }
+    document.addEventListener("mousedown", clearHighlight)
+    return () => document.removeEventListener("mousedown", clearHighlight)
+  }, [])
 
   const roomById = useMemo(() => {
     const map = new Map(ROOMS.map((r) => [r.id, r]))
@@ -163,6 +174,7 @@ export function AdminScheduler() {
     setSelectedBuilding(room?.building ?? "all")
     setSelectedCohort(cls.cohort ?? "all")
     setEditingClassId(null)
+    setHighlightedClassId(cls.id)
     window.setTimeout(() => {
       document.getElementById(`assignment-${cls.id}`)?.scrollIntoView({ behavior: "smooth", block: "center" })
     }, 0)
@@ -193,6 +205,7 @@ export function AdminScheduler() {
     })
     setSelectedDay(alt.day)
     setEditingClassId(null)
+    setHighlightedClassId(classId)
   }
 
   function showAssignment(assignment: import("@/lib/scheduling").Assignment) {
@@ -203,6 +216,7 @@ export function AdminScheduler() {
     setSelectedCampus(room.campus ?? "all")
     setSelectedBuilding(room.building ?? "all")
     setSelectedCohort(cls.cohort ?? "all")
+    setHighlightedClassId(assignment.classId)
     window.setTimeout(() => {
       document.getElementById(`assignment-${assignment.classId}`)?.scrollIntoView({ behavior: "smooth", block: "center" })
     }, 0)
@@ -658,7 +672,16 @@ export function AdminScheduler() {
                                   <li
                                     key={a.classId}
                                     id={`assignment-${a.classId}`}
-                                    className="rounded-xl border border-border bg-card p-3 shadow-sm transition-shadow hover:shadow-md"
+                                    data-assignment-card
+                                    onClick={() =>
+                                      setHighlightedClassId((current) => (current === a.classId ? current : null))
+                                    }
+                                    className={[
+                                      "rounded-xl border bg-card p-3 shadow-sm transition-all hover:shadow-md",
+                                      highlightedClassId === a.classId
+                                        ? "border-amber-400 bg-amber-50/70 shadow-[0_0_0_4px_rgba(251,191,36,0.28),0_0_24px_rgba(251,191,36,0.35)]"
+                                        : "border-border",
+                                    ].join(" ")}
                                   >
                                     <div className="flex items-start justify-between gap-2">
                                       <div className="min-w-0">
