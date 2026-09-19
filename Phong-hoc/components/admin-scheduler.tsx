@@ -536,11 +536,16 @@ export function AdminScheduler() {
                         if (campusItems.length === 0) return null
                         return (
                           <section key={group.campus} aria-label={group.label}>
-                            <div className={`mb-2 flex items-center justify-between rounded-lg border px-3 py-2 ${group.tone}`}>
-                              <span className="text-xs font-bold">{group.label}</span>
-                              <span className="rounded-full bg-white/80 px-2 py-0.5 text-[11px] font-bold">
+                            <div className={`mb-3 rounded-xl border px-3.5 py-3 ${group.tone}`}>
+                              <div className="flex items-center justify-between gap-2">
+                                <div>
+                                  <p className="text-sm font-bold">{group.label}</p>
+                                  <p className="mt-0.5 text-[11px] opacity-75">Các lớp đã được xếp phòng tại cơ sở này</p>
+                                </div>
+                                <span className="rounded-full bg-white/85 px-2.5 py-1 text-[11px] font-bold">
                                 {campusItems.length} lớp
-                              </span>
+                                </span>
+                              </div>
                             </div>
                             <ul className="flex flex-col gap-2.5">
                               {campusItems.map((a) => {
