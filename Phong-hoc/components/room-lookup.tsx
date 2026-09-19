@@ -16,7 +16,15 @@ import {
   ListFilter,
   CalendarDays,
 } from "lucide-react"
-import { autoSchedule, CAMPUS_LABELS, rangeTime, type CampusFilter, type RoomInfo } from "@/lib/scheduling"
+import {
+  autoSchedule,
+  CAMPUS_LABELS,
+  COHORT_LABELS,
+  rangeTime,
+  type CampusFilter,
+  type CohortFilter,
+  type RoomInfo,
+} from "@/lib/scheduling"
 import { SHEET_CLASSES, SHEET_ROOMS } from "@/lib/schedule-data"
 
 type RoomStatus = "available" | "in-class" | "booked"
@@ -57,9 +65,10 @@ const WEEKDAY_LABELS = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "T
  * Trạng thái phòng (trống / đang có lớp) được tính theo GIỜ THỰC hiện tại
  * so với các khối giờ này.
  */
-function createRoomSchedules(): RoomBase[] {
-  const result = autoSchedule(SHEET_CLASSES, SHEET_ROOMS)
-  const classById = new Map(SHEET_CLASSES.map((item) => [item.id, item]))
+function createRoomSchedules(cohort: CohortFilter): RoomBase[] {
+  const classes = cohort === "all" ? SHEET_CLASSES : SHEET_CLASSES.filter((item) => item.cohort === cohort)
+  const result = autoSchedule(classes, SHEET_ROOMS)
+  const classById = new Map(classes.map((item) => [item.id, item]))
   const roomById = new Map(SHEET_ROOMS.map((item) => [item.id, item]))
   const blocksByRoom = new Map<string, ClassBlock[]>()
 
@@ -178,7 +187,8 @@ function roomOrder(a: RoomView, b: RoomView): number {
 }
 
 export function RoomLookup() {
-  const schedules = useMemo(() => createRoomSchedules(), [])
+  const [cohort, setCohort] = useState<CohortFilter>("all")
+  const schedules = useMemo(() => createRoomSchedules(cohort), [cohort])
   const [now, setNow] = useState<Date | null>(null)
   const [bookings, setBookings] = useState<Record<string, Booking>>({})
   const [activeRoomId, setActiveRoomId] = useState<string | null>(null)
@@ -247,6 +257,7 @@ export function RoomLookup() {
     setFilter("all")
     setCampus("all")
     setBuilding("all")
+    setCohort("all")
   }
 
   function handleCancelBooking(id: string) {
@@ -350,6 +361,35 @@ export function RoomLookup() {
             )
           })}
         </div>
+      </section>
+
+      <section aria-label="Chọn khóa" className="mt-4 rounded-2xl border border-white/60 bg-white/60 p-4 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
+        <div className="mb-3 flex items-center gap-2 text-sm font-semibold text-foreground">
+          <CalendarDays className="size-4 text-primary" />
+          Xem lịch theo khóa
+        </div>
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+          {(Object.keys(COHORT_LABELS) as CohortFilter[]).map((item) => (
+            <button
+              key={item}
+              type="button"
+              onClick={() => setCohort(item)}
+              className={[
+                "rounded-xl border px-3 py-2.5 text-sm font-semibold transition-all",
+                cohort === item
+                  ? "border-primary bg-primary text-primary-foreground shadow-sm"
+                  : "border-border bg-card text-foreground hover:border-primary/40 hover:bg-accent",
+              ].join(" ")}
+            >
+              {COHORT_LABELS[item]}
+            </button>
+          ))}
+        </div>
+        {cohort === "K26" && SHEET_CLASSES.every((item) => item.cohort !== "K26") && (
+          <p className="mt-3 text-xs text-amber-700">
+            Chưa có dữ liệu thời khóa biểu Khóa 26 trong Google Sheet hiện tại.
+          </p>
+        )}
       </section>
 
       <section aria-label="Chọn tòa nhà" className="mt-4 rounded-2xl border border-white/60 bg-white/60 p-4 shadow-[0_8px_30px_rgb(15,23,42,0.05)] backdrop-blur-xl">
