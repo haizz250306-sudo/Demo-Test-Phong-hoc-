@@ -359,11 +359,9 @@ export function AdminScheduler() {
                     "relative block text-sm font-semibold leading-5 tabular-nums",
                     selectedCampus === campus
                       ? isAll
-                        ? "text-primary-foreground"
-                        : campus === "36 Xuân La"
-                          ? "text-sky-800"
-                          : "text-violet-800"
-                      : "text-foreground",
+                        ? "text-primary-foreground/75"
+                        : "text-slate-500"
+                      : "text-muted-foreground",
                   ].join(" ")}
                 >
                   {count} phòng
