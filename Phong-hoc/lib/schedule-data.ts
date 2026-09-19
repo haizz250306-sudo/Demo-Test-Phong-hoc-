@@ -7,7 +7,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A101",
     "capacity": 75,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -15,7 +15,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A102",
     "capacity": 80,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -23,7 +23,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A103",
     "capacity": 60,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -31,7 +31,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A104",
     "capacity": 55,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -39,7 +39,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A105",
     "capacity": 80,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -47,7 +47,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A106",
     "capacity": 75,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -55,7 +55,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A107",
     "capacity": 90,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -63,7 +63,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A108",
     "capacity": 50,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -71,7 +71,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A109",
     "capacity": 65,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -79,7 +79,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A110",
     "capacity": 70,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -87,7 +87,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A111",
     "capacity": 55,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -95,7 +95,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A112",
     "capacity": 70,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -103,7 +103,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A113",
     "capacity": 40,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -111,7 +111,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A114",
     "capacity": 55,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -119,7 +119,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A115",
     "capacity": 75,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -127,7 +127,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A116",
     "capacity": 70,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -135,7 +135,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A117",
     "capacity": 55,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -143,7 +143,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "A118",
     "capacity": 75,
     "building": "36XL-A",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -151,7 +151,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "B201",
     "capacity": 85,
     "building": "36XL-B",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -159,7 +159,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "B202",
     "capacity": 60,
     "building": "36XL-B",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -167,7 +167,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "B203",
     "capacity": 85,
     "building": "36XL-B",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -175,7 +175,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "B204",
     "capacity": 80,
     "building": "36XL-B",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -183,7 +183,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "C301",
     "capacity": 60,
     "building": "36XL-C",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -191,7 +191,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "C302",
     "capacity": 50,
     "building": "36XL-C",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -199,7 +199,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "C303",
     "capacity": 95,
     "building": "36XL-C",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -207,7 +207,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "C304",
     "capacity": 60,
     "building": "36XL-C",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -215,7 +215,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "D401",
     "capacity": 50,
     "building": "36XL-D",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -223,7 +223,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "D402",
     "capacity": 50,
     "building": "36XL-D",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -231,7 +231,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "D403",
     "capacity": 85,
     "building": "36XL-D",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -239,7 +239,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "D404",
     "capacity": 75,
     "building": "36XL-D",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -247,7 +247,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E501",
     "capacity": 85,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -255,7 +255,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E502",
     "capacity": 80,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -263,7 +263,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E503",
     "capacity": 70,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -271,7 +271,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E504",
     "capacity": 100,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -279,7 +279,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E505",
     "capacity": 60,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -287,7 +287,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E506",
     "capacity": 70,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -295,7 +295,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E507",
     "capacity": 85,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -303,7 +303,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E508",
     "capacity": 75,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -311,7 +311,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E509",
     "capacity": 90,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -319,7 +319,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E510",
     "capacity": 75,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -327,7 +327,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E511",
     "capacity": 80,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -335,7 +335,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E512",
     "capacity": 45,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -343,7 +343,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E513",
     "capacity": 55,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -351,7 +351,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E514",
     "capacity": 60,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -359,7 +359,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E515",
     "capacity": 45,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -367,7 +367,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E516",
     "capacity": 55,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -375,7 +375,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E517",
     "capacity": 50,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -383,7 +383,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E518",
     "capacity": 60,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -391,7 +391,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E519",
     "capacity": 75,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -399,7 +399,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E520",
     "capacity": 60,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -407,7 +407,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E521",
     "capacity": 60,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -415,7 +415,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "E522",
     "capacity": 55,
     "building": "36XL-E",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -423,7 +423,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "G601",
     "capacity": 60,
     "building": "36XL-G",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -431,7 +431,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "G602",
     "capacity": 95,
     "building": "36XL-G",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -439,7 +439,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "G603",
     "capacity": 75,
     "building": "36XL-G",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -447,7 +447,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "name": "HT-36XL",
     "capacity": 400,
     "building": "HoiTruong",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
