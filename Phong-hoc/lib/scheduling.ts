@@ -265,6 +265,10 @@ function findFreeBlock(used: Set<number>, shiftPeriods: number[], periods: numbe
   return null
 }
 
+function isHallRoom(room: RoomInfo): boolean {
+  return room.kind === "hall" || room.building === "HoiTruong" || room.name.toLocaleUpperCase().startsWith("HT-")
+}
+
 /**
  * Thuật toán sắp xếp:
  * 1. Duyệt lần lượt từ Thứ Hai -> Thứ Bảy.
@@ -307,7 +311,7 @@ export function autoSchedule(classes: ClassInfo[], rooms: RoomInfo[]): ScheduleR
     }
 
     const availableRooms = roomsByCapAsc.filter((room) => {
-      if (cls.size < 150 && room.kind === "hall") return false
+      if (cls.size < 150 && isHallRoom(room)) return false
       return true
     })
     const fitRooms = availableRooms.filter((room) => room.capacity >= cls.size)
@@ -386,7 +390,9 @@ export function findAlternatives(
   limit = 6,
 ): AltSlot[] {
   const occupancy = buildOccupancy(assignments)
-  const fitRooms = [...rooms].filter((r) => r.capacity >= cls.size).sort((a, b) => a.capacity - b.capacity)
+  const fitRooms = [...rooms]
+    .filter((room) => room.capacity >= cls.size && (cls.size >= 150 || !isHallRoom(room)))
+    .sort((a, b) => a.capacity - b.capacity)
   const results: AltSlot[] = []
 
   const day = cls.day
