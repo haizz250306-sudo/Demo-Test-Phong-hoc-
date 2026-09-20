@@ -7,7 +7,7 @@ export type RoomInfo = {
   name: string
   capacity: number
   building?: string
-  campus?: "36 Xuân La" | "371 Nguyễn Hoàng Tôn"
+  campus?: "36 Xuân La" | "371 Nguyễn Hoàng Tôn" | "77 Nguyễn Chí Thanh"
   kind?: "classroom" | "hall"
 }
 
@@ -95,6 +95,7 @@ export const CAMPUS_LABELS = {
   all: "Tất cả cơ sở",
   "36 Xuân La": "Cơ sở 36 Xuân La",
   "371 Nguyễn Hoàng Tôn": "Cơ sở 371 Nguyễn Hoàng Tôn",
+  "77 Nguyễn Chí Thanh": "Cơ sở 77 Nguyễn Chí Thanh",
 } as const
 
 export type CampusFilter = keyof typeof CAMPUS_LABELS
@@ -269,25 +270,32 @@ function isHallRoom(room: RoomInfo): boolean {
   return room.kind === "hall" || room.building === "HoiTruong" || room.name.toLocaleUpperCase().startsWith("HT-")
 }
 
+const ALL_PERIODS = Array.from({ length: 13 }, (_, index) => index + 1)
+
+function periodsForClass(cls: ClassInfo): number[] {
+  return cls.startPeriod !== undefined || cls.endPeriod !== undefined
+    ? ALL_PERIODS
+    : SHIFT_PERIODS[cls.shift]
+}
+
 /**
- * Thuật toán sắp xếp:
- * 1. Duyệt lần lượt từ Thứ Hai -> Thứ Bảy.
- * 2. Trong mỗi ngày, ưu tiên lớp sĩ số LỚN nhất trước.
- * 3. Chọn phòng nhỏ nhất mà vẫn đủ sức chứa (best-fit) để dành phòng lớn cho lớp đông.
- * 4. Lớp không đủ phòng / hết chỗ -> đẩy ra danh sách "ngoài".
+ * Xếp lớp theo độ khan hiếm trước, sau đó dùng best-fit.
+ *
+ * Từ tiết/đến tiết trong TKB là ràng buộc cứng. Ca chỉ mô tả ca hiển thị,
+ * nên một khung cố định có thể bắt đầu ở tiết 10 và kết thúc ở tiết 13.
  */
 export function autoSchedule(classes: ClassInfo[], rooms: RoomInfo[]): ScheduleResult {
   const roomFitCount = (cls: ClassInfo): number =>
     rooms.filter((room) => (cls.size >= 150 || !isHallRoom(room)) && room.capacity >= cls.size).length
 
   const sorted = [...classes].sort((a, b) => {
-    if (a.day !== b.day) return a.day - b.day
-    if (a.shift !== b.shift) return SHIFTS.indexOf(a.shift) - SHIFTS.indexOf(b.shift)
     const aFitCount = roomFitCount(a)
     const bFitCount = roomFitCount(b)
     if (aFitCount !== bFitCount) return aFitCount - bFitCount
     if (a.periods !== b.periods) return b.periods - a.periods
-    return b.size - a.size
+    if (a.size !== b.size) return b.size - a.size
+    if (a.day !== b.day) return a.day - b.day
+    return (a.startPeriod ?? SHIFT_PERIODS[a.shift][0]) - (b.startPeriod ?? SHIFT_PERIODS[b.shift][0])
   })
 
   const roomsByCapAsc = [...rooms].sort((a, b) => {
@@ -300,13 +308,13 @@ export function autoSchedule(classes: ClassInfo[], rooms: RoomInfo[]): ScheduleR
   const unassigned: Unassigned[] = []
 
   for (const cls of sorted) {
-    const shiftPeriods = SHIFT_PERIODS[cls.shift]
+    const shiftPeriods = periodsForClass(cls)
     const startPeriod = cls.startPeriod ?? shiftPeriods[0]
     const endPeriod = cls.endPeriod ?? startPeriod + cls.periods - 1
     if (
       cls.periods > shiftPeriods.length ||
-      startPeriod < shiftPeriods[0] ||
-      endPeriod > shiftPeriods[shiftPeriods.length - 1] ||
+      startPeriod < 1 ||
+      endPeriod > 13 ||
       endPeriod - startPeriod + 1 !== cls.periods
     ) {
       unassigned.push({
@@ -317,7 +325,9 @@ export function autoSchedule(classes: ClassInfo[], rooms: RoomInfo[]): ScheduleR
     }
 
     const eligibleRooms = roomsByCapAsc.filter((room) => cls.size >= 150 || !isHallRoom(room))
-    const fitRooms = eligibleRooms.filter((room) => room.capacity >= cls.size)
+    const fitRooms = eligibleRooms
+      .filter((room) => room.capacity >= cls.size)
+      .sort((a, b) => a.capacity - b.capacity || a.id.localeCompare(b.id))
     const undersizedRooms = eligibleRooms
       .filter((room) => room.capacity < cls.size)
       .sort((a, b) => b.capacity - a.capacity)

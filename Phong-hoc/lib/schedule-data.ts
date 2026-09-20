@@ -1,178 +1,178 @@
-﻿// D? li?u ??ng b? t? Google Sheet NCKH TKB: danh m?c ph?ng v? TKB K23-K25.
+// Data synchronized from the latest Google Sheet.
 import type { ClassInfo, RoomInfo } from "./scheduling"
 
 export const SHEET_ROOMS: RoomInfo[] = [
   {
-    "id": "A101",
-    "name": "A101",
+    "id": "A201",
+    "name": "A201",
     "capacity": 75,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A102",
-    "name": "A102",
+    "id": "A202",
+    "name": "A202",
     "capacity": 80,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A103",
-    "name": "A103",
+    "id": "A203",
+    "name": "A203",
     "capacity": 60,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A104",
-    "name": "A104",
+    "id": "A301",
+    "name": "A301",
     "capacity": 55,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A105",
-    "name": "A105",
+    "id": "A302",
+    "name": "A302",
     "capacity": 80,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A106",
-    "name": "A106",
+    "id": "A303",
+    "name": "A303",
     "capacity": 75,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A107",
-    "name": "A107",
+    "id": "A401",
+    "name": "A401",
     "capacity": 90,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A108",
-    "name": "A108",
+    "id": "A402",
+    "name": "A402",
     "capacity": 50,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A109",
-    "name": "A109",
+    "id": "A403",
+    "name": "A403",
     "capacity": 65,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A110",
-    "name": "A110",
+    "id": "A501",
+    "name": "A501",
     "capacity": 70,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A111",
-    "name": "A111",
+    "id": "A502",
+    "name": "A502",
     "capacity": 55,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A112",
-    "name": "A112",
+    "id": "A503",
+    "name": "A503",
     "capacity": 70,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A113",
-    "name": "A113",
+    "id": "A601",
+    "name": "A601",
     "capacity": 40,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A114",
-    "name": "A114",
+    "id": "A602",
+    "name": "A602",
     "capacity": 55,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A115",
-    "name": "A115",
+    "id": "A603",
+    "name": "A603",
     "capacity": 75,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A116",
-    "name": "A116",
+    "id": "A701",
+    "name": "A701",
     "capacity": 70,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A117",
-    "name": "A117",
+    "id": "A702",
+    "name": "A702",
     "capacity": 55,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "A118",
-    "name": "A118",
+    "id": "A703",
+    "name": "A703",
     "capacity": 75,
     "building": "36XL-A",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "B201",
-    "name": "B201",
+    "id": "B301",
+    "name": "B301",
     "capacity": 85,
     "building": "36XL-B",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "B202",
-    "name": "B202",
+    "id": "B401",
+    "name": "B401",
     "capacity": 60,
     "building": "36XL-B",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "B203",
-    "name": "B203",
+    "id": "B501",
+    "name": "B501",
     "capacity": 85,
     "building": "36XL-B",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "B204",
-    "name": "B204",
+    "id": "B601",
+    "name": "B601",
     "capacity": 80,
     "building": "36XL-B",
     "campus": "36 Xuân La",
@@ -187,65 +187,169 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "kind": "classroom"
   },
   {
-    "id": "C302",
-    "name": "C302",
+    "id": "C401",
+    "name": "C401",
     "capacity": 50,
     "building": "36XL-C",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "C303",
-    "name": "C303",
+    "id": "C501",
+    "name": "C501",
     "capacity": 95,
     "building": "36XL-C",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "C304",
-    "name": "C304",
+    "id": "C601",
+    "name": "C601",
     "capacity": 60,
     "building": "36XL-C",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "D401",
-    "name": "D401",
+    "id": "D101",
+    "name": "D101",
     "capacity": 50,
     "building": "36XL-D",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "D402",
-    "name": "D402",
+    "id": "D501",
+    "name": "D501",
     "capacity": 50,
     "building": "36XL-D",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "D403",
-    "name": "D403",
+    "id": "D502",
+    "name": "D502",
     "capacity": 85,
     "building": "36XL-D",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "D404",
-    "name": "D404",
+    "id": "D503",
+    "name": "D503",
     "capacity": 75,
     "building": "36XL-D",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
+    "id": "E101",
+    "name": "E101",
+    "capacity": 85,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E102",
+    "name": "E102",
+    "capacity": 80,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E201",
+    "name": "E201",
+    "capacity": 70,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E202",
+    "name": "E202",
+    "capacity": 100,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E203",
+    "name": "E203",
+    "capacity": 70,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E204",
+    "name": "E204",
+    "capacity": 80,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E301",
+    "name": "E301",
+    "capacity": 70,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E302",
+    "name": "E302",
+    "capacity": 85,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E303",
+    "name": "E303",
+    "capacity": 75,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E304",
+    "name": "E304",
+    "capacity": 75,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E401",
+    "name": "E401",
+    "capacity": 90,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E402",
+    "name": "E402",
+    "capacity": 75,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
+    "id": "E403",
+    "name": "E403",
+    "capacity": 80,
+    "building": "36XL-E",
+    "campus": "36 Xuân La",
+    "kind": "classroom"
+  },
+  {
     "id": "E501",
     "name": "E501",
-    "capacity": 85,
+    "capacity": 45,
     "building": "36XL-E",
     "campus": "36 Xuân La",
     "kind": "classroom"
@@ -253,7 +357,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
   {
     "id": "E502",
     "name": "E502",
-    "capacity": 80,
+    "capacity": 55,
     "building": "36XL-E",
     "campus": "36 Xuân La",
     "kind": "classroom"
@@ -261,7 +365,7 @@ export const SHEET_ROOMS: RoomInfo[] = [
   {
     "id": "E503",
     "name": "E503",
-    "capacity": 70,
+    "capacity": 60,
     "building": "36XL-E",
     "campus": "36 Xuân La",
     "kind": "classroom"
@@ -269,593 +373,73 @@ export const SHEET_ROOMS: RoomInfo[] = [
   {
     "id": "E504",
     "name": "E504",
-    "capacity": 100,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E505",
-    "name": "E505",
-    "capacity": 60,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E506",
-    "name": "E506",
-    "capacity": 70,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E507",
-    "name": "E507",
-    "capacity": 85,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E508",
-    "name": "E508",
-    "capacity": 75,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E509",
-    "name": "E509",
-    "capacity": 90,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E510",
-    "name": "E510",
-    "capacity": 75,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E511",
-    "name": "E511",
     "capacity": 80,
     "building": "36XL-E",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "E512",
-    "name": "E512",
+    "id": "E601",
+    "name": "E601",
     "capacity": 45,
     "building": "36XL-E",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "E513",
-    "name": "E513",
+    "id": "E602",
+    "name": "E602",
     "capacity": 55,
     "building": "36XL-E",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "E514",
-    "name": "E514",
+    "id": "E603",
+    "name": "E603",
     "capacity": 60,
     "building": "36XL-E",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "E515",
-    "name": "E515",
-    "capacity": 45,
+    "id": "E604",
+    "name": "E604",
+    "capacity": 85,
     "building": "36XL-E",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "E516",
-    "name": "E516",
-    "capacity": 55,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E517",
-    "name": "E517",
-    "capacity": 50,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E518",
-    "name": "E518",
-    "capacity": 60,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E519",
-    "name": "E519",
+    "id": "G201",
+    "name": "G201",
     "capacity": 75,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E520",
-    "name": "E520",
-    "capacity": 60,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E521",
-    "name": "E521",
-    "capacity": 60,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "E522",
-    "name": "E522",
-    "capacity": 55,
-    "building": "36XL-E",
-    "campus": "36 Xuân La",
-    "kind": "classroom"
-  },
-  {
-    "id": "G601",
-    "name": "G601",
-    "capacity": 60,
     "building": "36XL-G",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "G602",
-    "name": "G602",
+    "id": "G202",
+    "name": "G202",
     "capacity": 95,
     "building": "36XL-G",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "G603",
-    "name": "G603",
+    "id": "G301",
+    "name": "G301",
     "capacity": 75,
     "building": "36XL-G",
     "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
-    "id": "HT-371",
-    "name": "HT-371",
-    "capacity": 300,
-    "building": "HoiTruong",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "hall"
-  },
-  {
-    "id": "P701-371",
-    "name": "P701-371",
-    "capacity": 75,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P702-371",
-    "name": "P702-371",
-    "capacity": 55,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P703-371",
-    "name": "P703-371",
-    "capacity": 80,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P704-371",
-    "name": "P704-371",
-    "capacity": 55,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P705-371",
-    "name": "P705-371",
-    "capacity": 60,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P706-371",
-    "name": "P706-371",
-    "capacity": 100,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P707-371",
-    "name": "P707-371",
-    "capacity": 75,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P708-371",
-    "name": "P708-371",
-    "capacity": 70,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P709-371",
-    "name": "P709-371",
-    "capacity": 80,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P710-371",
-    "name": "P710-371",
-    "capacity": 85,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P711-371",
-    "name": "P711-371",
-    "capacity": 80,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P712-371",
-    "name": "P712-371",
-    "capacity": 55,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P713-371",
-    "name": "P713-371",
-    "capacity": 45,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P714-371",
-    "name": "P714-371",
-    "capacity": 60,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P715-371",
-    "name": "P715-371",
-    "capacity": 60,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P716-371",
-    "name": "P716-371",
-    "capacity": 55,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P717-371",
-    "name": "P717-371",
-    "capacity": 95,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P718-371",
-    "name": "P718-371",
+    "id": "G401",
+    "name": "G401",
     "capacity": 90,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P719-371",
-    "name": "P719-371",
-    "capacity": 60,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P720-371",
-    "name": "P720-371",
-    "capacity": 75,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P721-371",
-    "name": "P721-371",
-    "capacity": 65,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P722-371",
-    "name": "P722-371",
-    "capacity": 90,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P723-371",
-    "name": "P723-371",
-    "capacity": 65,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P724-371",
-    "name": "P724-371",
-    "capacity": 60,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P725-371",
-    "name": "P725-371",
-    "capacity": 55,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P726-371",
-    "name": "P726-371",
-    "capacity": 75,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P727-371",
-    "name": "P727-371",
-    "capacity": 60,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P728-371",
-    "name": "P728-371",
-    "capacity": 75,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P729-371",
-    "name": "P729-371",
-    "capacity": 90,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P730-371",
-    "name": "P730-371",
-    "capacity": 65,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P731-371",
-    "name": "P731-371",
-    "capacity": 55,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P732-371",
-    "name": "P732-371",
-    "capacity": 100,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P733-371",
-    "name": "P733-371",
-    "capacity": 70,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P734-371",
-    "name": "P734-371",
-    "capacity": 50,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P735-371",
-    "name": "P735-371",
-    "capacity": 45,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P736-371",
-    "name": "P736-371",
-    "capacity": 50,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P737-371",
-    "name": "P737-371",
-    "capacity": 75,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P738-371",
-    "name": "P738-371",
-    "capacity": 85,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P739-371",
-    "name": "P739-371",
-    "capacity": 65,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P740-371",
-    "name": "P740-371",
-    "capacity": 45,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P741-371",
-    "name": "P741-371",
-    "capacity": 65,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P742-371",
-    "name": "P742-371",
-    "capacity": 100,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P743-371",
-    "name": "P743-371",
-    "capacity": 70,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P744-371",
-    "name": "P744-371",
-    "capacity": 100,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P745-371",
-    "name": "P745-371",
-    "capacity": 90,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P746-371",
-    "name": "P746-371",
-    "capacity": 40,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P747-371",
-    "name": "P747-371",
-    "capacity": 80,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P748-371",
-    "name": "P748-371",
-    "capacity": 80,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P749-371",
-    "name": "P749-371",
-    "capacity": 70,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P750-371",
-    "name": "P750-371",
-    "capacity": 60,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
-    "kind": "classroom"
-  },
-  {
-    "id": "P751-371",
-    "name": "P751-371",
-    "capacity": 75,
-    "building": "371NHT",
-    "campus": "371 Nguyễn Hoàng Tôn",
+    "building": "36XL-G",
+    "campus": "36 Xuân La",
     "kind": "classroom"
   },
   {
@@ -867,16 +451,472 @@ export const SHEET_ROOMS: RoomInfo[] = [
     "kind": "hall"
   },
   {
-    "id": "P752-371",
-    "name": "P752-371",
+    "id": "HT-371",
+    "name": "HT-371",
+    "capacity": 300,
+    "building": "HoiTruong",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "hall"
+  },
+  {
+    "id": "A201 -371NHT",
+    "name": "A201 -371NHT",
+    "capacity": 75,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A202 -371NHT",
+    "name": "A202 -371NHT",
+    "capacity": 55,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A301-371NHT",
+    "name": "A301-371NHT",
+    "capacity": 80,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A302-371NHT",
+    "name": "A302-371NHT",
+    "capacity": 55,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A303-371NHT",
+    "name": "A303-371NHT",
+    "capacity": 60,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A304-371NHT",
+    "name": "A304-371NHT",
+    "capacity": 100,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A305 -371NHT",
+    "name": "A305 -371NHT",
+    "capacity": 75,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A306-371NHT",
+    "name": "A306-371NHT",
+    "capacity": 70,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A307-371NHT",
+    "name": "A307-371NHT",
+    "capacity": 80,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A308-371NHT",
+    "name": "A308-371NHT",
+    "capacity": 85,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A309-371NHT",
+    "name": "A309-371NHT",
+    "capacity": 80,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A310-371NHT",
+    "name": "A310-371NHT",
+    "capacity": 55,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A401-371NHT",
+    "name": "A401-371NHT",
+    "capacity": 45,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A402",
+    "name": "A402",
+    "capacity": 60,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A403",
+    "name": "A403",
+    "capacity": 60,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A404",
+    "name": "A404",
+    "capacity": 55,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A405",
+    "name": "A405",
+    "capacity": 95,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A406",
+    "name": "A406",
+    "capacity": 90,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A407",
+    "name": "A407",
+    "capacity": 60,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A408",
+    "name": "A408",
+    "capacity": 75,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A409",
+    "name": "A409",
+    "capacity": 65,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A410",
+    "name": "A410",
+    "capacity": 90,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A501",
+    "name": "A501",
+    "capacity": 65,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A502",
+    "name": "A502",
+    "capacity": 60,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A503",
+    "name": "A503",
+    "capacity": 55,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A504",
+    "name": "A504",
+    "capacity": 75,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A505",
+    "name": "A505",
+    "capacity": 60,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A506",
+    "name": "A506",
+    "capacity": 75,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A507",
+    "name": "A507",
+    "capacity": 90,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A508",
+    "name": "A508",
+    "capacity": 65,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A509",
+    "name": "A509",
+    "capacity": 55,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A510",
+    "name": "A510",
+    "capacity": 100,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A601",
+    "name": "A601",
+    "capacity": 70,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A602",
+    "name": "A602",
     "capacity": 50,
     "building": "371NHT",
     "campus": "371 Nguyễn Hoàng Tôn",
     "kind": "classroom"
+  },
+  {
+    "id": "A603",
+    "name": "A603",
+    "capacity": 45,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A604",
+    "name": "A604",
+    "capacity": 50,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A605",
+    "name": "A605",
+    "capacity": 75,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A606",
+    "name": "A606",
+    "capacity": 85,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A607",
+    "name": "A607",
+    "capacity": 65,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A608",
+    "name": "A608",
+    "capacity": 45,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A609",
+    "name": "A609",
+    "capacity": 65,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A610",
+    "name": "A610",
+    "capacity": 100,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A701",
+    "name": "A701",
+    "capacity": 70,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A702",
+    "name": "A702",
+    "capacity": 100,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A703",
+    "name": "A703",
+    "capacity": 90,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A704",
+    "name": "A704",
+    "capacity": 40,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A705",
+    "name": "A705",
+    "capacity": 80,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A706",
+    "name": "A706",
+    "capacity": 80,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A707",
+    "name": "A707",
+    "capacity": 70,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A708",
+    "name": "A708",
+    "capacity": 60,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A709",
+    "name": "A709",
+    "capacity": 75,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "A710",
+    "name": "A710",
+    "capacity": 50,
+    "building": "371NHT",
+    "campus": "371 Nguyễn Hoàng Tôn",
+    "kind": "classroom"
+  },
+  {
+    "id": "3A",
+    "name": "3A",
+    "capacity": 75,
+    "building": "77NCT",
+    "campus": "77 Nguyễn Chí Thanh",
+    "kind": "classroom"
+  },
+  {
+    "id": "4A",
+    "name": "4A",
+    "capacity": 80,
+    "building": "77NCT",
+    "campus": "77 Nguyễn Chí Thanh",
+    "kind": "classroom"
+  },
+  {
+    "id": "5A",
+    "name": "5A",
+    "capacity": 85,
+    "building": "77NCT",
+    "campus": "77 Nguyễn Chí Thanh",
+    "kind": "classroom"
+  },
+  {
+    "id": "6A",
+    "name": "6A",
+    "capacity": 70,
+    "building": "77NCT",
+    "campus": "77 Nguyễn Chí Thanh",
+    "kind": "classroom"
+  },
+  {
+    "id": "7A",
+    "name": "7A",
+    "capacity": 80,
+    "building": "77NCT",
+    "campus": "77 Nguyễn Chí Thanh",
+    "kind": "classroom"
   }
 ]
 
-export const SHEET_CLASSES: ClassInfo[] = [
+export const SHEET_CLASSES: ClassInfo[] = JSON.parse(String.raw`[
   {
     "id": "cls-1",
     "name": "Lịch sử Đảng Cộng sản Việt Nam",
@@ -886,11 +926,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF0005_TT_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "1"
+    "major": "TT"
   },
   {
     "id": "cls-2",
@@ -901,11 +941,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "ISF0005_TT_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "1"
+    "major": "TT"
   },
   {
     "id": "cls-3",
@@ -916,11 +956,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF0005_TT_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "2"
+    "major": "TT"
   },
   {
     "id": "cls-4",
@@ -931,11 +971,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "ISF0005_TT_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "2"
+    "major": "TT"
   },
   {
     "id": "cls-5",
@@ -946,11 +986,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF0005_TT_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "3"
+    "major": "TT"
   },
   {
     "id": "cls-6",
@@ -961,11 +1001,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "ISF0005_TT_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "3"
+    "major": "TT"
   },
   {
     "id": "cls-7",
@@ -976,11 +1016,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF0005_TT_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "4"
+    "major": "TT"
   },
   {
     "id": "cls-8",
@@ -991,11 +1031,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "ISF0005_TT_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "4"
+    "major": "TT"
   },
   {
     "id": "cls-9",
@@ -1006,11 +1046,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF0005_TT_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "5"
+    "major": "TT"
   },
   {
     "id": "cls-10",
@@ -1021,11 +1061,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "ISF0005_TT_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "5"
+    "major": "TT"
   },
   {
     "id": "cls-11",
@@ -1036,11 +1076,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF0005_TT_HK1_2627_K24.6",
+    "section": "6",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "6"
+    "major": "TT"
   },
   {
     "id": "cls-12",
@@ -1051,11 +1091,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "ISF0005_TT_HK1_2627_K24.6",
+    "section": "6",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "6"
+    "major": "TT"
   },
   {
     "id": "cls-13",
@@ -1066,11 +1106,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ISF0005_TT_HK1_2627_K24.7",
+    "section": "7",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "7"
+    "major": "TT"
   },
   {
     "id": "cls-14",
@@ -1081,11 +1121,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "ISF0005_TT_HK1_2627_K24.7",
+    "section": "7",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "7"
+    "major": "TT"
   },
   {
     "id": "cls-15",
@@ -1096,11 +1136,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ISF0005_TT_HK1_2627_K24.8",
+    "section": "8",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "8"
+    "major": "TT"
   },
   {
     "id": "cls-16",
@@ -1111,11 +1151,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "ISF0005_TT_HK1_2627_K24.8",
+    "section": "8",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "8"
+    "major": "TT"
   },
   {
     "id": "cls-17",
@@ -1126,11 +1166,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ISF0005_TT_HK1_2627_K24.9",
+    "section": "9",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "9"
+    "major": "TT"
   },
   {
     "id": "cls-18",
@@ -1141,11 +1181,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "ISF0005_TT_HK1_2627_K24.9",
+    "section": "9",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "9"
+    "major": "TT"
   },
   {
     "id": "cls-19",
@@ -1156,11 +1196,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ISF0005_TT_HK1_2627_K24.10",
+    "section": "10",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "10"
+    "major": "TT"
   },
   {
     "id": "cls-20",
@@ -1171,11 +1211,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "ISF0005_TT_HK1_2627_K24.10",
+    "section": "10",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "10"
+    "major": "TT"
   },
   {
     "id": "cls-21",
@@ -1186,11 +1226,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ISF0005_TT_HK1_2627_K24.11",
+    "section": "11",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "11"
+    "major": "TT"
   },
   {
     "id": "cls-22",
@@ -1201,11 +1241,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "ISF0005_TT_HK1_2627_K24.12",
+    "section": "12",
     "cohort": "K24",
     "courseCode": "ISF0005",
-    "major": "TT",
-    "className": "ISF0005_TT_HK1_2627_K24",
-    "section": "12"
+    "major": "TT"
   },
   {
     "id": "cls-23",
@@ -1216,11 +1256,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF0004_2405QLNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF0004",
-    "major": "2405QLNA",
-    "className": "ISF0004_2405QLNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLNA"
   },
   {
     "id": "cls-24",
@@ -1231,11 +1271,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2019_2405QLNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ASF2019",
-    "major": "2405QLNA",
-    "className": "ASF2019_2405QLNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLNA"
   },
   {
     "id": "cls-25",
@@ -1246,11 +1286,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "LIF1035_2405QLNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF1035",
-    "major": "2405QLNA",
-    "className": "LIF1035_2405QLNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLNA"
   },
   {
     "id": "cls-26",
@@ -1261,11 +1301,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2001_2405QLNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QLNA",
-    "className": "ASF2001_2405QLNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLNA"
   },
   {
     "id": "cls-27",
@@ -1276,11 +1316,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "SLF2061_2405QLNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF2061",
-    "major": "2405QLNA",
-    "className": "SLF2061_2405QLNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLNA"
   },
   {
     "id": "cls-28",
@@ -1291,11 +1331,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "HRF2059_2405QLNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QLNA",
-    "className": "HRF2059_2405QLNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLNA"
   },
   {
     "id": "cls-29",
@@ -1306,11 +1346,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ISF0004_2405QLNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF0004",
-    "major": "2405QLNB",
-    "className": "ISF0004_2405QLNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QLNB"
   },
   {
     "id": "cls-30",
@@ -1321,11 +1361,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF2019_2405QLNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ASF2019",
-    "major": "2405QLNB",
-    "className": "ASF2019_2405QLNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QLNB"
   },
   {
     "id": "cls-31",
@@ -1336,11 +1376,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "LIF1035_2405QLNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "LIF1035",
-    "major": "2405QLNB",
-    "className": "LIF1035_2405QLNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QLNB"
   },
   {
     "id": "cls-32",
@@ -1351,11 +1391,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF2001_2405QLNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QLNB",
-    "className": "ASF2001_2405QLNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QLNB"
   },
   {
     "id": "cls-33",
@@ -1366,11 +1406,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "SLF2061_2405QLNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF2061",
-    "major": "2405QLNB",
-    "className": "SLF2061_2405QLNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QLNB"
   },
   {
     "id": "cls-34",
@@ -1381,11 +1421,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "HRF2059_2405QLNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QLNB",
-    "className": "HRF2059_2405QLNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QLNB"
   },
   {
     "id": "cls-35",
@@ -1396,11 +1436,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF0004_2405QLNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "ISF0004",
-    "major": "2405QLNC",
-    "className": "ISF0004_2405QLNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QLNC"
   },
   {
     "id": "cls-36",
@@ -1411,11 +1451,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2019_2405QLNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "ASF2019",
-    "major": "2405QLNC",
-    "className": "ASF2019_2405QLNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QLNC"
   },
   {
     "id": "cls-37",
@@ -1426,11 +1466,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "LIF1035_2405QLNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "LIF1035",
-    "major": "2405QLNC",
-    "className": "LIF1035_2405QLNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QLNC"
   },
   {
     "id": "cls-38",
@@ -1441,11 +1481,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2001_2405QLNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QLNC",
-    "className": "ASF2001_2405QLNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QLNC"
   },
   {
     "id": "cls-39",
@@ -1456,11 +1496,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "SLF2061_2405QLNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SLF2061",
-    "major": "2405QLNC",
-    "className": "SLF2061_2405QLNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QLNC"
   },
   {
     "id": "cls-40",
@@ -1471,11 +1511,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "HRF2059_2405QLNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QLNC",
-    "className": "HRF2059_2405QLNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QLNC"
   },
   {
     "id": "cls-41",
@@ -1486,11 +1526,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ISF0004_2405QLND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "ISF0004",
-    "major": "2405QLND",
-    "className": "ISF0004_2405QLND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QLND"
   },
   {
     "id": "cls-42",
@@ -1501,11 +1541,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF2019_2405QLND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "ASF2019",
-    "major": "2405QLND",
-    "className": "ASF2019_2405QLND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QLND"
   },
   {
     "id": "cls-43",
@@ -1516,11 +1556,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "LIF1035_2405QLND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "LIF1035",
-    "major": "2405QLND",
-    "className": "LIF1035_2405QLND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QLND"
   },
   {
     "id": "cls-44",
@@ -1531,11 +1571,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF2001_2405QLND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QLND",
-    "className": "ASF2001_2405QLND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QLND"
   },
   {
     "id": "cls-45",
@@ -1546,11 +1586,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "SLF2061_2405QLND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "SLF2061",
-    "major": "2405QLND",
-    "className": "SLF2061_2405QLND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QLND"
   },
   {
     "id": "cls-46",
@@ -1561,11 +1601,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "HRF2059_2405QLND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QLND",
-    "className": "HRF2059_2405QLND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QLND"
   },
   {
     "id": "cls-47",
@@ -1576,11 +1616,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF0004_2405QLNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "ISF0004",
-    "major": "2405QLNE",
-    "className": "ISF0004_2405QLNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QLNE"
   },
   {
     "id": "cls-48",
@@ -1591,11 +1631,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2019_2405QLNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "ASF2019",
-    "major": "2405QLNE",
-    "className": "ASF2019_2405QLNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QLNE"
   },
   {
     "id": "cls-49",
@@ -1606,11 +1646,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "LIF1035_2405QLNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "LIF1035",
-    "major": "2405QLNE",
-    "className": "LIF1035_2405QLNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QLNE"
   },
   {
     "id": "cls-50",
@@ -1621,11 +1661,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2001_2405QLNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QLNE",
-    "className": "ASF2001_2405QLNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QLNE"
   },
   {
     "id": "cls-51",
@@ -1636,11 +1676,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "SLF2061_2405QLNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "SLF2061",
-    "major": "2405QLNE",
-    "className": "SLF2061_2405QLNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QLNE"
   },
   {
     "id": "cls-52",
@@ -1651,11 +1691,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "HRF2059_2405QLNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QLNE",
-    "className": "HRF2059_2405QLNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QLNE"
   },
   {
     "id": "cls-53",
@@ -1666,11 +1706,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ISF0004_2405QLNI_HK1_2627_K24.6",
+    "section": "6",
     "cohort": "K24",
     "courseCode": "ISF0004",
-    "major": "2405QLNI",
-    "className": "ISF0004_2405QLNI_HK1_2627_K24",
-    "section": "6"
+    "major": "2405QLNI"
   },
   {
     "id": "cls-54",
@@ -1681,11 +1721,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF2019_2405QLNI_HK1_2627_K24.6",
+    "section": "6",
     "cohort": "K24",
     "courseCode": "ASF2019",
-    "major": "2405QLNI",
-    "className": "ASF2019_2405QLNI_HK1_2627_K24",
-    "section": "6"
+    "major": "2405QLNI"
   },
   {
     "id": "cls-55",
@@ -1696,11 +1736,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "LIF1035_2405QLNI_HK1_2627_K24.6",
+    "section": "6",
     "cohort": "K24",
     "courseCode": "LIF1035",
-    "major": "2405QLNI",
-    "className": "LIF1035_2405QLNI_HK1_2627_K24",
-    "section": "6"
+    "major": "2405QLNI"
   },
   {
     "id": "cls-56",
@@ -1711,11 +1751,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF2001_2405QLNI_HK1_2627_K24.6",
+    "section": "6",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QLNI",
-    "className": "ASF2001_2405QLNI_HK1_2627_K24",
-    "section": "6"
+    "major": "2405QLNI"
   },
   {
     "id": "cls-57",
@@ -1726,11 +1766,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "SLF2061_2405QLNI_HK1_2627_K24.6",
+    "section": "6",
     "cohort": "K24",
     "courseCode": "SLF2061",
-    "major": "2405QLNI",
-    "className": "SLF2061_2405QLNI_HK1_2627_K24",
-    "section": "6"
+    "major": "2405QLNI"
   },
   {
     "id": "cls-58",
@@ -1741,11 +1781,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "HRF2059_2405QLNI_HK1_2627_K24.6",
+    "section": "6",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QLNI",
-    "className": "HRF2059_2405QLNI_HK1_2627_K24",
-    "section": "6"
+    "major": "2405QLNI"
   },
   {
     "id": "cls-59",
@@ -1756,11 +1796,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF0004_2405QLNG_HK1_2627_K24.7",
+    "section": "7",
     "cohort": "K24",
     "courseCode": "ISF0004",
-    "major": "2405QLNG",
-    "className": "ISF0004_2405QLNG_HK1_2627_K24",
-    "section": "7"
+    "major": "2405QLNG"
   },
   {
     "id": "cls-60",
@@ -1771,11 +1811,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2019_2405QLNG_HK1_2627_K24.7",
+    "section": "7",
     "cohort": "K24",
     "courseCode": "ASF2019",
-    "major": "2405QLNG",
-    "className": "ASF2019_2405QLNG_HK1_2627_K24",
-    "section": "7"
+    "major": "2405QLNG"
   },
   {
     "id": "cls-61",
@@ -1786,11 +1826,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "LIF1035_2405QLNG_HK1_2627_K24.7",
+    "section": "7",
     "cohort": "K24",
     "courseCode": "LIF1035",
-    "major": "2405QLNG",
-    "className": "LIF1035_2405QLNG_HK1_2627_K24",
-    "section": "7"
+    "major": "2405QLNG"
   },
   {
     "id": "cls-62",
@@ -1801,11 +1841,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2001_2405QLNG_HK1_2627_K24.7",
+    "section": "7",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QLNG",
-    "className": "ASF2001_2405QLNG_HK1_2627_K24",
-    "section": "7"
+    "major": "2405QLNG"
   },
   {
     "id": "cls-63",
@@ -1816,11 +1856,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SLF2061_2405QLNG_HK1_2627_K24.7",
+    "section": "7",
     "cohort": "K24",
     "courseCode": "SLF2061",
-    "major": "2405QLNG",
-    "className": "SLF2061_2405QLNG_HK1_2627_K24",
-    "section": "7"
+    "major": "2405QLNG"
   },
   {
     "id": "cls-64",
@@ -1831,11 +1871,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "HRF2059_2405QLNG_HK1_2627_K24.7",
+    "section": "7",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QLNG",
-    "className": "HRF2059_2405QLNG_HK1_2627_K24",
-    "section": "7"
+    "major": "2405QLNG"
   },
   {
     "id": "cls-65",
@@ -1846,11 +1886,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ISF0004_2405QLNH_HK1_2627_K24.8",
+    "section": "8",
     "cohort": "K24",
     "courseCode": "ISF0004",
-    "major": "2405QLNH",
-    "className": "ISF0004_2405QLNH_HK1_2627_K24",
-    "section": "8"
+    "major": "2405QLNH"
   },
   {
     "id": "cls-66",
@@ -1861,11 +1901,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF2019_2405QLNH_HK1_2627_K24.8",
+    "section": "8",
     "cohort": "K24",
     "courseCode": "ASF2019",
-    "major": "2405QLNH",
-    "className": "ASF2019_2405QLNH_HK1_2627_K24",
-    "section": "8"
+    "major": "2405QLNH"
   },
   {
     "id": "cls-67",
@@ -1876,11 +1916,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "LIF1035_2405QLNH_HK1_2627_K24.8",
+    "section": "8",
     "cohort": "K24",
     "courseCode": "LIF1035",
-    "major": "2405QLNH",
-    "className": "LIF1035_2405QLNH_HK1_2627_K24",
-    "section": "8"
+    "major": "2405QLNH"
   },
   {
     "id": "cls-68",
@@ -1891,11 +1931,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF2001_2405QLNH_HK1_2627_K24.8",
+    "section": "8",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QLNH",
-    "className": "ASF2001_2405QLNH_HK1_2627_K24",
-    "section": "8"
+    "major": "2405QLNH"
   },
   {
     "id": "cls-69",
@@ -1906,11 +1946,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "SLF2061_2405QLNH_HK1_2627_K24.8",
+    "section": "8",
     "cohort": "K24",
     "courseCode": "SLF2061",
-    "major": "2405QLNH",
-    "className": "SLF2061_2405QLNH_HK1_2627_K24",
-    "section": "8"
+    "major": "2405QLNH"
   },
   {
     "id": "cls-70",
@@ -1921,11 +1961,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "HRF2059_2405QLNH_HK1_2627_K24.8",
+    "section": "8",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QLNH",
-    "className": "HRF2059_2405QLNH_HK1_2627_K24",
-    "section": "8"
+    "major": "2405QLNH"
   },
   {
     "id": "cls-71",
@@ -1936,11 +1976,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ASF2081_2405QLNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ASF2081",
-    "major": "2405QLNA",
-    "className": "ASF2081_2405QLNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLNA"
   },
   {
     "id": "cls-72",
@@ -1951,11 +1991,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2049_2405QLNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2049",
-    "major": "2405QLNA",
-    "className": "AMF2049_2405QLNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLNA"
   },
   {
     "id": "cls-73",
@@ -1966,11 +2006,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ASF2081_2405QLNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ASF2081",
-    "major": "2405QLNB",
-    "className": "ASF2081_2405QLNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QLNB"
   },
   {
     "id": "cls-74",
@@ -1981,11 +2021,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2049_2405QLNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2049",
-    "major": "2405QLNB",
-    "className": "AMF2049_2405QLNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QLNB"
   },
   {
     "id": "cls-75",
@@ -1996,11 +2036,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ASF2081_2405QLNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "ASF2081",
-    "major": "2405QLNC",
-    "className": "ASF2081_2405QLNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QLNC"
   },
   {
     "id": "cls-76",
@@ -2011,11 +2051,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2049_2405QLNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "AMF2049",
-    "major": "2405QLNC",
-    "className": "AMF2049_2405QLNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QLNC"
   },
   {
     "id": "cls-77",
@@ -2026,11 +2066,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ASF2081_2405QLND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "ASF2081",
-    "major": "2405QLND",
-    "className": "ASF2081_2405QLND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QLND"
   },
   {
     "id": "cls-78",
@@ -2041,11 +2081,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2049_2405QLND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "AMF2049",
-    "major": "2405QLND",
-    "className": "AMF2049_2405QLND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QLND"
   },
   {
     "id": "cls-79",
@@ -2056,11 +2096,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ASF2081_2405QLNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "ASF2081",
-    "major": "2405QLNE",
-    "className": "ASF2081_2405QLNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QLNE"
   },
   {
     "id": "cls-80",
@@ -2071,11 +2111,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2049_2405QLNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "AMF2049",
-    "major": "2405QLNE",
-    "className": "AMF2049_2405QLNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QLNE"
   },
   {
     "id": "cls-81",
@@ -2086,11 +2126,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ASF2081_2405QLNI_HK1_2627_K24.6",
+    "section": "6",
     "cohort": "K24",
     "courseCode": "ASF2081",
-    "major": "2405QLNI",
-    "className": "ASF2081_2405QLNI_HK1_2627_K24",
-    "section": "6"
+    "major": "2405QLNI"
   },
   {
     "id": "cls-82",
@@ -2101,11 +2141,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2049_2405QLNI_HK1_2627_K24.6",
+    "section": "6",
     "cohort": "K24",
     "courseCode": "AMF2049",
-    "major": "2405QLNI",
-    "className": "AMF2049_2405QLNI_HK1_2627_K24",
-    "section": "6"
+    "major": "2405QLNI"
   },
   {
     "id": "cls-83",
@@ -2116,11 +2156,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ASF2081_2405QLNG_HK1_2627_K24.7",
+    "section": "7",
     "cohort": "K24",
     "courseCode": "ASF2081",
-    "major": "2405QLNG",
-    "className": "ASF2081_2405QLNG_HK1_2627_K24",
-    "section": "7"
+    "major": "2405QLNG"
   },
   {
     "id": "cls-84",
@@ -2131,11 +2171,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2049_2405QLNG_HK1_2627_K24.7",
+    "section": "7",
     "cohort": "K24",
     "courseCode": "AMF2049",
-    "major": "2405QLNG",
-    "className": "AMF2049_2405QLNG_HK1_2627_K24",
-    "section": "7"
+    "major": "2405QLNG"
   },
   {
     "id": "cls-85",
@@ -2146,11 +2186,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ASF2081_2405QLNH_HK1_2627_K24.8",
+    "section": "8",
     "cohort": "K24",
     "courseCode": "ASF2081",
-    "major": "2405QLNH",
-    "className": "ASF2081_2405QLNH_HK1_2627_K24",
-    "section": "8"
+    "major": "2405QLNH"
   },
   {
     "id": "cls-86",
@@ -2161,11 +2201,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2049_2405QLNH_HK1_2627_K24.8",
+    "section": "8",
     "cohort": "K24",
     "courseCode": "AMF2049",
-    "major": "2405QLNH",
-    "className": "AMF2049_2405QLNH_HK1_2627_K24",
-    "section": "8"
+    "major": "2405QLNH"
   },
   {
     "id": "cls-87",
@@ -2176,11 +2216,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "HRF2069_2405QTNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "HRF2069",
-    "major": "2405QTNA",
-    "className": "HRF2069_2405QTNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTNA"
   },
   {
     "id": "cls-88",
@@ -2191,11 +2231,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "HRF2014_2405QTNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "HRF2014",
-    "major": "2405QTNA",
-    "className": "HRF2014_2405QTNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTNA"
   },
   {
     "id": "cls-89",
@@ -2206,11 +2246,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF2058_2405QTNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405QTNA",
-    "className": "AMF2058_2405QTNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTNA"
   },
   {
     "id": "cls-90",
@@ -2221,11 +2261,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2011_2405QTNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "HRF2011",
-    "major": "2405QTNA",
-    "className": "HRF2011_2405QTNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTNA"
   },
   {
     "id": "cls-91",
@@ -2236,11 +2276,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF1008_2405QTNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF1008",
-    "major": "2405QTNA",
-    "className": "AMF1008_2405QTNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTNA"
   },
   {
     "id": "cls-92",
@@ -2251,11 +2291,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ASF2001_2405QTNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QTNA",
-    "className": "ASF2001_2405QTNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTNA"
   },
   {
     "id": "cls-93",
@@ -2266,11 +2306,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2059_2405QTNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QTNA",
-    "className": "HRF2059_2405QTNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTNA"
   },
   {
     "id": "cls-94",
@@ -2281,11 +2321,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "HRF2067_2405QTNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "HRF2067",
-    "major": "2405QTNA",
-    "className": "HRF2067_2405QTNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTNA"
   },
   {
     "id": "cls-95",
@@ -2296,11 +2336,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "HRF2068_2405QTNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "HRF2068",
-    "major": "2405QTNA",
-    "className": "HRF2068_2405QTNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTNA"
   },
   {
     "id": "cls-96",
@@ -2311,11 +2351,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "HRF2069_2405QTNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "HRF2069",
-    "major": "2405QTNB",
-    "className": "HRF2069_2405QTNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTNB"
   },
   {
     "id": "cls-97",
@@ -2326,11 +2366,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "HRF2014_2405QTNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "HRF2014",
-    "major": "2405QTNB",
-    "className": "HRF2014_2405QTNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTNB"
   },
   {
     "id": "cls-98",
@@ -2341,11 +2381,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF2058_2405QTNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405QTNB",
-    "className": "AMF2058_2405QTNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTNB"
   },
   {
     "id": "cls-99",
@@ -2356,11 +2396,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2011_2405QTNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "HRF2011",
-    "major": "2405QTNB",
-    "className": "HRF2011_2405QTNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTNB"
   },
   {
     "id": "cls-100",
@@ -2371,11 +2411,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF1008_2405QTNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF1008",
-    "major": "2405QTNB",
-    "className": "AMF1008_2405QTNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTNB"
   },
   {
     "id": "cls-101",
@@ -2386,11 +2426,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ASF2001_2405QTNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QTNB",
-    "className": "ASF2001_2405QTNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTNB"
   },
   {
     "id": "cls-102",
@@ -2401,11 +2441,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2059_2405QTNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QTNB",
-    "className": "HRF2059_2405QTNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTNB"
   },
   {
     "id": "cls-103",
@@ -2416,11 +2456,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "HRF2067_2405QTNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "HRF2067",
-    "major": "2405QTNB",
-    "className": "HRF2067_2405QTNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTNB"
   },
   {
     "id": "cls-104",
@@ -2431,11 +2471,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "HRF2068_2405QTNB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "HRF2068",
-    "major": "2405QTNB",
-    "className": "HRF2068_2405QTNB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTNB"
   },
   {
     "id": "cls-105",
@@ -2446,11 +2486,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "HRF2069_2405QTNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "HRF2069",
-    "major": "2405QTNC",
-    "className": "HRF2069_2405QTNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTNC"
   },
   {
     "id": "cls-106",
@@ -2461,11 +2501,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "HRF2014_2405QTNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "HRF2014",
-    "major": "2405QTNC",
-    "className": "HRF2014_2405QTNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTNC"
   },
   {
     "id": "cls-107",
@@ -2476,11 +2516,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF2058_2405QTNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405QTNC",
-    "className": "AMF2058_2405QTNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTNC"
   },
   {
     "id": "cls-108",
@@ -2491,11 +2531,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2011_2405QTNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "HRF2011",
-    "major": "2405QTNC",
-    "className": "HRF2011_2405QTNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTNC"
   },
   {
     "id": "cls-109",
@@ -2506,11 +2546,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF1008_2405QTNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "AMF1008",
-    "major": "2405QTNC",
-    "className": "AMF1008_2405QTNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTNC"
   },
   {
     "id": "cls-110",
@@ -2521,11 +2561,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ASF2001_2405QTNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QTNC",
-    "className": "ASF2001_2405QTNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTNC"
   },
   {
     "id": "cls-111",
@@ -2536,11 +2576,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2059_2405QTNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QTNC",
-    "className": "HRF2059_2405QTNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTNC"
   },
   {
     "id": "cls-112",
@@ -2551,11 +2591,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "HRF2067_2405QTNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "HRF2067",
-    "major": "2405QTNC",
-    "className": "HRF2067_2405QTNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTNC"
   },
   {
     "id": "cls-113",
@@ -2566,11 +2606,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "HRF2068_2405QTNC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "HRF2068",
-    "major": "2405QTNC",
-    "className": "HRF2068_2405QTNC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTNC"
   },
   {
     "id": "cls-114",
@@ -2581,11 +2621,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "HRF2069_2405QTND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "HRF2069",
-    "major": "2405QTND",
-    "className": "HRF2069_2405QTND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTND"
   },
   {
     "id": "cls-115",
@@ -2596,11 +2636,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "HRF2014_2405QTND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "HRF2014",
-    "major": "2405QTND",
-    "className": "HRF2014_2405QTND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTND"
   },
   {
     "id": "cls-116",
@@ -2611,11 +2651,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2058_2405QTND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405QTND",
-    "className": "AMF2058_2405QTND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTND"
   },
   {
     "id": "cls-117",
@@ -2626,11 +2666,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2011_2405QTND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "HRF2011",
-    "major": "2405QTND",
-    "className": "HRF2011_2405QTND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTND"
   },
   {
     "id": "cls-118",
@@ -2641,11 +2681,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF1008_2405QTND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "AMF1008",
-    "major": "2405QTND",
-    "className": "AMF1008_2405QTND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTND"
   },
   {
     "id": "cls-119",
@@ -2656,11 +2696,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ASF2001_2405QTND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QTND",
-    "className": "ASF2001_2405QTND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTND"
   },
   {
     "id": "cls-120",
@@ -2671,11 +2711,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2059_2405QTND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QTND",
-    "className": "HRF2059_2405QTND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTND"
   },
   {
     "id": "cls-121",
@@ -2686,11 +2726,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "HRF2067_2405QTND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "HRF2067",
-    "major": "2405QTND",
-    "className": "HRF2067_2405QTND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTND"
   },
   {
     "id": "cls-122",
@@ -2701,11 +2741,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "HRF2068_2405QTND_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "HRF2068",
-    "major": "2405QTND",
-    "className": "HRF2068_2405QTND_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTND"
   },
   {
     "id": "cls-123",
@@ -2716,11 +2756,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "HRF2069_2405QTNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "HRF2069",
-    "major": "2405QTNE",
-    "className": "HRF2069_2405QTNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTNE"
   },
   {
     "id": "cls-124",
@@ -2731,11 +2771,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "HRF2014_2405QTNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "HRF2014",
-    "major": "2405QTNE",
-    "className": "HRF2014_2405QTNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTNE"
   },
   {
     "id": "cls-125",
@@ -2746,11 +2786,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2058_2405QTNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405QTNE",
-    "className": "AMF2058_2405QTNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTNE"
   },
   {
     "id": "cls-126",
@@ -2761,11 +2801,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2011_2405QTNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "HRF2011",
-    "major": "2405QTNE",
-    "className": "HRF2011_2405QTNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTNE"
   },
   {
     "id": "cls-127",
@@ -2776,11 +2816,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF1008_2405QTNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "AMF1008",
-    "major": "2405QTNE",
-    "className": "AMF1008_2405QTNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTNE"
   },
   {
     "id": "cls-128",
@@ -2791,11 +2831,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ASF2001_2405QTNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "ASF2001",
-    "major": "2405QTNE",
-    "className": "ASF2001_2405QTNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTNE"
   },
   {
     "id": "cls-129",
@@ -2806,11 +2846,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2059_2405QTNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "HRF2059",
-    "major": "2405QTNE",
-    "className": "HRF2059_2405QTNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTNE"
   },
   {
     "id": "cls-130",
@@ -2821,11 +2861,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "HRF2067_2405QTNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "HRF2067",
-    "major": "2405QTNE",
-    "className": "HRF2067_2405QTNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTNE"
   },
   {
     "id": "cls-131",
@@ -2836,11 +2876,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "HRF2068_2405QTNE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "HRF2068",
-    "major": "2405QTNE",
-    "className": "HRF2068_2405QTNE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTNE"
   },
   {
     "id": "cls-132",
@@ -2851,11 +2891,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF1012_2405LHOA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1012",
-    "major": "2405LHOA",
-    "className": "SLF1012_2405LHOA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LHOA"
   },
   {
     "id": "cls-133",
@@ -2866,11 +2906,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "HRF2061_2405LHOA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "HRF2061",
-    "major": "2405LHOA",
-    "className": "HRF2061_2405LHOA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LHOA"
   },
   {
     "id": "cls-134",
@@ -2881,11 +2921,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF2008_2405LHOA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF2008",
-    "major": "2405LHOA",
-    "className": "SLF2008_2405LHOA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LHOA"
   },
   {
     "id": "cls-135",
@@ -2896,11 +2936,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1018_2405LHOA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1018",
-    "major": "2405LHOA",
-    "className": "SLF1018_2405LHOA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LHOA"
   },
   {
     "id": "cls-136",
@@ -2911,11 +2951,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF1010_2405LHOA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1010",
-    "major": "2405LHOA",
-    "className": "SLF1010_2405LHOA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LHOA"
   },
   {
     "id": "cls-137",
@@ -2926,11 +2966,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1015_2405LHOA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1015",
-    "major": "2405LHOA",
-    "className": "SLF1015_2405LHOA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LHOA"
   },
   {
     "id": "cls-138",
@@ -2941,11 +2981,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF2010_2405LHOA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF2010",
-    "major": "2405LHOA",
-    "className": "SLF2010_2405LHOA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LHOA"
   },
   {
     "id": "cls-139",
@@ -2956,11 +2996,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1011_2405LHOA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1011",
-    "major": "2405LHOA",
-    "className": "SLF1011_2405LHOA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LHOA"
   },
   {
     "id": "cls-140",
@@ -2971,11 +3011,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF1012_2405LHOB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1012",
-    "major": "2405LHOB",
-    "className": "SLF1012_2405LHOB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LHOB"
   },
   {
     "id": "cls-141",
@@ -2986,11 +3026,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "HRF2061_2405LHOB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "HRF2061",
-    "major": "2405LHOB",
-    "className": "HRF2061_2405LHOB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LHOB"
   },
   {
     "id": "cls-142",
@@ -3001,11 +3041,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF2008_2405LHOB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF2008",
-    "major": "2405LHOB",
-    "className": "SLF2008_2405LHOB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LHOB"
   },
   {
     "id": "cls-143",
@@ -3016,11 +3056,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1018_2405LHOB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1018",
-    "major": "2405LHOB",
-    "className": "SLF1018_2405LHOB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LHOB"
   },
   {
     "id": "cls-144",
@@ -3031,11 +3071,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF1010_2405LHOB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1010",
-    "major": "2405LHOB",
-    "className": "SLF1010_2405LHOB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LHOB"
   },
   {
     "id": "cls-145",
@@ -3046,11 +3086,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1015_2405LHOB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1015",
-    "major": "2405LHOB",
-    "className": "SLF1015_2405LHOB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LHOB"
   },
   {
     "id": "cls-146",
@@ -3061,11 +3101,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF2010_2405LHOB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF2010",
-    "major": "2405LHOB",
-    "className": "SLF2010_2405LHOB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LHOB"
   },
   {
     "id": "cls-147",
@@ -3076,11 +3116,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1011_2405LHOB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1011",
-    "major": "2405LHOB",
-    "className": "SLF1011_2405LHOB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LHOB"
   },
   {
     "id": "cls-148",
@@ -3091,11 +3131,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF1012_2405LHOC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SLF1012",
-    "major": "2405LHOC",
-    "className": "SLF1012_2405LHOC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405LHOC"
   },
   {
     "id": "cls-149",
@@ -3106,11 +3146,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "HRF2061_2405LHOC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "HRF2061",
-    "major": "2405LHOC",
-    "className": "HRF2061_2405LHOC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405LHOC"
   },
   {
     "id": "cls-150",
@@ -3121,11 +3161,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF2008_2405LHOC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SLF2008",
-    "major": "2405LHOC",
-    "className": "SLF2008_2405LHOC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405LHOC"
   },
   {
     "id": "cls-151",
@@ -3136,11 +3176,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1018_2405LHOC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SLF1018",
-    "major": "2405LHOC",
-    "className": "SLF1018_2405LHOC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405LHOC"
   },
   {
     "id": "cls-152",
@@ -3151,11 +3191,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF1010_2405LHOC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SLF1010",
-    "major": "2405LHOC",
-    "className": "SLF1010_2405LHOC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405LHOC"
   },
   {
     "id": "cls-153",
@@ -3166,11 +3206,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1015_2405LHOC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SLF1015",
-    "major": "2405LHOC",
-    "className": "SLF1015_2405LHOC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405LHOC"
   },
   {
     "id": "cls-154",
@@ -3181,11 +3221,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF2010_2405LHOC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SLF2010",
-    "major": "2405LHOC",
-    "className": "SLF2010_2405LHOC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405LHOC"
   },
   {
     "id": "cls-155",
@@ -3196,11 +3236,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1011_2405LHOC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SLF1011",
-    "major": "2405LHOC",
-    "className": "SLF1011_2405LHOC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405LHOC"
   },
   {
     "id": "cls-156",
@@ -3211,11 +3251,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF2066_2405TTRA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF2066",
-    "major": "2405TTRA",
-    "className": "SLF2066_2405TTRA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTRA"
   },
   {
     "id": "cls-157",
@@ -3226,11 +3266,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1010_2405TTRA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1010",
-    "major": "2405TTRA",
-    "className": "SLF1010_2405TTRA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTRA"
   },
   {
     "id": "cls-158",
@@ -3241,11 +3281,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF2010_2405TTRA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF2010",
-    "major": "2405TTRA",
-    "className": "SLF2010_2405TTRA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTRA"
   },
   {
     "id": "cls-159",
@@ -3256,11 +3296,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1011_2405TTRA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1011",
-    "major": "2405TTRA",
-    "className": "SLF1011_2405TTRA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTRA"
   },
   {
     "id": "cls-160",
@@ -3271,11 +3311,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF1012_2405TTRA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1012",
-    "major": "2405TTRA",
-    "className": "SLF1012_2405TTRA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTRA"
   },
   {
     "id": "cls-161",
@@ -3286,11 +3326,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1013_2405TTRA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1013",
-    "major": "2405TTRA",
-    "className": "SLF1013_2405TTRA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTRA"
   },
   {
     "id": "cls-162",
@@ -3301,11 +3341,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "HRF2061_2405TTRA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "HRF2061",
-    "major": "2405TTRA",
-    "className": "HRF2061_2405TTRA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTRA"
   },
   {
     "id": "cls-163",
@@ -3316,11 +3356,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1026_2405TTRA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1026",
-    "major": "2405TTRA",
-    "className": "SLF1026_2405TTRA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTRA"
   },
   {
     "id": "cls-164",
@@ -3331,11 +3371,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF2066_2405TTRB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF2066",
-    "major": "2405TTRB",
-    "className": "SLF2066_2405TTRB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405TTRB"
   },
   {
     "id": "cls-165",
@@ -3346,11 +3386,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1010_2405TTRB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1010",
-    "major": "2405TTRB",
-    "className": "SLF1010_2405TTRB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405TTRB"
   },
   {
     "id": "cls-166",
@@ -3361,11 +3401,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF2010_2405TTRB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF2010",
-    "major": "2405TTRB",
-    "className": "SLF2010_2405TTRB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405TTRB"
   },
   {
     "id": "cls-167",
@@ -3376,11 +3416,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1011_2405TTRB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1011",
-    "major": "2405TTRB",
-    "className": "SLF1011_2405TTRB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405TTRB"
   },
   {
     "id": "cls-168",
@@ -3391,11 +3431,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF1012_2405TTRB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1012",
-    "major": "2405TTRB",
-    "className": "SLF1012_2405TTRB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405TTRB"
   },
   {
     "id": "cls-169",
@@ -3406,11 +3446,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1013_2405TTRB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1013",
-    "major": "2405TTRB",
-    "className": "SLF1013_2405TTRB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405TTRB"
   },
   {
     "id": "cls-170",
@@ -3421,11 +3461,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "HRF2061_2405TTRB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "HRF2061",
-    "major": "2405TTRB",
-    "className": "HRF2061_2405TTRB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405TTRB"
   },
   {
     "id": "cls-171",
@@ -3436,11 +3476,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SLF1026_2405TTRB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1026",
-    "major": "2405TTRB",
-    "className": "SLF1026_2405TTRB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405TTRB"
   },
   {
     "id": "cls-172",
@@ -3451,11 +3491,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ASF1001_2405QTVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ASF1001",
-    "major": "2405QTVA",
-    "className": "ASF1001_2405QTVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTVA"
   },
   {
     "id": "cls-173",
@@ -3466,11 +3506,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "AMF2036_2405QTVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2036",
-    "major": "2405QTVA",
-    "className": "AMF2036_2405QTVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTVA"
   },
   {
     "id": "cls-174",
@@ -3481,11 +3521,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2042_2405QTVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2042",
-    "major": "2405QTVA",
-    "className": "AMF2042_2405QTVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTVA"
   },
   {
     "id": "cls-175",
@@ -3496,11 +3536,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "AMF2014_2405QTVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2014",
-    "major": "2405QTVA",
-    "className": "AMF2014_2405QTVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTVA"
   },
   {
     "id": "cls-176",
@@ -3511,11 +3551,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2058_2405QTVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405QTVA",
-    "className": "AMF2058_2405QTVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTVA"
   },
   {
     "id": "cls-177",
@@ -3526,11 +3566,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2032_2405QTVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2032",
-    "major": "2405QTVA",
-    "className": "AMF2032_2405QTVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTVA"
   },
   {
     "id": "cls-178",
@@ -3541,11 +3581,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "EMF1003_2405QTVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "EMF1003",
-    "major": "2405QTVA",
-    "className": "EMF1003_2405QTVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTVA"
   },
   {
     "id": "cls-179",
@@ -3556,11 +3596,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "ASF1001_2405QTVB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ASF1001",
-    "major": "2405QTVB",
-    "className": "ASF1001_2405QTVB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTVB"
   },
   {
     "id": "cls-180",
@@ -3571,11 +3611,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "AMF2036_2405QTVB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2036",
-    "major": "2405QTVB",
-    "className": "AMF2036_2405QTVB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTVB"
   },
   {
     "id": "cls-181",
@@ -3586,11 +3626,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2042_2405QTVB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2042",
-    "major": "2405QTVB",
-    "className": "AMF2042_2405QTVB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTVB"
   },
   {
     "id": "cls-182",
@@ -3601,11 +3641,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "AMF2014_2405QTVB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2014",
-    "major": "2405QTVB",
-    "className": "AMF2014_2405QTVB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTVB"
   },
   {
     "id": "cls-183",
@@ -3616,11 +3656,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2058_2405QTVB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405QTVB",
-    "className": "AMF2058_2405QTVB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTVB"
   },
   {
     "id": "cls-184",
@@ -3631,11 +3671,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2032_2405QTVB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2032",
-    "major": "2405QTVB",
-    "className": "AMF2032_2405QTVB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTVB"
   },
   {
     "id": "cls-185",
@@ -3646,11 +3686,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "EMF1003_2405QTVB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "EMF1003",
-    "major": "2405QTVB",
-    "className": "EMF1003_2405QTVB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QTVB"
   },
   {
     "id": "cls-186",
@@ -3661,11 +3701,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ASF1001_2405QTVC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "ASF1001",
-    "major": "2405QTVC",
-    "className": "ASF1001_2405QTVC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTVC"
   },
   {
     "id": "cls-187",
@@ -3676,11 +3716,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "AMF2036_2405QTVC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "AMF2036",
-    "major": "2405QTVC",
-    "className": "AMF2036_2405QTVC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTVC"
   },
   {
     "id": "cls-188",
@@ -3691,11 +3731,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2042_2405QTVC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "AMF2042",
-    "major": "2405QTVC",
-    "className": "AMF2042_2405QTVC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTVC"
   },
   {
     "id": "cls-189",
@@ -3706,11 +3746,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "AMF2014_2405QTVC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "AMF2014",
-    "major": "2405QTVC",
-    "className": "AMF2014_2405QTVC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTVC"
   },
   {
     "id": "cls-190",
@@ -3721,11 +3761,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2058_2405QTVC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405QTVC",
-    "className": "AMF2058_2405QTVC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTVC"
   },
   {
     "id": "cls-191",
@@ -3736,11 +3776,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2032_2405QTVC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "AMF2032",
-    "major": "2405QTVC",
-    "className": "AMF2032_2405QTVC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTVC"
   },
   {
     "id": "cls-192",
@@ -3751,11 +3791,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "EMF1003_2405QTVC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "EMF1003",
-    "major": "2405QTVC",
-    "className": "EMF1003_2405QTVC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405QTVC"
   },
   {
     "id": "cls-193",
@@ -3766,11 +3806,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "ASF1001_2405QTVD_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "ASF1001",
-    "major": "2405QTVD",
-    "className": "ASF1001_2405QTVD_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTVD"
   },
   {
     "id": "cls-194",
@@ -3781,11 +3821,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "AMF2036_2405QTVD_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "AMF2036",
-    "major": "2405QTVD",
-    "className": "AMF2036_2405QTVD_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTVD"
   },
   {
     "id": "cls-195",
@@ -3796,11 +3836,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2042_2405QTVD_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "AMF2042",
-    "major": "2405QTVD",
-    "className": "AMF2042_2405QTVD_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTVD"
   },
   {
     "id": "cls-196",
@@ -3811,11 +3851,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "AMF2014_2405QTVD_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "AMF2014",
-    "major": "2405QTVD",
-    "className": "AMF2014_2405QTVD_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTVD"
   },
   {
     "id": "cls-197",
@@ -3826,11 +3866,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2058_2405QTVD_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405QTVD",
-    "className": "AMF2058_2405QTVD_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTVD"
   },
   {
     "id": "cls-198",
@@ -3841,11 +3881,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2032_2405QTVD_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "AMF2032",
-    "major": "2405QTVD",
-    "className": "AMF2032_2405QTVD_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTVD"
   },
   {
     "id": "cls-199",
@@ -3856,11 +3896,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "EMF1003_2405QTVD_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "EMF1003",
-    "major": "2405QTVD",
-    "className": "EMF1003_2405QTVD_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTVD"
   },
   {
     "id": "cls-200",
@@ -3871,11 +3911,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ASF1001_2405QTVE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "ASF1001",
-    "major": "2405QTVE",
-    "className": "ASF1001_2405QTVE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTVE"
   },
   {
     "id": "cls-201",
@@ -3886,11 +3926,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "AMF2036_2405QTVE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "AMF2036",
-    "major": "2405QTVE",
-    "className": "AMF2036_2405QTVE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTVE"
   },
   {
     "id": "cls-202",
@@ -3901,11 +3941,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2042_2405QTVE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "AMF2042",
-    "major": "2405QTVE",
-    "className": "AMF2042_2405QTVE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTVE"
   },
   {
     "id": "cls-203",
@@ -3916,11 +3956,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "AMF2014_2405QTVE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "AMF2014",
-    "major": "2405QTVE",
-    "className": "AMF2014_2405QTVE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTVE"
   },
   {
     "id": "cls-204",
@@ -3931,11 +3971,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2058_2405QTVE_HK1_2627_K24.5",
+    "section": "5",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405QTVE",
-    "className": "AMF2058_2405QTVE_HK1_2627_K24",
-    "section": "5"
+    "major": "2405QTVE"
   },
   {
     "id": "cls-205",
@@ -3946,11 +3986,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2032_2405QTVE_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "AMF2032",
-    "major": "2405QTVE",
-    "className": "AMF2032_2405QTVE_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTVE"
   },
   {
     "id": "cls-206",
@@ -3961,11 +4001,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "EMF1003_2405QTVE_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "EMF1003",
-    "major": "2405QTVE",
-    "className": "EMF1003_2405QTVE_HK1_2627_K24",
-    "section": "4"
+    "major": "2405QTVE"
   },
   {
     "id": "cls-207",
@@ -3976,11 +4016,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF1008_2405TKVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF1008",
-    "major": "2405TKVA",
-    "className": "AMF1008_2405TKVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TKVA"
   },
   {
     "id": "cls-208",
@@ -3991,11 +4031,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "AMF2036_2405TKVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2036",
-    "major": "2405TKVA",
-    "className": "AMF2036_2405TKVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TKVA"
   },
   {
     "id": "cls-209",
@@ -4006,11 +4046,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "ASF1001_2405TKVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ASF1001",
-    "major": "2405TKVA",
-    "className": "ASF1001_2405TKVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TKVA"
   },
   {
     "id": "cls-210",
@@ -4021,11 +4061,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "AMF2038_2405TKVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2038",
-    "major": "2405TKVA",
-    "className": "AMF2038_2405TKVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TKVA"
   },
   {
     "id": "cls-211",
@@ -4036,11 +4076,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2073_2405TKVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2073",
-    "major": "2405TKVA",
-    "className": "AMF2073_2405TKVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TKVA"
   },
   {
     "id": "cls-212",
@@ -4051,11 +4091,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2050_2405TKVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2050",
-    "major": "2405TKVA",
-    "className": "AMF2050_2405TKVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TKVA"
   },
   {
     "id": "cls-213",
@@ -4066,11 +4106,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2045_2405TKVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2045",
-    "major": "2405TKVA",
-    "className": "AMF2045_2405TKVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TKVA"
   },
   {
     "id": "cls-214",
@@ -4081,11 +4121,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2040_2405TKVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2040",
-    "major": "2405TKVA",
-    "className": "AMF2040_2405TKVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TKVA"
   },
   {
     "id": "cls-215",
@@ -4096,11 +4136,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF2001_2405TKVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2001",
-    "major": "2405TKVA",
-    "className": "LIF2001_2405TKVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TKVA"
   },
   {
     "id": "cls-216",
@@ -4111,11 +4151,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF2053_2405KTEA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "EMF2053",
-    "major": "2405KTEA",
-    "className": "EMF2053_2405KTEA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405KTEA"
   },
   {
     "id": "cls-217",
@@ -4126,11 +4166,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF2004_2405KTEA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "EMF2004",
-    "major": "2405KTEA",
-    "className": "EMF2004_2405KTEA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405KTEA"
   },
   {
     "id": "cls-218",
@@ -4141,11 +4181,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF2007_2405KTEA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "EMF2007",
-    "major": "2405KTEA",
-    "className": "EMF2007_2405KTEA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405KTEA"
   },
   {
     "id": "cls-219",
@@ -4156,11 +4196,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "EMF2001_2405KTEA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "EMF2001",
-    "major": "2405KTEA",
-    "className": "EMF2001_2405KTEA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405KTEA"
   },
   {
     "id": "cls-220",
@@ -4171,11 +4211,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF2053_2405KTEB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "EMF2053",
-    "major": "2405KTEB",
-    "className": "EMF2053_2405KTEB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405KTEB"
   },
   {
     "id": "cls-221",
@@ -4186,11 +4226,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF2004_2405KTEB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "EMF2004",
-    "major": "2405KTEB",
-    "className": "EMF2004_2405KTEB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405KTEB"
   },
   {
     "id": "cls-222",
@@ -4201,11 +4241,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF2007_2405KTEB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "EMF2007",
-    "major": "2405KTEB",
-    "className": "EMF2007_2405KTEB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405KTEB"
   },
   {
     "id": "cls-223",
@@ -4216,11 +4256,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "EMF2001_2405KTEB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "EMF2001",
-    "major": "2405KTEB",
-    "className": "EMF2001_2405KTEB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405KTEB"
   },
   {
     "id": "cls-224",
@@ -4231,11 +4271,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF2053_2405KTEC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "EMF2053",
-    "major": "2405KTEC",
-    "className": "EMF2053_2405KTEC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405KTEC"
   },
   {
     "id": "cls-225",
@@ -4246,11 +4286,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF2004_2405KTEC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "EMF2004",
-    "major": "2405KTEC",
-    "className": "EMF2004_2405KTEC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405KTEC"
   },
   {
     "id": "cls-226",
@@ -4261,11 +4301,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "EMF2007_2405KTEC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "EMF2007",
-    "major": "2405KTEC",
-    "className": "EMF2007_2405KTEC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405KTEC"
   },
   {
     "id": "cls-227",
@@ -4276,11 +4316,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "EMF2001_2405KTEC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "EMF2001",
-    "major": "2405KTEC",
-    "className": "EMF2001_2405KTEC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405KTEC"
   },
   {
     "id": "cls-228",
@@ -4291,11 +4331,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF2053_2405KTED_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "EMF2053",
-    "major": "2405KTED",
-    "className": "EMF2053_2405KTED_HK1_2627_K24",
-    "section": "4"
+    "major": "2405KTED"
   },
   {
     "id": "cls-229",
@@ -4306,11 +4346,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF2004_2405KTED_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "EMF2004",
-    "major": "2405KTED",
-    "className": "EMF2004_2405KTED_HK1_2627_K24",
-    "section": "4"
+    "major": "2405KTED"
   },
   {
     "id": "cls-230",
@@ -4321,11 +4361,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "EMF2007_2405KTED_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "EMF2007",
-    "major": "2405KTED",
-    "className": "EMF2007_2405KTED_HK1_2627_K24",
-    "section": "4"
+    "major": "2405KTED"
   },
   {
     "id": "cls-231",
@@ -4336,11 +4376,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "EMF2001_2405KTED_HK1_2627_K24.4",
+    "section": "4",
     "cohort": "K24",
     "courseCode": "EMF2001",
-    "major": "2405KTED",
-    "className": "EMF2001_2405KTED_HK1_2627_K24",
-    "section": "4"
+    "major": "2405KTED"
   },
   {
     "id": "cls-232",
@@ -4351,11 +4391,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF2008_2405CTHA+CSCA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF2008",
-    "major": "2405CTHA+CSCA",
-    "className": "ISF2008_2405CTHA+CSCA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405CTHA+CSCA"
   },
   {
     "id": "cls-233",
@@ -4366,11 +4406,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ISF1001_2405CTHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF1001",
-    "major": "2405CTHA",
-    "className": "ISF1001_2405CTHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405CTHA"
   },
   {
     "id": "cls-234",
@@ -4381,11 +4421,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ISF2006_2405CTHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF2006",
-    "major": "2405CTHA",
-    "className": "ISF2006_2405CTHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405CTHA"
   },
   {
     "id": "cls-235",
@@ -4396,11 +4436,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "ISF2008_2405CTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF2008",
-    "major": "2405CTHB",
-    "className": "ISF2008_2405CTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405CTHB"
   },
   {
     "id": "cls-236",
@@ -4411,11 +4451,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ISF1001_2405CTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF1001",
-    "major": "2405CTHB",
-    "className": "ISF1001_2405CTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405CTHB"
   },
   {
     "id": "cls-237",
@@ -4426,11 +4466,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ISF2006_2405CTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF2006",
-    "major": "2405CTHB",
-    "className": "ISF2006_2405CTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405CTHB"
   },
   {
     "id": "cls-238",
@@ -4441,11 +4481,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "ISF2015_2405CTHA+CSCA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF2015",
-    "major": "2405CTHA+CSCA",
-    "className": "ISF2015_2405CTHA+CSCA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405CTHA+CSCA"
   },
   {
     "id": "cls-239",
@@ -4456,11 +4496,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "AMF2049_2405CTHA+CSCA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2049",
-    "major": "2405CTHA+CSCA",
-    "className": "AMF2049_2405CTHA+CSCA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405CTHA+CSCA"
   },
   {
     "id": "cls-240",
@@ -4471,11 +4511,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "ISF2002_2405CTHA+CSCA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF2002",
-    "major": "2405CTHA+CSCA",
-    "className": "ISF2002_2405CTHA+CSCA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405CTHA+CSCA"
   },
   {
     "id": "cls-241",
@@ -4486,11 +4526,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ISF1005_2405CTHA+CSCA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF1005",
-    "major": "2405CTHA+CSCA",
-    "className": "ISF1005_2405CTHA+CSCA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405CTHA+CSCA"
   },
   {
     "id": "cls-242",
@@ -4501,11 +4541,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ISF2015_2405CTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF2015",
-    "major": "2405CTHB",
-    "className": "ISF2015_2405CTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405CTHB"
   },
   {
     "id": "cls-243",
@@ -4516,11 +4556,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "AMF2049_2405CTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2049",
-    "major": "2405CTHB",
-    "className": "AMF2049_2405CTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405CTHB"
   },
   {
     "id": "cls-244",
@@ -4531,11 +4571,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ISF2002_2405CTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF2002",
-    "major": "2405CTHB",
-    "className": "ISF2002_2405CTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405CTHB"
   },
   {
     "id": "cls-245",
@@ -4546,11 +4586,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "ISF1005_2405CTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF1005",
-    "major": "2405CTHB",
-    "className": "ISF1005_2405CTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405CTHB"
   },
   {
     "id": "cls-246",
@@ -4561,11 +4601,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "ASF2072_2405CSCA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ASF2072",
-    "major": "2405CSCA",
-    "className": "ASF2072_2405CSCA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405CSCA"
   },
   {
     "id": "cls-247",
@@ -4576,11 +4616,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ASF2073_2405CSCA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ASF2073",
-    "major": "2405CSCA",
-    "className": "ASF2073_2405CSCA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405CSCA"
   },
   {
     "id": "cls-248",
@@ -4591,11 +4631,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF2003_2405QLVA+B_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2003",
-    "major": "2405QLVA+B",
-    "className": "SMF2003_2405QLVA+B_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLVA+B"
   },
   {
     "id": "cls-249",
@@ -4606,11 +4646,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF2007_2405QLVA+B_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2007",
-    "major": "2405QLVA+B",
-    "className": "SMF2007_2405QLVA+B_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLVA+B"
   },
   {
     "id": "cls-250",
@@ -4621,11 +4661,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF2004_2405QLVA+B_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2004",
-    "major": "2405QLVA+B",
-    "className": "SMF2004_2405QLVA+B_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLVA+B"
   },
   {
     "id": "cls-251",
@@ -4636,11 +4676,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF2013_2405QLVA+B_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2013",
-    "major": "2405QLVA+B",
-    "className": "SMF2013_2405QLVA+B_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLVA+B"
   },
   {
     "id": "cls-252",
@@ -4651,11 +4691,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "LIF0011_2405QLVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0011",
-    "major": "2405QLVA",
-    "className": "LIF0011_2405QLVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLVA"
   },
   {
     "id": "cls-253",
@@ -4666,11 +4706,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "LIF0011_2405QLVA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0011",
-    "major": "2405QLVA",
-    "className": "LIF0011_2405QLVA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QLVA"
   },
   {
     "id": "cls-254",
@@ -4681,11 +4721,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "LIF0011_2405QLVB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "LIF0011",
-    "major": "2405QLVB",
-    "className": "LIF0011_2405QLVB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QLVB"
   },
   {
     "id": "cls-255",
@@ -4696,11 +4736,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "LIF0011_2405QLVB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "LIF0011",
-    "major": "2405QLVB",
-    "className": "LIF0011_2405QLVB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405QLVB"
   },
   {
     "id": "cls-256",
@@ -4711,11 +4751,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2003_2405QDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2003",
-    "major": "2405QDLA",
-    "className": "SMF2003_2405QDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QDLA"
   },
   {
     "id": "cls-257",
@@ -4726,11 +4766,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2011_2405QDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2011",
-    "major": "2405QDLA",
-    "className": "SMF2011_2405QDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QDLA"
   },
   {
     "id": "cls-258",
@@ -4741,11 +4781,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2012_2405QDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2012",
-    "major": "2405QDLA",
-    "className": "SMF2012_2405QDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QDLA"
   },
   {
     "id": "cls-259",
@@ -4756,11 +4796,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2010_2405QDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2010",
-    "major": "2405QDLA",
-    "className": "SMF2010_2405QDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QDLA"
   },
   {
     "id": "cls-260",
@@ -4771,11 +4811,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2027_2405QDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2027",
-    "major": "2405QDLA",
-    "className": "SMF2027_2405QDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QDLA"
   },
   {
     "id": "cls-261",
@@ -4786,11 +4826,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2034_2405QDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2034",
-    "major": "2405QDLA",
-    "className": "SMF2034_2405QDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QDLA"
   },
   {
     "id": "cls-262",
@@ -4801,11 +4841,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2004_2405QDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2004",
-    "major": "2405QDLA",
-    "className": "SMF2004_2405QDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QDLA"
   },
   {
     "id": "cls-263",
@@ -4816,11 +4856,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_2405VDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0011",
-    "major": "2405VDLA",
-    "className": "LIF0011_2405VDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VDLA"
   },
   {
     "id": "cls-264",
@@ -4831,11 +4871,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_2405VDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0011",
-    "major": "2405VDLA",
-    "className": "LIF0011_2405VDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VDLA"
   },
   {
     "id": "cls-265",
@@ -4846,11 +4886,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2113_2405VDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2113",
-    "major": "2405VDLA",
-    "className": "SMF2113_2405VDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VDLA"
   },
   {
     "id": "cls-266",
@@ -4861,11 +4901,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2029_2405VDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2029",
-    "major": "2405VDLA",
-    "className": "SMF2029_2405VDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VDLA"
   },
   {
     "id": "cls-267",
@@ -4876,11 +4916,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2029_2405VDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2029",
-    "major": "2405VDLA",
-    "className": "SMF2029_2405VDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VDLA"
   },
   {
     "id": "cls-268",
@@ -4891,11 +4931,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2010_2405VDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2010",
-    "major": "2405VDLA",
-    "className": "SMF2010_2405VDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VDLA"
   },
   {
     "id": "cls-269",
@@ -4906,11 +4946,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2123_2405VDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2123",
-    "major": "2405VDLA",
-    "className": "SMF2123_2405VDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VDLA"
   },
   {
     "id": "cls-270",
@@ -4921,11 +4961,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2124_2405VDLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2124",
-    "major": "2405VDLA",
-    "className": "SMF2124_2405VDLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VDLA"
   },
   {
     "id": "cls-271",
@@ -4936,11 +4976,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTA",
-    "className": "LIF0010_2405VTTA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTTA"
   },
   {
     "id": "cls-272",
@@ -4951,11 +4991,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTA",
-    "className": "LIF0010_2405VTTA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTTA"
   },
   {
     "id": "cls-273",
@@ -4966,11 +5006,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTA_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTA",
-    "className": "LIF0010_2405VTTA_HK1_2627_K24",
-    "section": "2"
+    "major": "2405VTTA"
   },
   {
     "id": "cls-274",
@@ -4981,11 +5021,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTA_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTA",
-    "className": "LIF0010_2405VTTA_HK1_2627_K24",
-    "section": "2"
+    "major": "2405VTTA"
   },
   {
     "id": "cls-275",
@@ -4996,11 +5036,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF2121_2405VTTA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2121",
-    "major": "2405VTTA",
-    "className": "SMF2121_2405VTTA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTTA"
   },
   {
     "id": "cls-276",
@@ -5011,11 +5051,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF2024_2405VTTA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2024",
-    "major": "2405VTTA",
-    "className": "SMF2024_2405VTTA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTTA"
   },
   {
     "id": "cls-277",
@@ -5026,11 +5066,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF2123_2405VTTA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2123",
-    "major": "2405VTTA",
-    "className": "SMF2123_2405VTTA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTTA"
   },
   {
     "id": "cls-278",
@@ -5041,11 +5081,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF2124_2405VTTA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2124",
-    "major": "2405VTTA",
-    "className": "SMF2124_2405VTTA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTTA"
   },
   {
     "id": "cls-279",
@@ -5056,11 +5096,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTB_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTB",
-    "className": "LIF0010_2405VTTB_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTTB"
   },
   {
     "id": "cls-280",
@@ -5071,11 +5111,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTB_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTB",
-    "className": "LIF0010_2405VTTB_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTTB"
   },
   {
     "id": "cls-281",
@@ -5086,11 +5126,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTB",
-    "className": "LIF0010_2405VTTB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405VTTB"
   },
   {
     "id": "cls-282",
@@ -5101,11 +5141,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTB",
-    "className": "LIF0010_2405VTTB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405VTTB"
   },
   {
     "id": "cls-283",
@@ -5116,11 +5156,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "SMF2121_2405VTTB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SMF2121",
-    "major": "2405VTTB",
-    "className": "SMF2121_2405VTTB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405VTTB"
   },
   {
     "id": "cls-284",
@@ -5131,11 +5171,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "SMF2024_2405VTTB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SMF2024",
-    "major": "2405VTTB",
-    "className": "SMF2024_2405VTTB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405VTTB"
   },
   {
     "id": "cls-285",
@@ -5146,11 +5186,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "SMF2123_2405VTTB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SMF2123",
-    "major": "2405VTTB",
-    "className": "SMF2123_2405VTTB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405VTTB"
   },
   {
     "id": "cls-286",
@@ -5161,11 +5201,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "SMF2124_2405VTTB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SMF2124",
-    "major": "2405VTTB",
-    "className": "SMF2124_2405VTTB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405VTTB"
   },
   {
     "id": "cls-287",
@@ -5176,11 +5216,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTC_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTC",
-    "className": "LIF0010_2405VTTC_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTTC"
   },
   {
     "id": "cls-288",
@@ -5191,11 +5231,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTC_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTC",
-    "className": "LIF0010_2405VTTC_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTTC"
   },
   {
     "id": "cls-289",
@@ -5206,11 +5246,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTC_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTC",
-    "className": "LIF0010_2405VTTC_HK1_2627_K24",
-    "section": "2"
+    "major": "2405VTTC"
   },
   {
     "id": "cls-290",
@@ -5221,11 +5261,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF0010_2405VTTC_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "LIF0010",
-    "major": "2405VTTC",
-    "className": "LIF0010_2405VTTC_HK1_2627_K24",
-    "section": "2"
+    "major": "2405VTTC"
   },
   {
     "id": "cls-291",
@@ -5236,11 +5276,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "SMF2121_2405VTTC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SMF2121",
-    "major": "2405VTTC",
-    "className": "SMF2121_2405VTTC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405VTTC"
   },
   {
     "id": "cls-292",
@@ -5251,11 +5291,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF2024_2405VTTC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SMF2024",
-    "major": "2405VTTC",
-    "className": "SMF2024_2405VTTC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405VTTC"
   },
   {
     "id": "cls-293",
@@ -5266,11 +5306,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF2123_2405VTTC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SMF2123",
-    "major": "2405VTTC",
-    "className": "SMF2123_2405VTTC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405VTTC"
   },
   {
     "id": "cls-294",
@@ -5281,11 +5321,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF2124_2405VTTC_HK1_2627_K24.3",
+    "section": "3",
     "cohort": "K24",
     "courseCode": "SMF2124",
-    "major": "2405VTTC",
-    "className": "SMF2124_2405VTTC_HK1_2627_K24",
-    "section": "3"
+    "major": "2405VTTC"
   },
   {
     "id": "cls-295",
@@ -5296,11 +5336,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2010_2405VTT_HK1_2627_K24",
+    "section": "",
     "cohort": "K24",
     "courseCode": "SMF2010",
-    "major": "2405VTT",
-    "className": "SMF2010_2405VTT_HK1_2627_K24",
-    "section": ""
+    "major": "2405VTT"
   },
   {
     "id": "cls-296",
@@ -5311,11 +5351,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2028_2405DLHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2028",
-    "major": "2405DLHA",
-    "className": "SMF2028_2405DLHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405DLHA"
   },
   {
     "id": "cls-297",
@@ -5326,11 +5366,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2027_2405DLHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2027",
-    "major": "2405DLHA",
-    "className": "SMF2027_2405DLHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405DLHA"
   },
   {
     "id": "cls-298",
@@ -5341,11 +5381,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2065_2405DLHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2065",
-    "major": "2405DLHA",
-    "className": "SMF2065_2405DLHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405DLHA"
   },
   {
     "id": "cls-299",
@@ -5356,11 +5396,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2064_2405DLHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2064",
-    "major": "2405DLHA",
-    "className": "SMF2064_2405DLHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405DLHA"
   },
   {
     "id": "cls-300",
@@ -5371,11 +5411,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2028_2405DLHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SMF2028",
-    "major": "2405DLHB",
-    "className": "SMF2028_2405DLHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405DLHB"
   },
   {
     "id": "cls-301",
@@ -5386,11 +5426,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2027_2405DLHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SMF2027",
-    "major": "2405DLHB",
-    "className": "SMF2027_2405DLHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405DLHB"
   },
   {
     "id": "cls-302",
@@ -5401,11 +5441,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2065_2405DLHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SMF2065",
-    "major": "2405DLHB",
-    "className": "SMF2065_2405DLHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405DLHB"
   },
   {
     "id": "cls-303",
@@ -5416,11 +5456,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2064_2405DLHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SMF2064",
-    "major": "2405DLHB",
-    "className": "SMF2064_2405DLHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405DLHB"
   },
   {
     "id": "cls-304",
@@ -5431,11 +5471,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2062_2405LTHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2062",
-    "major": "2405LTHA",
-    "className": "AMF2062_2405LTHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHA"
   },
   {
     "id": "cls-305",
@@ -5446,11 +5486,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "AMF2017_2405LTHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2017",
-    "major": "2405LTHA",
-    "className": "AMF2017_2405LTHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHA"
   },
   {
     "id": "cls-306",
@@ -5461,11 +5501,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2018_2405LTHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2018",
-    "major": "2405LTHA",
-    "className": "AMF2018_2405LTHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHA"
   },
   {
     "id": "cls-307",
@@ -5476,11 +5516,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "SLF2061_2405LTHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF2061",
-    "major": "2405LTHA",
-    "className": "SLF2061_2405LTHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHA"
   },
   {
     "id": "cls-308",
@@ -5491,11 +5531,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "AMF2023_2405LTHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2023",
-    "major": "2405LTHA",
-    "className": "AMF2023_2405LTHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHA"
   },
   {
     "id": "cls-309",
@@ -5506,11 +5546,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "SLF1002_2405LTHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1002",
-    "major": "2405LTHA",
-    "className": "SLF1002_2405LTHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHA"
   },
   {
     "id": "cls-310",
@@ -5521,11 +5561,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "SMF2043_2405LTHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2043",
-    "major": "2405LTHA",
-    "className": "SMF2043_2405LTHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHA"
   },
   {
     "id": "cls-311",
@@ -5536,11 +5576,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "ISF1007_2405LTHA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF1007",
-    "major": "2405LTHA",
-    "className": "ISF1007_2405LTHA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHA"
   },
   {
     "id": "cls-312",
@@ -5551,11 +5591,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "AMF2062_2405LTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2062",
-    "major": "2405LTHB",
-    "className": "AMF2062_2405LTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LTHB"
   },
   {
     "id": "cls-313",
@@ -5566,11 +5606,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "AMF2017_2405LTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2017",
-    "major": "2405LTHB",
-    "className": "AMF2017_2405LTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LTHB"
   },
   {
     "id": "cls-314",
@@ -5581,11 +5621,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2018_2405LTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2018",
-    "major": "2405LTHB",
-    "className": "AMF2018_2405LTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LTHB"
   },
   {
     "id": "cls-315",
@@ -5596,11 +5636,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "SLF2061_2405LTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF2061",
-    "major": "2405LTHB",
-    "className": "SLF2061_2405LTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LTHB"
   },
   {
     "id": "cls-316",
@@ -5611,11 +5651,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "AMF2023_2405LTHB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "AMF2023",
-    "major": "2405LTHB",
-    "className": "AMF2023_2405LTHB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405LTHB"
   },
   {
     "id": "cls-317",
@@ -5626,11 +5666,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "SLF1002_2405LTHB_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1002",
-    "major": "2405LTHB",
-    "className": "SLF1002_2405LTHB_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHB"
   },
   {
     "id": "cls-318",
@@ -5641,11 +5681,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "SMF2043_2405LTHB_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SMF2043",
-    "major": "2405LTHB",
-    "className": "SMF2043_2405LTHB_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHB"
   },
   {
     "id": "cls-319",
@@ -5656,11 +5696,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "ISF1007_2405LTHB_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF1007",
-    "major": "2405LTHB",
-    "className": "ISF1007_2405LTHB_HK1_2627_K24",
-    "section": "1"
+    "major": "2405LTHB"
   },
   {
     "id": "cls-320",
@@ -5671,11 +5711,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF2058_2405VTLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2058",
-    "major": "2405VTLA",
-    "className": "AMF2058_2405VTLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTLA"
   },
   {
     "id": "cls-321",
@@ -5686,11 +5726,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "AMF2062_2405VTLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2062",
-    "major": "2405VTLA",
-    "className": "AMF2062_2405VTLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTLA"
   },
   {
     "id": "cls-322",
@@ -5701,11 +5741,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF1006_2405VTLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF1006",
-    "major": "2405VTLA",
-    "className": "AMF1006_2405VTLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTLA"
   },
   {
     "id": "cls-323",
@@ -5716,11 +5756,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "AMF2017_2405VTLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2017",
-    "major": "2405VTLA",
-    "className": "AMF2017_2405VTLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTLA"
   },
   {
     "id": "cls-324",
@@ -5731,11 +5771,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2009_2405VTLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2009",
-    "major": "2405VTLA",
-    "className": "AMF2009_2405VTLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTLA"
   },
   {
     "id": "cls-325",
@@ -5746,11 +5786,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "AMF2071_2405VTLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2071",
-    "major": "2405VTLA",
-    "className": "AMF2071_2405VTLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTLA"
   },
   {
     "id": "cls-326",
@@ -5761,11 +5801,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "ISF1007_2405VTLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF1007",
-    "major": "2405VTLA",
-    "className": "ISF1007_2405VTLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTLA"
   },
   {
     "id": "cls-327",
@@ -5776,11 +5816,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF2023_2405VTLA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "AMF2023",
-    "major": "2405VTLA",
-    "className": "AMF2023_2405VTLA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405VTLA"
   },
   {
     "id": "cls-328",
@@ -5791,11 +5831,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "ISF2030_2405XDDA+B_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF2030",
-    "major": "2405XDDA+B",
-    "className": "ISF2030_2405XDDA+B_HK1_2627_K24",
-    "section": "1"
+    "major": "2405XDDA+B"
   },
   {
     "id": "cls-329",
@@ -5806,11 +5846,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ISF2032_2405XDDA+TCB_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF2032",
-    "major": "2405XDDA+TCB",
-    "className": "ISF2032_2405XDDA+TCB_HK1_2627_K24",
-    "section": "1"
+    "major": "2405XDDA+TCB"
   },
   {
     "id": "cls-330",
@@ -5821,11 +5861,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SLF1024_2405XDDA+TCB_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1024",
-    "major": "2405XDDA+TCB",
-    "className": "SLF1024_2405XDDA+TCB_HK1_2627_K24",
-    "section": "1"
+    "major": "2405XDDA+TCB"
   },
   {
     "id": "cls-331",
@@ -5836,11 +5876,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ISF2064_2405XDDA+TCB_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF2064",
-    "major": "2405XDDA+TCB",
-    "className": "ISF2064_2405XDDA+TCB_HK1_2627_K24",
-    "section": "1"
+    "major": "2405XDDA+TCB"
   },
   {
     "id": "cls-332",
@@ -5851,11 +5891,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2063_2405XDDA+TCB_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "HRF2063",
-    "major": "2405XDDA+TCB",
-    "className": "HRF2063_2405XDDA+TCB_HK1_2627_K24",
-    "section": "1"
+    "major": "2405XDDA+TCB"
   },
   {
     "id": "cls-333",
@@ -5866,11 +5906,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ISF2063_2405XDDA+TCB_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "ISF2063",
-    "major": "2405XDDA+TCB",
-    "className": "ISF2063_2405XDDA+TCB_HK1_2627_K24",
-    "section": "1"
+    "major": "2405XDDA+TCB"
   },
   {
     "id": "cls-334",
@@ -5881,11 +5921,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ISF2032_2405XDDB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF2032",
-    "major": "2405XDDB",
-    "className": "ISF2032_2405XDDB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405XDDB"
   },
   {
     "id": "cls-335",
@@ -5896,11 +5936,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SLF1024_2405XDDB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "SLF1024",
-    "major": "2405XDDB",
-    "className": "SLF1024_2405XDDB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405XDDB"
   },
   {
     "id": "cls-336",
@@ -5911,11 +5951,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ISF2064_2405XDDB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF2064",
-    "major": "2405XDDB",
-    "className": "ISF2064_2405XDDB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405XDDB"
   },
   {
     "id": "cls-337",
@@ -5926,11 +5966,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF2063_2405XDDB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "HRF2063",
-    "major": "2405XDDB",
-    "className": "HRF2063_2405XDDB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405XDDB"
   },
   {
     "id": "cls-338",
@@ -5941,11 +5981,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "ISF2063_2405XDDB_HK1_2627_K24.2",
+    "section": "2",
     "cohort": "K24",
     "courseCode": "ISF2063",
-    "major": "2405XDDB",
-    "className": "ISF2063_2405XDDB_HK1_2627_K24",
-    "section": "2"
+    "major": "2405XDDB"
   },
   {
     "id": "cls-339",
@@ -5956,11 +5996,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF1031_2405HTTA+B_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "SLF1031",
-    "major": "2405HTTA+B",
-    "className": "SLF1031_2405HTTA+B_HK1_2627_K24",
-    "section": "1"
+    "major": "2405HTTA+B"
   },
   {
     "id": "cls-340",
@@ -5971,11 +6011,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0015_2405NNA+TAP_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0015",
-    "major": "2405NNA+TAP",
-    "className": "LIF0015_2405NNA+TAP_HK1_2627_K24",
-    "section": "1"
+    "major": "2405NNA+TAP"
   },
   {
     "id": "cls-341",
@@ -5986,11 +6026,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0015_2405NNA+TAP_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF0015",
-    "major": "2405NNA+TAP",
-    "className": "LIF0015_2405NNA+TAP_HK1_2627_K24",
-    "section": "1"
+    "major": "2405NNA+TAP"
   },
   {
     "id": "cls-342",
@@ -6001,11 +6041,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2073_2405NNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2073",
-    "major": "2405NNA",
-    "className": "LIF2073_2405NNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405NNA"
   },
   {
     "id": "cls-343",
@@ -6016,11 +6056,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2073_2405NNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2073",
-    "major": "2405NNA",
-    "className": "LIF2073_2405NNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405NNA"
   },
   {
     "id": "cls-344",
@@ -6031,11 +6071,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2072_2405NNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2072",
-    "major": "2405NNA",
-    "className": "LIF2072_2405NNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405NNA"
   },
   {
     "id": "cls-345",
@@ -6046,11 +6086,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2072_2405NNA_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2072",
-    "major": "2405NNA",
-    "className": "LIF2072_2405NNA_HK1_2627_K24",
-    "section": "1"
+    "major": "2405NNA"
   },
   {
     "id": "cls-346",
@@ -6061,11 +6101,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF1030_2405NNA+TAP_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF1030",
-    "major": "2405NNA+TAP",
-    "className": "LIF1030_2405NNA+TAP_HK1_2627_K24",
-    "section": "1"
+    "major": "2405NNA+TAP"
   },
   {
     "id": "cls-347",
@@ -6076,11 +6116,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF1030_2405NNA+TAP_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF1030",
-    "major": "2405NNA+TAP",
-    "className": "LIF1030_2405NNA+TAP_HK1_2627_K24",
-    "section": "1"
+    "major": "2405NNA+TAP"
   },
   {
     "id": "cls-348",
@@ -6091,11 +6131,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF1024_2405NNA+TAP_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF1024",
-    "major": "2405NNA+TAP",
-    "className": "LIF1024_2405NNA+TAP_HK1_2627_K24",
-    "section": "1"
+    "major": "2405NNA+TAP"
   },
   {
     "id": "cls-349",
@@ -6106,11 +6146,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF1024_2405NNA+TAP_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF1024",
-    "major": "2405NNA+TAP",
-    "className": "LIF1024_2405NNA+TAP_HK1_2627_K24",
-    "section": "1"
+    "major": "2405NNA+TAP"
   },
   {
     "id": "cls-350",
@@ -6121,11 +6161,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF2048_2405TAP_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2048",
-    "major": "2405TAP",
-    "className": "LIF2048_2405TAP_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TAP"
   },
   {
     "id": "cls-351",
@@ -6136,11 +6176,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF2120_2405TAP_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2120",
-    "major": "2405TAP",
-    "className": "LIF2120_2405TAP_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TAP"
   },
   {
     "id": "cls-352",
@@ -6151,11 +6191,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "LIF2126_2405TAP_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2126",
-    "major": "2405TAP",
-    "className": "LIF2126_2405TAP_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TAP"
   },
   {
     "id": "cls-353",
@@ -6166,11 +6206,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "LIF2135_2405TTV_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2135",
-    "major": "2405TTV",
-    "className": "LIF2135_2405TTV_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTV"
   },
   {
     "id": "cls-354",
@@ -6181,11 +6221,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "LIF2077_2405TTV_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2077",
-    "major": "2405TTV",
-    "className": "LIF2077_2405TTV_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTV"
   },
   {
     "id": "cls-355",
@@ -6196,11 +6236,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "LIF2136_2405TTV_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2136",
-    "major": "2405TTV",
-    "className": "LIF2136_2405TTV_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTV"
   },
   {
     "id": "cls-356",
@@ -6211,11 +6251,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "LIF2010_2405TTV_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2010",
-    "major": "2405TTV",
-    "className": "LIF2010_2405TTV_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTV"
   },
   {
     "id": "cls-357",
@@ -6226,11 +6266,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "LIF2132_2405TTV_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2132",
-    "major": "2405TTV",
-    "className": "LIF2132_2405TTV_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTV"
   },
   {
     "id": "cls-358",
@@ -6241,11 +6281,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "LIF1043_2405TTV_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF1043",
-    "major": "2405TTV",
-    "className": "LIF1043_2405TTV_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTV"
   },
   {
     "id": "cls-359",
@@ -6256,11 +6296,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "LIF2079_2405TTV_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2079",
-    "major": "2405TTV",
-    "className": "LIF2079_2405TTV_HK1_2627_K24",
-    "section": "1"
+    "major": "2405TTV"
   },
   {
     "id": "cls-360",
@@ -6271,11 +6311,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "LIF2136_2405QTT_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2136",
-    "major": "2405QTT",
-    "className": "LIF2136_2405QTT_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTT"
   },
   {
     "id": "cls-361",
@@ -6286,11 +6326,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "LIF2077_2405QTT_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2077",
-    "major": "2405QTT",
-    "className": "LIF2077_2405QTT_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTT"
   },
   {
     "id": "cls-362",
@@ -6301,11 +6341,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "LIF2132_2405QTT_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2132",
-    "major": "2405QTT",
-    "className": "LIF2132_2405QTT_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTT"
   },
   {
     "id": "cls-363",
@@ -6316,11 +6356,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "LIF2010_2405QTT_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2010",
-    "major": "2405QTT",
-    "className": "LIF2010_2405QTT_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTT"
   },
   {
     "id": "cls-364",
@@ -6331,11 +6371,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "LIF1043_2405QTT_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF1043",
-    "major": "2405QTT",
-    "className": "LIF1043_2405QTT_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTT"
   },
   {
     "id": "cls-365",
@@ -6346,11 +6386,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "LIF2079_2405QTT_HK1_2627_K24.1",
+    "section": "1",
     "cohort": "K24",
     "courseCode": "LIF2079",
-    "major": "2405QTT",
-    "className": "LIF2079_2405QTT_HK1_2627_K24",
-    "section": "1"
+    "major": "2405QTT"
   },
   {
     "id": "cls-366",
@@ -6361,11 +6401,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2082_2305QLNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ASF2082",
-    "major": "2305QLNA",
-    "className": "ASF2082_2305QLNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLNA"
   },
   {
     "id": "cls-367",
@@ -6376,11 +6416,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2085_2305QLNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ASF2085",
-    "major": "2305QLNA",
-    "className": "ASF2085_2305QLNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLNA"
   },
   {
     "id": "cls-368",
@@ -6391,11 +6431,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2082_2305QLNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ASF2082",
-    "major": "2305QLNB",
-    "className": "ASF2082_2305QLNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QLNB"
   },
   {
     "id": "cls-369",
@@ -6406,11 +6446,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2085_2305QLNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ASF2085",
-    "major": "2305QLNB",
-    "className": "ASF2085_2305QLNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QLNB"
   },
   {
     "id": "cls-370",
@@ -6421,11 +6461,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2082_2305QLNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "ASF2082",
-    "major": "2305QLNC",
-    "className": "ASF2082_2305QLNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QLNC"
   },
   {
     "id": "cls-371",
@@ -6436,11 +6476,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2085_2305QLNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "ASF2085",
-    "major": "2305QLNC",
-    "className": "ASF2085_2305QLNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QLNC"
   },
   {
     "id": "cls-372",
@@ -6451,11 +6491,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2082_2305QLND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "ASF2082",
-    "major": "2305QLND",
-    "className": "ASF2082_2305QLND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QLND"
   },
   {
     "id": "cls-373",
@@ -6466,11 +6506,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2085_2305QLND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "ASF2085",
-    "major": "2305QLND",
-    "className": "ASF2085_2305QLND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QLND"
   },
   {
     "id": "cls-374",
@@ -6481,11 +6521,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2082_2305QLNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "ASF2082",
-    "major": "2305QLNE",
-    "className": "ASF2082_2305QLNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QLNE"
   },
   {
     "id": "cls-375",
@@ -6496,11 +6536,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2085_2305QLNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "ASF2085",
-    "major": "2305QLNE",
-    "className": "ASF2085_2305QLNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QLNE"
   },
   {
     "id": "cls-376",
@@ -6511,11 +6551,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2082_2305QLNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "ASF2082",
-    "major": "2305QLNG",
-    "className": "ASF2082_2305QLNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QLNG"
   },
   {
     "id": "cls-377",
@@ -6526,11 +6566,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2085_2305QLNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "ASF2085",
-    "major": "2305QLNG",
-    "className": "ASF2085_2305QLNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QLNG"
   },
   {
     "id": "cls-378",
@@ -6541,11 +6581,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2082_2305QLNH_HK1_2627_K23.7",
+    "section": "7",
     "cohort": "K23",
     "courseCode": "ASF2082",
-    "major": "2305QLNH",
-    "className": "ASF2082_2305QLNH_HK1_2627_K23",
-    "section": "7"
+    "major": "2305QLNH"
   },
   {
     "id": "cls-379",
@@ -6556,11 +6596,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2085_2305QLNH_HK1_2627_K23.7",
+    "section": "7",
     "cohort": "K23",
     "courseCode": "ASF2085",
-    "major": "2305QLNH",
-    "className": "ASF2085_2305QLNH_HK1_2627_K23",
-    "section": "7"
+    "major": "2305QLNH"
   },
   {
     "id": "cls-380",
@@ -6571,11 +6611,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF1006_2305QLNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ASF1006",
-    "major": "2305QLNA",
-    "className": "ASF1006_2305QLNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLNA"
   },
   {
     "id": "cls-381",
@@ -6586,11 +6626,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2069_2305QLNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ASF2069",
-    "major": "2305QLNA",
-    "className": "ASF2069_2305QLNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLNA"
   },
   {
     "id": "cls-382",
@@ -6601,11 +6641,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2006_2305QLNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ASF2006",
-    "major": "2305QLNA",
-    "className": "ASF2006_2305QLNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLNA"
   },
   {
     "id": "cls-383",
@@ -6616,11 +6656,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2026_2305QLNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "HRF2026",
-    "major": "2305QLNA",
-    "className": "HRF2026_2305QLNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLNA"
   },
   {
     "id": "cls-384",
@@ -6631,11 +6671,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2058_2305QLNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2058",
-    "major": "2305QLNA",
-    "className": "AMF2058_2305QLNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLNA"
   },
   {
     "id": "cls-385",
@@ -6646,11 +6686,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF1006_2305QLNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ASF1006",
-    "major": "2305QLNB",
-    "className": "ASF1006_2305QLNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QLNB"
   },
   {
     "id": "cls-386",
@@ -6661,11 +6701,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2069_2305QLNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ASF2069",
-    "major": "2305QLNB",
-    "className": "ASF2069_2305QLNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QLNB"
   },
   {
     "id": "cls-387",
@@ -6676,11 +6716,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2006_2305QLNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ASF2006",
-    "major": "2305QLNB",
-    "className": "ASF2006_2305QLNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QLNB"
   },
   {
     "id": "cls-388",
@@ -6691,11 +6731,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2026_2305QLNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "HRF2026",
-    "major": "2305QLNB",
-    "className": "HRF2026_2305QLNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QLNB"
   },
   {
     "id": "cls-389",
@@ -6706,11 +6746,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2058_2305QLNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "AMF2058",
-    "major": "2305QLNB",
-    "className": "AMF2058_2305QLNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QLNB"
   },
   {
     "id": "cls-390",
@@ -6721,11 +6761,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF1006_2305QLNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "ASF1006",
-    "major": "2305QLNC",
-    "className": "ASF1006_2305QLNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QLNC"
   },
   {
     "id": "cls-391",
@@ -6736,11 +6776,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2069_2305QLNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "ASF2069",
-    "major": "2305QLNC",
-    "className": "ASF2069_2305QLNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QLNC"
   },
   {
     "id": "cls-392",
@@ -6751,11 +6791,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2006_2305QLNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "ASF2006",
-    "major": "2305QLNC",
-    "className": "ASF2006_2305QLNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QLNC"
   },
   {
     "id": "cls-393",
@@ -6766,11 +6806,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2026_2305QLNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "HRF2026",
-    "major": "2305QLNC",
-    "className": "HRF2026_2305QLNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QLNC"
   },
   {
     "id": "cls-394",
@@ -6781,11 +6821,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2058_2305QLNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "AMF2058",
-    "major": "2305QLNC",
-    "className": "AMF2058_2305QLNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QLNC"
   },
   {
     "id": "cls-395",
@@ -6796,11 +6836,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF1006_2305QLND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "ASF1006",
-    "major": "2305QLND",
-    "className": "ASF1006_2305QLND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QLND"
   },
   {
     "id": "cls-396",
@@ -6811,11 +6851,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2069_2305QLND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "ASF2069",
-    "major": "2305QLND",
-    "className": "ASF2069_2305QLND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QLND"
   },
   {
     "id": "cls-397",
@@ -6826,11 +6866,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2006_2305QLND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "ASF2006",
-    "major": "2305QLND",
-    "className": "ASF2006_2305QLND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QLND"
   },
   {
     "id": "cls-398",
@@ -6841,11 +6881,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2026_2305QLND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "HRF2026",
-    "major": "2305QLND",
-    "className": "HRF2026_2305QLND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QLND"
   },
   {
     "id": "cls-399",
@@ -6856,11 +6896,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2058_2305QLND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "AMF2058",
-    "major": "2305QLND",
-    "className": "AMF2058_2305QLND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QLND"
   },
   {
     "id": "cls-400",
@@ -6871,11 +6911,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF1006_2305QLNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "ASF1006",
-    "major": "2305QLNE",
-    "className": "ASF1006_2305QLNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QLNE"
   },
   {
     "id": "cls-401",
@@ -6886,11 +6926,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2069_2305QLNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "ASF2069",
-    "major": "2305QLNE",
-    "className": "ASF2069_2305QLNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QLNE"
   },
   {
     "id": "cls-402",
@@ -6901,11 +6941,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2006_2305QLNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "ASF2006",
-    "major": "2305QLNE",
-    "className": "ASF2006_2305QLNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QLNE"
   },
   {
     "id": "cls-403",
@@ -6916,11 +6956,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2026_2305QLNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "HRF2026",
-    "major": "2305QLNE",
-    "className": "HRF2026_2305QLNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QLNE"
   },
   {
     "id": "cls-404",
@@ -6931,11 +6971,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2058_2305QLNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "AMF2058",
-    "major": "2305QLNE",
-    "className": "AMF2058_2305QLNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QLNE"
   },
   {
     "id": "cls-405",
@@ -6946,11 +6986,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF1006_2305QLNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "ASF1006",
-    "major": "2305QLNG",
-    "className": "ASF1006_2305QLNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QLNG"
   },
   {
     "id": "cls-406",
@@ -6961,11 +7001,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2069_2305QLNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "ASF2069",
-    "major": "2305QLNG",
-    "className": "ASF2069_2305QLNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QLNG"
   },
   {
     "id": "cls-407",
@@ -6976,11 +7016,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2006_2305QLNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "ASF2006",
-    "major": "2305QLNG",
-    "className": "ASF2006_2305QLNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QLNG"
   },
   {
     "id": "cls-408",
@@ -6991,11 +7031,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2026_2305QLNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "HRF2026",
-    "major": "2305QLNG",
-    "className": "HRF2026_2305QLNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QLNG"
   },
   {
     "id": "cls-409",
@@ -7006,11 +7046,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2058_2305QLNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "AMF2058",
-    "major": "2305QLNG",
-    "className": "AMF2058_2305QLNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QLNG"
   },
   {
     "id": "cls-410",
@@ -7021,11 +7061,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF1006_2305QLNH_HK1_2627_K23.7",
+    "section": "7",
     "cohort": "K23",
     "courseCode": "ASF1006",
-    "major": "2305QLNH",
-    "className": "ASF1006_2305QLNH_HK1_2627_K23",
-    "section": "7"
+    "major": "2305QLNH"
   },
   {
     "id": "cls-411",
@@ -7036,11 +7076,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2069_2305QLNH_HK1_2627_K23.7",
+    "section": "7",
     "cohort": "K23",
     "courseCode": "ASF2069",
-    "major": "2305QLNH",
-    "className": "ASF2069_2305QLNH_HK1_2627_K23",
-    "section": "7"
+    "major": "2305QLNH"
   },
   {
     "id": "cls-412",
@@ -7051,11 +7091,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2006_2305QLNH_HK1_2627_K23.7",
+    "section": "7",
     "cohort": "K23",
     "courseCode": "ASF2006",
-    "major": "2305QLNH",
-    "className": "ASF2006_2305QLNH_HK1_2627_K23",
-    "section": "7"
+    "major": "2305QLNH"
   },
   {
     "id": "cls-413",
@@ -7066,11 +7106,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2026_2305QLNH_HK1_2627_K23.7",
+    "section": "7",
     "cohort": "K23",
     "courseCode": "HRF2026",
-    "major": "2305QLNH",
-    "className": "HRF2026_2305QLNH_HK1_2627_K23",
-    "section": "7"
+    "major": "2305QLNH"
   },
   {
     "id": "cls-414",
@@ -7081,11 +7121,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2058_2305QLNH_HK1_2627_K23.7",
+    "section": "7",
     "cohort": "K23",
     "courseCode": "AMF2058",
-    "major": "2305QLNH",
-    "className": "AMF2058_2305QLNH_HK1_2627_K23",
-    "section": "7"
+    "major": "2305QLNH"
   },
   {
     "id": "cls-415",
@@ -7096,11 +7136,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2009_2305QTNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "HRF2009",
-    "major": "2305QTNA",
-    "className": "HRF2009_2305QTNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTNA"
   },
   {
     "id": "cls-416",
@@ -7111,11 +7151,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2018_2305QTNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "HRF2018",
-    "major": "2305QTNA",
-    "className": "HRF2018_2305QTNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTNA"
   },
   {
     "id": "cls-417",
@@ -7126,11 +7166,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2023_2305QTNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "HRF2023",
-    "major": "2305QTNA",
-    "className": "HRF2023_2305QTNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTNA"
   },
   {
     "id": "cls-418",
@@ -7141,11 +7181,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2016_2305QTNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "HRF2016",
-    "major": "2305QTNA",
-    "className": "HRF2016_2305QTNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTNA"
   },
   {
     "id": "cls-419",
@@ -7156,11 +7196,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2001_2305QTNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2001",
-    "major": "2305QTNA",
-    "className": "SLF2001_2305QTNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTNA"
   },
   {
     "id": "cls-420",
@@ -7171,11 +7211,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2057_2305QTNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "HRF2057",
-    "major": "2305QTNA",
-    "className": "HRF2057_2305QTNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTNA"
   },
   {
     "id": "cls-421",
@@ -7186,11 +7226,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2009_2305QTNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "HRF2009",
-    "major": "2305QTNB",
-    "className": "HRF2009_2305QTNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTNB"
   },
   {
     "id": "cls-422",
@@ -7201,11 +7241,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2018_2305QTNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "HRF2018",
-    "major": "2305QTNB",
-    "className": "HRF2018_2305QTNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTNB"
   },
   {
     "id": "cls-423",
@@ -7216,11 +7256,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2023_2305QTNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "HRF2023",
-    "major": "2305QTNB",
-    "className": "HRF2023_2305QTNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTNB"
   },
   {
     "id": "cls-424",
@@ -7231,11 +7271,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2016_2305QTNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "HRF2016",
-    "major": "2305QTNB",
-    "className": "HRF2016_2305QTNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTNB"
   },
   {
     "id": "cls-425",
@@ -7246,11 +7286,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2001_2305QTNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SLF2001",
-    "major": "2305QTNB",
-    "className": "SLF2001_2305QTNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTNB"
   },
   {
     "id": "cls-426",
@@ -7261,11 +7301,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2057_2305QTNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "HRF2057",
-    "major": "2305QTNB",
-    "className": "HRF2057_2305QTNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTNB"
   },
   {
     "id": "cls-427",
@@ -7276,11 +7316,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2009_2305QTNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "HRF2009",
-    "major": "2305QTNC",
-    "className": "HRF2009_2305QTNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTNC"
   },
   {
     "id": "cls-428",
@@ -7291,11 +7331,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2018_2305QTNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "HRF2018",
-    "major": "2305QTNC",
-    "className": "HRF2018_2305QTNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTNC"
   },
   {
     "id": "cls-429",
@@ -7306,11 +7346,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2023_2305QTNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "HRF2023",
-    "major": "2305QTNC",
-    "className": "HRF2023_2305QTNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTNC"
   },
   {
     "id": "cls-430",
@@ -7321,11 +7361,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2016_2305QTNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "HRF2016",
-    "major": "2305QTNC",
-    "className": "HRF2016_2305QTNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTNC"
   },
   {
     "id": "cls-431",
@@ -7336,11 +7376,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2001_2305QTNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "SLF2001",
-    "major": "2305QTNC",
-    "className": "SLF2001_2305QTNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTNC"
   },
   {
     "id": "cls-432",
@@ -7351,11 +7391,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2057_2305QTNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "HRF2057",
-    "major": "2305QTNC",
-    "className": "HRF2057_2305QTNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTNC"
   },
   {
     "id": "cls-433",
@@ -7366,11 +7406,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2009_2305QTND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "HRF2009",
-    "major": "2305QTND",
-    "className": "HRF2009_2305QTND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTND"
   },
   {
     "id": "cls-434",
@@ -7381,11 +7421,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2018_2305QTND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "HRF2018",
-    "major": "2305QTND",
-    "className": "HRF2018_2305QTND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTND"
   },
   {
     "id": "cls-435",
@@ -7396,11 +7436,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2023_2305QTND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "HRF2023",
-    "major": "2305QTND",
-    "className": "HRF2023_2305QTND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTND"
   },
   {
     "id": "cls-436",
@@ -7411,11 +7451,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2016_2305QTND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "HRF2016",
-    "major": "2305QTND",
-    "className": "HRF2016_2305QTND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTND"
   },
   {
     "id": "cls-437",
@@ -7426,11 +7466,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2001_2305QTND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "SLF2001",
-    "major": "2305QTND",
-    "className": "SLF2001_2305QTND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTND"
   },
   {
     "id": "cls-438",
@@ -7441,11 +7481,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2057_2305QTND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "HRF2057",
-    "major": "2305QTND",
-    "className": "HRF2057_2305QTND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTND"
   },
   {
     "id": "cls-439",
@@ -7456,11 +7496,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2009_2305QTNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "HRF2009",
-    "major": "2305QTNE",
-    "className": "HRF2009_2305QTNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTNE"
   },
   {
     "id": "cls-440",
@@ -7471,11 +7511,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2018_2305QTNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "HRF2018",
-    "major": "2305QTNE",
-    "className": "HRF2018_2305QTNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTNE"
   },
   {
     "id": "cls-441",
@@ -7486,11 +7526,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2023_2305QTNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "HRF2023",
-    "major": "2305QTNE",
-    "className": "HRF2023_2305QTNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTNE"
   },
   {
     "id": "cls-442",
@@ -7501,11 +7541,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2016_2305QTNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "HRF2016",
-    "major": "2305QTNE",
-    "className": "HRF2016_2305QTNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTNE"
   },
   {
     "id": "cls-443",
@@ -7516,11 +7556,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2001_2305QTNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "SLF2001",
-    "major": "2305QTNE",
-    "className": "SLF2001_2305QTNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTNE"
   },
   {
     "id": "cls-444",
@@ -7531,11 +7571,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2057_2305QTNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "HRF2057",
-    "major": "2305QTNE",
-    "className": "HRF2057_2305QTNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTNE"
   },
   {
     "id": "cls-445",
@@ -7546,11 +7586,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2009_2305QTNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "HRF2009",
-    "major": "2305QTNG",
-    "className": "HRF2009_2305QTNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QTNG"
   },
   {
     "id": "cls-446",
@@ -7561,11 +7601,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2018_2305QTNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "HRF2018",
-    "major": "2305QTNG",
-    "className": "HRF2018_2305QTNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QTNG"
   },
   {
     "id": "cls-447",
@@ -7576,11 +7616,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF2023_2305QTNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "HRF2023",
-    "major": "2305QTNG",
-    "className": "HRF2023_2305QTNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QTNG"
   },
   {
     "id": "cls-448",
@@ -7591,11 +7631,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2016_2305QTNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "HRF2016",
-    "major": "2305QTNG",
-    "className": "HRF2016_2305QTNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QTNG"
   },
   {
     "id": "cls-449",
@@ -7606,11 +7646,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2001_2305QTNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "SLF2001",
-    "major": "2305QTNG",
-    "className": "SLF2001_2305QTNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QTNG"
   },
   {
     "id": "cls-450",
@@ -7621,11 +7661,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2057_2305QTNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "HRF2057",
-    "major": "2305QTNG",
-    "className": "HRF2057_2305QTNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QTNG"
   },
   {
     "id": "cls-451",
@@ -7636,11 +7676,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF1012_2305QTNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "HRF1012",
-    "major": "2305QTNA",
-    "className": "HRF1012_2305QTNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTNA"
   },
   {
     "id": "cls-452",
@@ -7651,11 +7691,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2071_2305QTNA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "HRF2071",
-    "major": "2305QTNA",
-    "className": "HRF2071_2305QTNA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTNA"
   },
   {
     "id": "cls-453",
@@ -7666,11 +7706,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF1012_2305QTNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "HRF1012",
-    "major": "2305QTNB",
-    "className": "HRF1012_2305QTNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTNB"
   },
   {
     "id": "cls-454",
@@ -7681,11 +7721,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2071_2305QTNB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "HRF2071",
-    "major": "2305QTNB",
-    "className": "HRF2071_2305QTNB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTNB"
   },
   {
     "id": "cls-455",
@@ -7696,11 +7736,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF1012_2305QTNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "HRF1012",
-    "major": "2305QTNC",
-    "className": "HRF1012_2305QTNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTNC"
   },
   {
     "id": "cls-456",
@@ -7711,11 +7751,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2071_2305QTNC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "HRF2071",
-    "major": "2305QTNC",
-    "className": "HRF2071_2305QTNC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTNC"
   },
   {
     "id": "cls-457",
@@ -7726,11 +7766,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF1012_2305QTND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "HRF1012",
-    "major": "2305QTND",
-    "className": "HRF1012_2305QTND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTND"
   },
   {
     "id": "cls-458",
@@ -7741,11 +7781,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2071_2305QTND_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "HRF2071",
-    "major": "2305QTND",
-    "className": "HRF2071_2305QTND_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTND"
   },
   {
     "id": "cls-459",
@@ -7756,11 +7796,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF1012_2305QTNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "HRF1012",
-    "major": "2305QTNE",
-    "className": "HRF1012_2305QTNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTNE"
   },
   {
     "id": "cls-460",
@@ -7771,11 +7811,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2071_2305QTNE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "HRF2071",
-    "major": "2305QTNE",
-    "className": "HRF2071_2305QTNE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTNE"
   },
   {
     "id": "cls-461",
@@ -7786,11 +7826,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "HRF1012_2305QTNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "HRF1012",
-    "major": "2305QTNG",
-    "className": "HRF1012_2305QTNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QTNG"
   },
   {
     "id": "cls-462",
@@ -7801,11 +7841,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2071_2305QTNG_HK1_2627_K23.6",
+    "section": "6",
     "cohort": "K23",
     "courseCode": "HRF2071",
-    "major": "2305QTNG",
-    "className": "HRF2071_2305QTNG_HK1_2627_K23",
-    "section": "6"
+    "major": "2305QTNG"
   },
   {
     "id": "cls-463",
@@ -7816,11 +7856,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF1022_2305LHOA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF1022",
-    "major": "2305LHOA",
-    "className": "SLF1022_2305LHOA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LHOA"
   },
   {
     "id": "cls-464",
@@ -7831,11 +7871,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2078_2305LHOA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ASF2078",
-    "major": "2305LHOA",
-    "className": "ASF2078_2305LHOA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LHOA"
   },
   {
     "id": "cls-465",
@@ -7846,11 +7886,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF1022_2305LHOB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SLF1022",
-    "major": "2305LHOB",
-    "className": "SLF1022_2305LHOB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305LHOB"
   },
   {
     "id": "cls-466",
@@ -7861,11 +7901,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2078_2305LHOB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ASF2078",
-    "major": "2305LHOB",
-    "className": "ASF2078_2305LHOB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305LHOB"
   },
   {
     "id": "cls-467",
@@ -7876,11 +7916,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2007_2305LHOA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2007",
-    "major": "2305LHOA",
-    "className": "SLF2007_2305LHOA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LHOA"
   },
   {
     "id": "cls-468",
@@ -7891,11 +7931,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2007_2305LHOB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SLF2007",
-    "major": "2305LHOB",
-    "className": "SLF2007_2305LHOB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305LHOB"
   },
   {
     "id": "cls-469",
@@ -7906,11 +7946,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SLF2020_2305LHOA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2020",
-    "major": "2305LHOA",
-    "className": "SLF2020_2305LHOA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LHOA"
   },
   {
     "id": "cls-470",
@@ -7921,11 +7961,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SLF2020_2305LHOB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SLF2020",
-    "major": "2305LHOB",
-    "className": "SLF2020_2305LHOB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305LHOB"
   },
   {
     "id": "cls-471",
@@ -7936,11 +7976,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2053_2305LHOA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2053",
-    "major": "2305LHOA",
-    "className": "SLF2053_2305LHOA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LHOA"
   },
   {
     "id": "cls-472",
@@ -7951,11 +7991,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2053_2305LHOB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SLF2053",
-    "major": "2305LHOB",
-    "className": "SLF2053_2305LHOB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305LHOB"
   },
   {
     "id": "cls-473",
@@ -7966,11 +8006,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SLF2055_2305LHOA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2055",
-    "major": "2305LHOA",
-    "className": "SLF2055_2305LHOA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LHOA"
   },
   {
     "id": "cls-474",
@@ -7981,11 +8021,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SLF2055_2305LHOB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SLF2055",
-    "major": "2305LHOB",
-    "className": "SLF2055_2305LHOB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305LHOB"
   },
   {
     "id": "cls-475",
@@ -7996,11 +8036,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2057_2305LHOA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2057",
-    "major": "2305LHOA",
-    "className": "SLF2057_2305LHOA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LHOA"
   },
   {
     "id": "cls-476",
@@ -8011,11 +8051,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2057_2305LHOB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SLF2057",
-    "major": "2305LHOB",
-    "className": "SLF2057_2305LHOB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305LHOB"
   },
   {
     "id": "cls-477",
@@ -8026,11 +8066,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2039_2305TTRA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2039",
-    "major": "2305TTRA+B",
-    "className": "SLF2039_2305TTRA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTRA+B"
   },
   {
     "id": "cls-478",
@@ -8041,11 +8081,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SLF2040_2305TTRA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2040",
-    "major": "2305TTRA+B",
-    "className": "SLF2040_2305TTRA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTRA+B"
   },
   {
     "id": "cls-479",
@@ -8056,11 +8096,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2041_2305TTRA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2041",
-    "major": "2305TTRA+B",
-    "className": "SLF2041_2305TTRA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTRA+B"
   },
   {
     "id": "cls-480",
@@ -8071,11 +8111,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SLF2044_2305TTRA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2044",
-    "major": "2305TTRA+B",
-    "className": "SLF2044_2305TTRA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTRA+B"
   },
   {
     "id": "cls-481",
@@ -8086,11 +8126,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2048_2305TTRA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2048",
-    "major": "2305TTRA+B",
-    "className": "SLF2048_2305TTRA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTRA+B"
   },
   {
     "id": "cls-482",
@@ -8101,11 +8141,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SLF2042_2305TTRA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2042",
-    "major": "2305TTRA+B",
-    "className": "SLF2042_2305TTRA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTRA+B"
   },
   {
     "id": "cls-483",
@@ -8116,11 +8156,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2044_2305QTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2044",
-    "major": "2305QTVA",
-    "className": "AMF2044_2305QTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTVA"
   },
   {
     "id": "cls-484",
@@ -8131,11 +8171,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2043_2305QTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2043",
-    "major": "2305QTVA",
-    "className": "AMF2043_2305QTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTVA"
   },
   {
     "id": "cls-485",
@@ -8146,11 +8186,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2048_2305QTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2048",
-    "major": "2305QTVA",
-    "className": "AMF2048_2305QTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTVA"
   },
   {
     "id": "cls-486",
@@ -8161,251 +8201,251 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2039_2305QTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2039",
-    "major": "2305QTVA",
-    "className": "AMF2039_2305QTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTVA"
   },
   {
     "id": "cls-487",
     "name": "Nghiệp vụ thư ký văn phòng",
-    "size": 370,
+    "size": 100,
     "day": 3,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2044_2305QTVB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "AMF2044",
-    "major": "2305QTVB",
-    "className": "AMF2044_2305QTVB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTVB"
   },
   {
     "id": "cls-488",
     "name": "Kỹ năng đàm phán",
-    "size": 370,
+    "size": 100,
     "day": 3,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2043_2305QTVB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "AMF2043",
-    "major": "2305QTVB",
-    "className": "AMF2043_2305QTVB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTVB"
   },
   {
     "id": "cls-489",
     "name": "Văn phòng hiện đại",
-    "size": 370,
+    "size": 100,
     "day": 4,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2048_2305QTVB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "AMF2048",
-    "major": "2305QTVB",
-    "className": "AMF2048_2305QTVB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTVB"
   },
   {
     "id": "cls-490",
     "name": "Kỹ năng tổ chức và kiểm tra trong quản trị văn phòng",
-    "size": 370,
+    "size": 100,
     "day": 4,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2039_2305QTVB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "AMF2039",
-    "major": "2305QTVB",
-    "className": "AMF2039_2305QTVB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTVB"
   },
   {
     "id": "cls-491",
     "name": "Nghiệp vụ thư ký văn phòng",
-    "size": 370,
+    "size": 100,
     "day": 4,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2044_2305QTVC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "AMF2044",
-    "major": "2305QTVC",
-    "className": "AMF2044_2305QTVC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTVC"
   },
   {
     "id": "cls-492",
     "name": "Kỹ năng đàm phán",
-    "size": 370,
+    "size": 100,
     "day": 4,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2043_2305QTVC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "AMF2043",
-    "major": "2305QTVC",
-    "className": "AMF2043_2305QTVC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTVC"
   },
   {
     "id": "cls-493",
     "name": "Văn phòng hiện đại",
-    "size": 370,
+    "size": 100,
     "day": 5,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2048_2305QTVC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "AMF2048",
-    "major": "2305QTVC",
-    "className": "AMF2048_2305QTVC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTVC"
   },
   {
     "id": "cls-494",
     "name": "Kỹ năng tổ chức và kiểm tra trong quản trị văn phòng",
-    "size": 370,
+    "size": 100,
     "day": 5,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2039_2305QTVC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "AMF2039",
-    "major": "2305QTVC",
-    "className": "AMF2039_2305QTVC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTVC"
   },
   {
     "id": "cls-495",
     "name": "Nghiệp vụ thư ký văn phòng",
-    "size": 370,
+    "size": 100,
     "day": 5,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2044_2305QTVD_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "AMF2044",
-    "major": "2305QTVD",
-    "className": "AMF2044_2305QTVD_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTVD"
   },
   {
     "id": "cls-496",
     "name": "Kỹ năng đàm phán",
-    "size": 370,
+    "size": 100,
     "day": 5,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2043_2305QTVD_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "AMF2043",
-    "major": "2305QTVD",
-    "className": "AMF2043_2305QTVD_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTVD"
   },
   {
     "id": "cls-497",
     "name": "Văn phòng hiện đại",
-    "size": 370,
+    "size": 100,
     "day": 6,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2048_2305QTVD_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "AMF2048",
-    "major": "2305QTVD",
-    "className": "AMF2048_2305QTVD_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTVD"
   },
   {
     "id": "cls-498",
     "name": "Kỹ năng tổ chức và kiểm tra trong quản trị văn phòng",
-    "size": 370,
+    "size": 100,
     "day": 6,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2039_2305QTVD_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "AMF2039",
-    "major": "2305QTVD",
-    "className": "AMF2039_2305QTVD_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTVD"
   },
   {
     "id": "cls-499",
     "name": "Nghiệp vụ thư ký văn phòng",
-    "size": 370,
+    "size": 100,
     "day": 6,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2044_2305QTVE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "AMF2044",
-    "major": "2305QTVE",
-    "className": "AMF2044_2305QTVE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTVE"
   },
   {
     "id": "cls-500",
     "name": "Kỹ năng đàm phán",
-    "size": 370,
+    "size": 100,
     "day": 6,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2043_2305QTVE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "AMF2043",
-    "major": "2305QTVE",
-    "className": "AMF2043_2305QTVE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTVE"
   },
   {
     "id": "cls-501",
     "name": "Văn phòng hiện đại",
-    "size": 370,
+    "size": 100,
     "day": 7,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2048_2305QTVE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "AMF2048",
-    "major": "2305QTVE",
-    "className": "AMF2048_2305QTVE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTVE"
   },
   {
     "id": "cls-502",
     "name": "Kỹ năng tổ chức và kiểm tra trong quản trị văn phòng",
-    "size": 370,
+    "size": 100,
     "day": 7,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2039_2305QTVE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "AMF2039",
-    "major": "2305QTVE",
-    "className": "AMF2039_2305QTVE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTVE"
   },
   {
     "id": "cls-503",
@@ -8416,296 +8456,296 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2046_2305QTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2046",
-    "major": "2305QTVA",
-    "className": "AMF2046_2305QTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTVA"
   },
   {
     "id": "cls-504",
     "name": "Số hóa và lưu trữ tài liệu điện tử",
-    "size": 370,
+    "size": 100,
     "day": 4,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2019_2305QTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2019",
-    "major": "2305QTVA",
-    "className": "AMF2019_2305QTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTVA"
   },
   {
     "id": "cls-505",
     "name": "Quản trị thiết bị",
-    "size": 370,
+    "size": 100,
     "day": 5,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2046_2305QTVB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "AMF2046",
-    "major": "2305QTVB",
-    "className": "AMF2046_2305QTVB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTVB"
   },
   {
     "id": "cls-506",
     "name": "Số hóa và lưu trữ tài liệu điện tử",
-    "size": 370,
+    "size": 100,
     "day": 5,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2019_2305QTVB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "AMF2019",
-    "major": "2305QTVB",
-    "className": "AMF2019_2305QTVB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTVB"
   },
   {
     "id": "cls-507",
     "name": "Quản trị thiết bị",
-    "size": 370,
+    "size": 100,
     "day": 6,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2046_2305QTVC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "AMF2046",
-    "major": "2305QTVC",
-    "className": "AMF2046_2305QTVC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTVC"
   },
   {
     "id": "cls-508",
     "name": "Số hóa và lưu trữ tài liệu điện tử",
-    "size": 370,
+    "size": 100,
     "day": 6,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2019_2305QTVC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "AMF2019",
-    "major": "2305QTVC",
-    "className": "AMF2019_2305QTVC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTVC"
   },
   {
     "id": "cls-509",
     "name": "Quản trị thiết bị",
-    "size": 370,
+    "size": 100,
     "day": 7,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2046_2305QTVD_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "AMF2046",
-    "major": "2305QTVD",
-    "className": "AMF2046_2305QTVD_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTVD"
   },
   {
     "id": "cls-510",
     "name": "Số hóa và lưu trữ tài liệu điện tử",
-    "size": 370,
+    "size": 100,
     "day": 7,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2019_2305QTVD_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "AMF2019",
-    "major": "2305QTVD",
-    "className": "AMF2019_2305QTVD_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTVD"
   },
   {
     "id": "cls-511",
     "name": "Quản trị thiết bị",
-    "size": 370,
+    "size": 100,
     "day": 2,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2046_2305QTVE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "AMF2046",
-    "major": "2305QTVE",
-    "className": "AMF2046_2305QTVE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTVE"
   },
   {
     "id": "cls-512",
     "name": "Số hóa và lưu trữ tài liệu điện tử",
-    "size": 370,
+    "size": 100,
     "day": 2,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2019_2305QTVE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "AMF2019",
-    "major": "2305QTVE",
-    "className": "AMF2019_2305QTVE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTVE"
   },
   {
     "id": "cls-513",
     "name": "Quản lí dự án",
-    "size": 370,
+    "size": 100,
     "day": 5,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2058_2305QTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2058",
-    "major": "2305QTVA",
-    "className": "EMF2058_2305QTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTVA"
   },
   {
     "id": "cls-514",
     "name": "Quản lí dự án",
-    "size": 370,
+    "size": 100,
     "day": 6,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2058_2305QTVB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2058",
-    "major": "2305QTVB",
-    "className": "EMF2058_2305QTVB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTVB"
   },
   {
     "id": "cls-515",
     "name": "Quản lí dự án",
-    "size": 370,
+    "size": 100,
     "day": 7,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2058_2305QTVC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2058",
-    "major": "2305QTVC",
-    "className": "EMF2058_2305QTVC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTVC"
   },
   {
     "id": "cls-516",
     "name": "Quản lí dự án",
-    "size": 370,
+    "size": 100,
     "day": 2,
     "shift": "afternoon",
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2058_2305QTVD_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "EMF2058",
-    "major": "2305QTVD",
-    "className": "EMF2058_2305QTVD_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTVD"
   },
   {
     "id": "cls-517",
     "name": "Quản lí dự án",
-    "size": 370,
+    "size": 100,
     "day": 3,
     "shift": "morning",
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2058_2305QTVE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "EMF2058",
-    "major": "2305QTVE",
-    "className": "EMF2058_2305QTVE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTVE"
   },
   {
     "id": "cls-518",
     "name": "Nguyên lý kế toán",
-    "size": 370,
+    "size": 100,
     "day": 2,
     "shift": "evening",
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2047_2305QTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2047",
-    "major": "2305QTVA",
-    "className": "EMF2047_2305QTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTVA"
   },
   {
     "id": "cls-519",
     "name": "Nguyên lý kế toán",
-    "size": 370,
+    "size": 100,
     "day": 3,
     "shift": "evening",
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2047_2305QTVB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2047",
-    "major": "2305QTVB",
-    "className": "EMF2047_2305QTVB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305QTVB"
   },
   {
     "id": "cls-520",
     "name": "Nguyên lý kế toán",
-    "size": 370,
+    "size": 100,
     "day": 4,
     "shift": "evening",
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2047_2305QTVC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2047",
-    "major": "2305QTVC",
-    "className": "EMF2047_2305QTVC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305QTVC"
   },
   {
     "id": "cls-521",
     "name": "Nguyên lý kế toán",
-    "size": 370,
+    "size": 100,
     "day": 5,
     "shift": "evening",
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2047_2305QTVD_HK1_2627_K23.4",
+    "section": "4",
     "cohort": "K23",
     "courseCode": "EMF2047",
-    "major": "2305QTVD",
-    "className": "EMF2047_2305QTVD_HK1_2627_K23",
-    "section": "4"
+    "major": "2305QTVD"
   },
   {
     "id": "cls-522",
     "name": "Nguyên lý kế toán",
-    "size": 370,
+    "size": 100,
     "day": 6,
     "shift": "evening",
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2047_2305QTVE_HK1_2627_K23.5",
+    "section": "5",
     "cohort": "K23",
     "courseCode": "EMF2047",
-    "major": "2305QTVE",
-    "className": "EMF2047_2305QTVE_HK1_2627_K23",
-    "section": "5"
+    "major": "2305QTVE"
   },
   {
     "id": "cls-523",
@@ -8716,11 +8756,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2054_2305TKVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2054",
-    "major": "2305TKVA",
-    "className": "AMF2054_2305TKVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TKVA"
   },
   {
     "id": "cls-524",
@@ -8731,11 +8771,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2066_2305TKVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2066",
-    "major": "2305TKVA",
-    "className": "AMF2066_2305TKVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TKVA"
   },
   {
     "id": "cls-525",
@@ -8746,11 +8786,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2065_2305TKVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2065",
-    "major": "2305TKVA",
-    "className": "AMF2065_2305TKVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TKVA"
   },
   {
     "id": "cls-526",
@@ -8761,11 +8801,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2039_2305TKVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2039",
-    "major": "2305TKVA",
-    "className": "AMF2039_2305TKVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TKVA"
   },
   {
     "id": "cls-527",
@@ -8776,11 +8816,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2051_2305TKVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2051",
-    "major": "2305TKVA",
-    "className": "AMF2051_2305TKVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TKVA"
   },
   {
     "id": "cls-528",
@@ -8791,11 +8831,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2009_2305TKVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2009",
-    "major": "2305TKVA",
-    "className": "LIF2009_2305TKVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TKVA"
   },
   {
     "id": "cls-529",
@@ -8806,11 +8846,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2081_2305TKVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ASF2081",
-    "major": "2305TKVA",
-    "className": "ASF2081_2305TKVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TKVA"
   },
   {
     "id": "cls-530",
@@ -8821,11 +8861,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF1006_2305TKVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF1006",
-    "major": "2305TKVA",
-    "className": "AMF1006_2305TKVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TKVA"
   },
   {
     "id": "cls-531",
@@ -8836,11 +8876,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2009_2305KTEA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2009",
-    "major": "2305KTEA",
-    "className": "EMF2009_2305KTEA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305KTEA"
   },
   {
     "id": "cls-532",
@@ -8851,11 +8891,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2027_2305KTEA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2027",
-    "major": "2305KTEA",
-    "className": "EMF2027_2305KTEA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305KTEA"
   },
   {
     "id": "cls-533",
@@ -8866,11 +8906,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2028_2305KTEA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2028",
-    "major": "2305KTEA",
-    "className": "EMF2028_2305KTEA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305KTEA"
   },
   {
     "id": "cls-534",
@@ -8881,11 +8921,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2048_2305KTEA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2048",
-    "major": "2305KTEA",
-    "className": "EMF2048_2305KTEA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305KTEA"
   },
   {
     "id": "cls-535",
@@ -8896,11 +8936,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2058_2305KTEA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2058",
-    "major": "2305KTEA",
-    "className": "EMF2058_2305KTEA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305KTEA"
   },
   {
     "id": "cls-536",
@@ -8911,11 +8951,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2040_2305KTEA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2040",
-    "major": "2305KTEA",
-    "className": "EMF2040_2305KTEA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305KTEA"
   },
   {
     "id": "cls-537",
@@ -8926,11 +8966,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2069_2305KTEA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2069",
-    "major": "2305KTEA",
-    "className": "EMF2069_2305KTEA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305KTEA"
   },
   {
     "id": "cls-538",
@@ -8941,11 +8981,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2070_2305KTEA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2070",
-    "major": "2305KTEA",
-    "className": "EMF2070_2305KTEA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305KTEA"
   },
   {
     "id": "cls-539",
@@ -8956,11 +8996,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2049_2305KTEA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2049",
-    "major": "2305KTEA",
-    "className": "EMF2049_2305KTEA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305KTEA"
   },
   {
     "id": "cls-540",
@@ -8971,11 +9011,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2009_2305KTEB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2009",
-    "major": "2305KTEB",
-    "className": "EMF2009_2305KTEB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305KTEB"
   },
   {
     "id": "cls-541",
@@ -8986,11 +9026,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2027_2305KTEB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2027",
-    "major": "2305KTEB",
-    "className": "EMF2027_2305KTEB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305KTEB"
   },
   {
     "id": "cls-542",
@@ -9001,11 +9041,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2028_2305KTEB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2028",
-    "major": "2305KTEB",
-    "className": "EMF2028_2305KTEB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305KTEB"
   },
   {
     "id": "cls-543",
@@ -9016,11 +9056,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2048_2305KTEB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2048",
-    "major": "2305KTEB",
-    "className": "EMF2048_2305KTEB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305KTEB"
   },
   {
     "id": "cls-544",
@@ -9031,11 +9071,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2058_2305KTEB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2058",
-    "major": "2305KTEB",
-    "className": "EMF2058_2305KTEB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305KTEB"
   },
   {
     "id": "cls-545",
@@ -9046,11 +9086,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2040_2305KTEB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2040",
-    "major": "2305KTEB",
-    "className": "EMF2040_2305KTEB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305KTEB"
   },
   {
     "id": "cls-546",
@@ -9061,11 +9101,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2069_2305KTEB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2069",
-    "major": "2305KTEB",
-    "className": "EMF2069_2305KTEB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305KTEB"
   },
   {
     "id": "cls-547",
@@ -9076,11 +9116,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2070_2305KTEB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2070",
-    "major": "2305KTEB",
-    "className": "EMF2070_2305KTEB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305KTEB"
   },
   {
     "id": "cls-548",
@@ -9091,11 +9131,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2049_2305KTEB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "EMF2049",
-    "major": "2305KTEB",
-    "className": "EMF2049_2305KTEB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305KTEB"
   },
   {
     "id": "cls-549",
@@ -9106,11 +9146,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2009_2305KTEC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2009",
-    "major": "2305KTEC",
-    "className": "EMF2009_2305KTEC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305KTEC"
   },
   {
     "id": "cls-550",
@@ -9121,11 +9161,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2027_2305KTEC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2027",
-    "major": "2305KTEC",
-    "className": "EMF2027_2305KTEC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305KTEC"
   },
   {
     "id": "cls-551",
@@ -9136,11 +9176,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2028_2305KTEC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2028",
-    "major": "2305KTEC",
-    "className": "EMF2028_2305KTEC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305KTEC"
   },
   {
     "id": "cls-552",
@@ -9151,11 +9191,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "EMF2048_2305KTEC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2048",
-    "major": "2305KTEC",
-    "className": "EMF2048_2305KTEC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305KTEC"
   },
   {
     "id": "cls-553",
@@ -9166,11 +9206,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2058_2305KTEC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2058",
-    "major": "2305KTEC",
-    "className": "EMF2058_2305KTEC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305KTEC"
   },
   {
     "id": "cls-554",
@@ -9181,11 +9221,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2040_2305KTEC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2040",
-    "major": "2305KTEC",
-    "className": "EMF2040_2305KTEC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305KTEC"
   },
   {
     "id": "cls-555",
@@ -9196,11 +9236,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2069_2305KTEC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2069",
-    "major": "2305KTEC",
-    "className": "EMF2069_2305KTEC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305KTEC"
   },
   {
     "id": "cls-556",
@@ -9211,11 +9251,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "EMF2070_2305KTEC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2070",
-    "major": "2305KTEC",
-    "className": "EMF2070_2305KTEC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305KTEC"
   },
   {
     "id": "cls-557",
@@ -9226,11 +9266,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2049_2305KTEC_HK1_2627_K23.3",
+    "section": "3",
     "cohort": "K23",
     "courseCode": "EMF2049",
-    "major": "2305KTEC",
-    "className": "EMF2049_2305KTEC_HK1_2627_K23",
-    "section": "3"
+    "major": "2305KTEC"
   },
   {
     "id": "cls-558",
@@ -9241,11 +9281,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2021_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2021",
-    "major": "2305CTHA",
-    "className": "ISF2021_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-559",
@@ -9256,11 +9296,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2057_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2057",
-    "major": "2305CTHA",
-    "className": "ISF2057_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-560",
@@ -9271,11 +9311,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2013_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2013",
-    "major": "2305CTHA",
-    "className": "ISF2013_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-561",
@@ -9286,11 +9326,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2017_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2017",
-    "major": "2305CTHA",
-    "className": "ISF2017_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-562",
@@ -9301,11 +9341,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2024_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2024",
-    "major": "2305CTHA",
-    "className": "ISF2024_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-563",
@@ -9316,11 +9356,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2054_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2054",
-    "major": "2305CTHA",
-    "className": "ISF2054_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-564",
@@ -9331,11 +9371,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2026_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2026",
-    "major": "2305CTHA",
-    "className": "ISF2026_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-565",
@@ -9346,11 +9386,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2093_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2093",
-    "major": "2305CTHA",
-    "className": "SMF2093_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-566",
@@ -9361,11 +9401,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SLF2039_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2039",
-    "major": "2305CTHA",
-    "className": "SLF2039_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-567",
@@ -9376,11 +9416,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2081_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ASF2081",
-    "major": "2305CTHA",
-    "className": "ASF2081_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-568",
@@ -9391,11 +9431,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SLF2011_2305CTHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SLF2011",
-    "major": "2305CTHA",
-    "className": "SLF2011_2305CTHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CTHA"
   },
   {
     "id": "cls-569",
@@ -9406,11 +9446,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2021_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ISF2021",
-    "major": "2305CTHB",
-    "className": "ISF2021_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-570",
@@ -9421,11 +9461,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2057_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ISF2057",
-    "major": "2305CTHB",
-    "className": "ISF2057_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-571",
@@ -9436,11 +9476,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2013_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ISF2013",
-    "major": "2305CTHB",
-    "className": "ISF2013_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-572",
@@ -9451,11 +9491,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2017_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ISF2017",
-    "major": "2305CTHB",
-    "className": "ISF2017_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-573",
@@ -9466,11 +9506,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2024_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ISF2024",
-    "major": "2305CTHB",
-    "className": "ISF2024_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-574",
@@ -9481,11 +9521,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2054_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ISF2054",
-    "major": "2305CTHB",
-    "className": "ISF2054_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-575",
@@ -9496,11 +9536,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2026_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ISF2026",
-    "major": "2305CTHB",
-    "className": "ISF2026_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-576",
@@ -9511,11 +9551,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2093_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2093",
-    "major": "2305CTHB",
-    "className": "SMF2093_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-577",
@@ -9526,11 +9566,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SLF2039_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SLF2039",
-    "major": "2305CTHB",
-    "className": "SLF2039_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-578",
@@ -9541,11 +9581,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ASF2081_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "ASF2081",
-    "major": "2305CTHB",
-    "className": "ASF2081_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-579",
@@ -9556,11 +9596,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SLF2011_2305CTHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SLF2011",
-    "major": "2305CTHB",
-    "className": "SLF2011_2305CTHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305CTHB"
   },
   {
     "id": "cls-580",
@@ -9571,11 +9611,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2052_2305CSCA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2052",
-    "major": "2305CSCA",
-    "className": "EMF2052_2305CSCA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CSCA"
   },
   {
     "id": "cls-581",
@@ -9586,11 +9626,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2017_2305CSCA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2017",
-    "major": "2305CSCA",
-    "className": "ISF2017_2305CSCA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CSCA"
   },
   {
     "id": "cls-582",
@@ -9601,11 +9641,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2077_2305CSCA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ASF2077",
-    "major": "2305CSCA",
-    "className": "ASF2077_2305CSCA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CSCA"
   },
   {
     "id": "cls-583",
@@ -9616,11 +9656,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "EMF2053_2305CSCA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2053",
-    "major": "2305CSCA",
-    "className": "EMF2053_2305CSCA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CSCA"
   },
   {
     "id": "cls-584",
@@ -9631,11 +9671,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2091_2305CSCA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2091",
-    "major": "2305CSCA",
-    "className": "SMF2091_2305CSCA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CSCA"
   },
   {
     "id": "cls-585",
@@ -9646,11 +9686,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2024_2305CSCA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2024",
-    "major": "2305CSCA",
-    "className": "ISF2024_2305CSCA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CSCA"
   },
   {
     "id": "cls-586",
@@ -9661,11 +9701,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ASF2076_2305CSCA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ASF2076",
-    "major": "2305CSCA",
-    "className": "ASF2076_2305CSCA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CSCA"
   },
   {
     "id": "cls-587",
@@ -9676,11 +9716,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "SMF2093_2305CSCA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2093",
-    "major": "2305CSCA",
-    "className": "SMF2093_2305CSCA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CSCA"
   },
   {
     "id": "cls-588",
@@ -9691,11 +9731,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "SMF2092_2305CSCA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2092",
-    "major": "2305CSCA",
-    "className": "SMF2092_2305CSCA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CSCA"
   },
   {
     "id": "cls-589",
@@ -9706,11 +9746,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "EMF2021_2305CSCA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2021",
-    "major": "2305CSCA",
-    "className": "EMF2021_2305CSCA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305CSCA"
   },
   {
     "id": "cls-590",
@@ -9721,11 +9761,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2001_2305QLVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2001",
-    "major": "2305QLVA",
-    "className": "SMF2001_2305QLVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLVA"
   },
   {
     "id": "cls-591",
@@ -9736,11 +9776,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2009_2305QLVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2009",
-    "major": "2305QLVA",
-    "className": "SMF2009_2305QLVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLVA"
   },
   {
     "id": "cls-592",
@@ -9751,11 +9791,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2022_2305QLVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2022",
-    "major": "2305QLVA",
-    "className": "SMF2022_2305QLVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLVA"
   },
   {
     "id": "cls-593",
@@ -9766,11 +9806,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2012_2305QLVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2012",
-    "major": "2305QLVA",
-    "className": "SMF2012_2305QLVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLVA"
   },
   {
     "id": "cls-594",
@@ -9781,11 +9821,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2119_2305QLVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2119",
-    "major": "2305QLVA",
-    "className": "SMF2119_2305QLVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLVA"
   },
   {
     "id": "cls-595",
@@ -9796,11 +9836,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2122_2305QLVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2122",
-    "major": "2305QLVA",
-    "className": "SMF2122_2305QLVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLVA"
   },
   {
     "id": "cls-596",
@@ -9811,11 +9851,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "SMF2114_2305QLVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2114",
-    "major": "2305QLVA",
-    "className": "SMF2114_2305QLVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLVA"
   },
   {
     "id": "cls-597",
@@ -9826,11 +9866,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "SMF2034_2305QLVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2034",
-    "major": "2305QLVA",
-    "className": "SMF2034_2305QLVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QLVA"
   },
   {
     "id": "cls-598",
@@ -9841,11 +9881,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2009_2305QDLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2009",
-    "major": "2305QDLA",
-    "className": "SMF2009_2305QDLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QDLA"
   },
   {
     "id": "cls-599",
@@ -9856,11 +9896,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2001_2305QDLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2001",
-    "major": "2305QDLA",
-    "className": "SMF2001_2305QDLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QDLA"
   },
   {
     "id": "cls-600",
@@ -9871,11 +9911,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2031_2305QDLA+VDLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2031",
-    "major": "2305QDLA+VDLA",
-    "className": "SMF2031_2305QDLA+VDLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QDLA+VDLA"
   },
   {
     "id": "cls-601",
@@ -9886,11 +9926,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2121_2305QDLA+VDLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2121",
-    "major": "2305QDLA+VDLA",
-    "className": "SMF2121_2305QDLA+VDLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QDLA+VDLA"
   },
   {
     "id": "cls-602",
@@ -9901,11 +9941,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2022_2305QDLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2022",
-    "major": "2305QDLA",
-    "className": "SMF2022_2305QDLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QDLA"
   },
   {
     "id": "cls-603",
@@ -9916,11 +9956,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2026_2305VDLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2026",
-    "major": "2305VDLA",
-    "className": "SMF2026_2305VDLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VDLA"
   },
   {
     "id": "cls-604",
@@ -9931,11 +9971,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2028_2305VDLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2028",
-    "major": "2305VDLA",
-    "className": "SMF2028_2305VDLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VDLA"
   },
   {
     "id": "cls-605",
@@ -9946,11 +9986,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2040_2305VDLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2040",
-    "major": "2305VDLA",
-    "className": "SMF2040_2305VDLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VDLA"
   },
   {
     "id": "cls-606",
@@ -9961,11 +10001,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2067_2305VDLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2067",
-    "major": "2305VDLA",
-    "className": "SMF2067_2305VDLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VDLA"
   },
   {
     "id": "cls-607",
@@ -9976,11 +10016,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "EMF2056_2305VDLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "EMF2056",
-    "major": "2305VDLA",
-    "className": "EMF2056_2305VDLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VDLA"
   },
   {
     "id": "cls-608",
@@ -9991,11 +10031,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2011_2305VTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2011",
-    "major": "2305VTTA",
-    "className": "SMF2011_2305VTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTTA"
   },
   {
     "id": "cls-609",
@@ -10006,11 +10046,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2050_2305VTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2050",
-    "major": "2305VTTA",
-    "className": "SMF2050_2305VTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTTA"
   },
   {
     "id": "cls-610",
@@ -10021,11 +10061,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2051_2305VTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2051",
-    "major": "2305VTTA",
-    "className": "SMF2051_2305VTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTTA"
   },
   {
     "id": "cls-611",
@@ -10036,11 +10076,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2125_2305VTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2125",
-    "major": "2305VTTA",
-    "className": "SMF2125_2305VTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTTA"
   },
   {
     "id": "cls-612",
@@ -10051,11 +10091,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2055_2305VTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2055",
-    "major": "2305VTTA",
-    "className": "SMF2055_2305VTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTTA"
   },
   {
     "id": "cls-613",
@@ -10066,11 +10106,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2059_2305VTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2059",
-    "major": "2305VTTA",
-    "className": "SMF2059_2305VTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTTA"
   },
   {
     "id": "cls-614",
@@ -10081,11 +10121,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2011_2305VTTB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2011",
-    "major": "2305VTTB",
-    "className": "SMF2011_2305VTTB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305VTTB"
   },
   {
     "id": "cls-615",
@@ -10096,11 +10136,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2050_2305VTTB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2050",
-    "major": "2305VTTB",
-    "className": "SMF2050_2305VTTB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305VTTB"
   },
   {
     "id": "cls-616",
@@ -10111,11 +10151,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2051_2305VTTB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2051",
-    "major": "2305VTTB",
-    "className": "SMF2051_2305VTTB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305VTTB"
   },
   {
     "id": "cls-617",
@@ -10126,11 +10166,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2125_2305VTTB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2125",
-    "major": "2305VTTB",
-    "className": "SMF2125_2305VTTB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305VTTB"
   },
   {
     "id": "cls-618",
@@ -10141,11 +10181,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2055_2305VTTB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2055",
-    "major": "2305VTTB",
-    "className": "SMF2055_2305VTTB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305VTTB"
   },
   {
     "id": "cls-619",
@@ -10156,11 +10196,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2059_2305VTTB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2059",
-    "major": "2305VTTB",
-    "className": "SMF2059_2305VTTB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305VTTB"
   },
   {
     "id": "cls-620",
@@ -10171,11 +10211,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2112_2305DLHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2112",
-    "major": "2305DLHA",
-    "className": "SMF2112_2305DLHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305DLHA"
   },
   {
     "id": "cls-621",
@@ -10186,11 +10226,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2070_2305DLHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2070",
-    "major": "2305DLHA",
-    "className": "SMF2070_2305DLHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305DLHA"
   },
   {
     "id": "cls-622",
@@ -10201,11 +10241,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF2040_2305DLHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2040",
-    "major": "2305DLHA",
-    "className": "SMF2040_2305DLHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305DLHA"
   },
   {
     "id": "cls-623",
@@ -10216,11 +10256,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2041_2305DLHA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "SMF2041",
-    "major": "2305DLHA",
-    "className": "SMF2041_2305DLHA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305DLHA"
   },
   {
     "id": "cls-624",
@@ -10231,11 +10271,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2112_2305DLHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2112",
-    "major": "2305DLHB",
-    "className": "SMF2112_2305DLHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305DLHB"
   },
   {
     "id": "cls-625",
@@ -10246,11 +10286,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2070_2305DLHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2070",
-    "major": "2305DLHB",
-    "className": "SMF2070_2305DLHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305DLHB"
   },
   {
     "id": "cls-626",
@@ -10261,11 +10301,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2040_2305DLHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2040",
-    "major": "2305DLHB",
-    "className": "SMF2040_2305DLHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305DLHB"
   },
   {
     "id": "cls-627",
@@ -10276,11 +10316,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "SMF2041_2305DLHB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "SMF2041",
-    "major": "2305DLHB",
-    "className": "SMF2041_2305DLHB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305DLHB"
   },
   {
     "id": "cls-628",
@@ -10291,11 +10331,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2048_2305LTHA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2048",
-    "major": "2305LTHA+B",
-    "className": "AMF2048_2305LTHA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LTHA+B"
   },
   {
     "id": "cls-629",
@@ -10306,11 +10346,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2019_2305LTHA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2019",
-    "major": "2305LTHA+B",
-    "className": "AMF2019_2305LTHA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LTHA+B"
   },
   {
     "id": "cls-630",
@@ -10321,11 +10361,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2022_2305LTHA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2022",
-    "major": "2305LTHA+B",
-    "className": "AMF2022_2305LTHA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LTHA+B"
   },
   {
     "id": "cls-631",
@@ -10336,11 +10376,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2006_2305LTHA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2006",
-    "major": "2305LTHA+B",
-    "className": "AMF2006_2305LTHA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LTHA+B"
   },
   {
     "id": "cls-632",
@@ -10351,11 +10391,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2027_2305LTHA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2027",
-    "major": "2305LTHA+B",
-    "className": "AMF2027_2305LTHA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LTHA+B"
   },
   {
     "id": "cls-633",
@@ -10366,11 +10406,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2069_2305LTHA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2069",
-    "major": "2305LTHA+B",
-    "className": "AMF2069_2305LTHA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LTHA+B"
   },
   {
     "id": "cls-634",
@@ -10381,11 +10421,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2107_2305LTHA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2107",
-    "major": "2305LTHA+B",
-    "className": "LIF2107_2305LTHA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LTHA+B"
   },
   {
     "id": "cls-635",
@@ -10396,11 +10436,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 10,
     "endPeriod": 13,
+    "className": "LIF1043 _2305LTHA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF1043",
-    "major": "2305LTHA+B",
-    "className": "LIF1043 _2305LTHA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LTHA+B"
   },
   {
     "id": "cls-636",
@@ -10411,11 +10451,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2029_2305LTHA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2029",
-    "major": "2305LTHA+B",
-    "className": "AMF2029_2305LTHA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LTHA+B"
   },
   {
     "id": "cls-637",
@@ -10426,11 +10466,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2077_2305LTHA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2077",
-    "major": "2305LTHA+B",
-    "className": "LIF2077_2305LTHA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305LTHA+B"
   },
   {
     "id": "cls-638",
@@ -10441,11 +10481,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2048_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2048",
-    "major": "2305VTLA",
-    "className": "AMF2048_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-639",
@@ -10456,11 +10496,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2003_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2003",
-    "major": "2305VTLA",
-    "className": "AMF2003_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-640",
@@ -10471,11 +10511,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2019_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2019",
-    "major": "2305VTLA",
-    "className": "AMF2019_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-641",
@@ -10486,11 +10526,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2024_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2024",
-    "major": "2305VTLA",
-    "className": "AMF2024_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-642",
@@ -10501,11 +10541,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2006_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2006",
-    "major": "2305VTLA",
-    "className": "AMF2006_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-643",
@@ -10516,11 +10556,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2061_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2061",
-    "major": "2305VTLA",
-    "className": "AMF2061_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-644",
@@ -10531,11 +10571,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2099_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2099",
-    "major": "2305VTLA",
-    "className": "LIF2099_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-645",
@@ -10546,11 +10586,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2026_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2026",
-    "major": "2305VTLA",
-    "className": "AMF2026_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-646",
@@ -10561,11 +10601,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2020_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2020",
-    "major": "2305VTLA",
-    "className": "AMF2020_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-647",
@@ -10576,11 +10616,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "AMF2046_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2046",
-    "major": "2305VTLA",
-    "className": "AMF2046_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-648",
@@ -10591,11 +10631,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "AMF2007_2305VTLA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "AMF2007",
-    "major": "2305VTLA",
-    "className": "AMF2007_2305VTLA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305VTLA"
   },
   {
     "id": "cls-649",
@@ -10606,11 +10646,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2068_2305XDDAB+TCBA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2068",
-    "major": "2305XDDAB+TCBA",
-    "className": "ISF2068_2305XDDAB+TCBA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305XDDAB+TCBA"
   },
   {
     "id": "cls-650",
@@ -10621,11 +10661,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2068_2305XDDAB+TCBA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2068",
-    "major": "2305XDDAB+TCBA",
-    "className": "ISF2068_2305XDDAB+TCBA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305XDDAB+TCBA"
   },
   {
     "id": "cls-651",
@@ -10636,11 +10676,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2065_2305XDDA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2065",
-    "major": "2305XDDA+B",
-    "className": "ISF2065_2305XDDA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305XDDA+B"
   },
   {
     "id": "cls-652",
@@ -10651,11 +10691,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2035_2305XDDA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2035",
-    "major": "2305XDDA+B",
-    "className": "ISF2035_2305XDDA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305XDDA+B"
   },
   {
     "id": "cls-653",
@@ -10666,11 +10706,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2067_2305XDDA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2067",
-    "major": "2305XDDA+B",
-    "className": "ISF2067_2305XDDA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305XDDA+B"
   },
   {
     "id": "cls-654",
@@ -10681,11 +10721,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2041_2305XDDA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2041",
-    "major": "2305XDDA+B",
-    "className": "ISF2041_2305XDDA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305XDDA+B"
   },
   {
     "id": "cls-655",
@@ -10696,11 +10736,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2072_2305XDDA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2072",
-    "major": "2305XDDA+B",
-    "className": "ISF2072_2305XDDA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305XDDA+B"
   },
   {
     "id": "cls-656",
@@ -10711,11 +10751,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2069_2305XDDA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2069",
-    "major": "2305XDDA+B",
-    "className": "ISF2069_2305XDDA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305XDDA+B"
   },
   {
     "id": "cls-657",
@@ -10726,11 +10766,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2072_2305XDDA+B_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2072",
-    "major": "2305XDDA+B",
-    "className": "ISF2072_2305XDDA+B_HK1_2627_K23",
-    "section": "1"
+    "major": "2305XDDA+B"
   },
   {
     "id": "cls-658",
@@ -10741,11 +10781,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2077_2305TCBA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2077",
-    "major": "2305TCBA",
-    "className": "ISF2077_2305TCBA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TCBA"
   },
   {
     "id": "cls-659",
@@ -10756,11 +10796,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2045_2305TCBA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2045",
-    "major": "2305TCBA",
-    "className": "ISF2045_2305TCBA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TCBA"
   },
   {
     "id": "cls-660",
@@ -10771,11 +10811,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2055_2305TCBA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2055",
-    "major": "2305TCBA",
-    "className": "ISF2055_2305TCBA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TCBA"
   },
   {
     "id": "cls-661",
@@ -10786,11 +10826,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2056_2305TCBA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2056",
-    "major": "2305TCBA",
-    "className": "ISF2056_2305TCBA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TCBA"
   },
   {
     "id": "cls-662",
@@ -10801,11 +10841,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2070_2305TCBA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2070",
-    "major": "2305TCBA",
-    "className": "ISF2070_2305TCBA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TCBA"
   },
   {
     "id": "cls-663",
@@ -10816,11 +10856,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2069_2305TCBA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2069",
-    "major": "2305TCBA",
-    "className": "ISF2069_2305TCBA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TCBA"
   },
   {
     "id": "cls-664",
@@ -10831,11 +10871,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISF2057_2305TCBA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2057",
-    "major": "2305TCBA",
-    "className": "ISF2057_2305TCBA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TCBA"
   },
   {
     "id": "cls-665",
@@ -10846,11 +10886,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF2071_2305TCBA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "ISF2071",
-    "major": "2305TCBA",
-    "className": "ISF2071_2305TCBA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TCBA"
   },
   {
     "id": "cls-666",
@@ -10861,11 +10901,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0017_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF0017",
-    "major": "2305NNAA+TAP",
-    "className": "LIF0017_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-667",
@@ -10876,11 +10916,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0017_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF0017",
-    "major": "2305NNAA+TAP",
-    "className": "LIF0017_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-668",
@@ -10891,11 +10931,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2050_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2050",
-    "major": "2305NNAA+TAP",
-    "className": "LIF2050_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-669",
@@ -10906,11 +10946,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2050_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2050",
-    "major": "2305NNAA+TAP",
-    "className": "LIF2050_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-670",
@@ -10921,11 +10961,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2051_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2051",
-    "major": "2305NNAA+TAP",
-    "className": "LIF2051_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-671",
@@ -10936,11 +10976,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2051_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2051",
-    "major": "2305NNAA+TAP",
-    "className": "LIF2051_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-672",
@@ -10951,11 +10991,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2123_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2123",
-    "major": "2305NNAA+TAP",
-    "className": "LIF2123_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-673",
@@ -10966,11 +11006,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2123_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2123",
-    "major": "2305NNAA+TAP",
-    "className": "LIF2123_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-674",
@@ -10981,11 +11021,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2124_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2124",
-    "major": "2305NNAA+TAP",
-    "className": "LIF2124_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-675",
@@ -10996,11 +11036,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2124_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2124",
-    "major": "2305NNAA+TAP",
-    "className": "LIF2124_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-676",
@@ -11011,11 +11051,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2125_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2125",
-    "major": "2305NNAA+TAP",
-    "className": "LIF2125_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-677",
@@ -11026,11 +11066,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2125_2305NNAA+TAP_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2125",
-    "major": "2305NNAA+TAP",
-    "className": "LIF2125_2305NNAA+TAP_HK1_2627_K23",
-    "section": "1"
+    "major": "2305NNAA+TAP"
   },
   {
     "id": "cls-678",
@@ -11041,11 +11081,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0017_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF0017",
-    "major": "2305NNAB",
-    "className": "LIF0017_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-679",
@@ -11056,11 +11096,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0017_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF0017",
-    "major": "2305NNAB",
-    "className": "LIF0017_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-680",
@@ -11071,11 +11111,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2050_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF2050",
-    "major": "2305NNAB",
-    "className": "LIF2050_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-681",
@@ -11086,11 +11126,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2050_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF2050",
-    "major": "2305NNAB",
-    "className": "LIF2050_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-682",
@@ -11101,11 +11141,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2051_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF2051",
-    "major": "2305NNAB",
-    "className": "LIF2051_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-683",
@@ -11116,11 +11156,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2051_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF2051",
-    "major": "2305NNAB",
-    "className": "LIF2051_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-684",
@@ -11131,11 +11171,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2123_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF2123",
-    "major": "2305NNAB",
-    "className": "LIF2123_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-685",
@@ -11146,11 +11186,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2123_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF2123",
-    "major": "2305NNAB",
-    "className": "LIF2123_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-686",
@@ -11161,11 +11201,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2124_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF2124",
-    "major": "2305NNAB",
-    "className": "LIF2124_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-687",
@@ -11176,11 +11216,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2124_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF2124",
-    "major": "2305NNAB",
-    "className": "LIF2124_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-688",
@@ -11191,11 +11231,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2125_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF2125",
-    "major": "2305NNAB",
-    "className": "LIF2125_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-689",
@@ -11206,11 +11246,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2125_2305NNAB_HK1_2627_K23.2",
+    "section": "2",
     "cohort": "K23",
     "courseCode": "LIF2125",
-    "major": "2305NNAB",
-    "className": "LIF2125_2305NNAB_HK1_2627_K23",
-    "section": "2"
+    "major": "2305NNAB"
   },
   {
     "id": "cls-690",
@@ -11221,11 +11261,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2139_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2139",
-    "major": "2305TTVA",
-    "className": "LIF2139_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-691",
@@ -11236,11 +11276,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2082_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2082",
-    "major": "2305TTVA",
-    "className": "LIF2082_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-692",
@@ -11251,11 +11291,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2078_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2078",
-    "major": "2305TTVA",
-    "className": "LIF2078_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-693",
@@ -11266,11 +11306,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2098_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2098",
-    "major": "2305TTVA",
-    "className": "LIF2098_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-694",
@@ -11281,11 +11321,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2095_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2095",
-    "major": "2305TTVA",
-    "className": "LIF2095_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-695",
@@ -11296,11 +11336,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2083_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2083",
-    "major": "2305TTVA",
-    "className": "LIF2083_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-696",
@@ -11311,11 +11351,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2085_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2085",
-    "major": "2305TTVA",
-    "className": "LIF2085_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-697",
@@ -11326,11 +11366,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2106_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2106",
-    "major": "2305TTVA",
-    "className": "LIF2106_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-698",
@@ -11341,11 +11381,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2096_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2096",
-    "major": "2305TTVA",
-    "className": "LIF2096_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-699",
@@ -11356,11 +11396,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2084_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2084",
-    "major": "2305TTVA",
-    "className": "LIF2084_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-700",
@@ -11371,11 +11411,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2140_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2140",
-    "major": "2305TTVA",
-    "className": "LIF2140_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-701",
@@ -11386,11 +11426,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2108_2305TTVA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2108",
-    "major": "2305TTVA",
-    "className": "LIF2108_2305TTVA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305TTVA"
   },
   {
     "id": "cls-702",
@@ -11401,11 +11441,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2108_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2108",
-    "major": "2305QTTA",
-    "className": "LIF2108_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-703",
@@ -11416,11 +11456,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2099_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2099",
-    "major": "2305QTTA",
-    "className": "LIF2099_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-704",
@@ -11431,11 +11471,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2106_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2106",
-    "major": "2305QTTA",
-    "className": "LIF2106_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-705",
@@ -11446,11 +11486,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2098_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2098",
-    "major": "2305QTTA",
-    "className": "LIF2098_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-706",
@@ -11461,11 +11501,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2137_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2137",
-    "major": "2305QTTA",
-    "className": "LIF2137_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-707",
@@ -11476,11 +11516,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2100_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2100",
-    "major": "2305QTTA",
-    "className": "LIF2100_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-708",
@@ -11491,11 +11531,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2101_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2101",
-    "major": "2305QTTA",
-    "className": "LIF2101_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-709",
@@ -11506,11 +11546,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2104_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2104",
-    "major": "2305QTTA",
-    "className": "LIF2104_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-710",
@@ -11521,11 +11561,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2102_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2102",
-    "major": "2305QTTA",
-    "className": "LIF2102_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-711",
@@ -11536,11 +11576,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF2103_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2103",
-    "major": "2305QTTA",
-    "className": "LIF2103_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-712",
@@ -11551,11 +11591,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF2105_2305QTTA_HK1_2627_K23.1",
+    "section": "1",
     "cohort": "K23",
     "courseCode": "LIF2105",
-    "major": "2305QTTA",
-    "className": "LIF2105_2305QTTA_HK1_2627_K23",
-    "section": "1"
+    "major": "2305QTTA"
   },
   {
     "id": "cls-713",
@@ -11566,11 +11606,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "1"
+    "major": "TT"
   },
   {
     "id": "cls-714",
@@ -11581,11 +11621,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "1"
+    "major": "TT"
   },
   {
     "id": "cls-715",
@@ -11596,11 +11636,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.2",
+    "section": "2",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "2"
+    "major": "TT"
   },
   {
     "id": "cls-716",
@@ -11611,11 +11651,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.2",
+    "section": "2",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "2"
+    "major": "TT"
   },
   {
     "id": "cls-717",
@@ -11626,11 +11666,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.3",
+    "section": "3",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "3"
+    "major": "TT"
   },
   {
     "id": "cls-718",
@@ -11641,11 +11681,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.3",
+    "section": "3",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "3"
+    "major": "TT"
   },
   {
     "id": "cls-719",
@@ -11656,11 +11696,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.4",
+    "section": "4",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "4"
+    "major": "TT"
   },
   {
     "id": "cls-720",
@@ -11671,11 +11711,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.4",
+    "section": "4",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "4"
+    "major": "TT"
   },
   {
     "id": "cls-721",
@@ -11686,11 +11726,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.5",
+    "section": "5",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "5"
+    "major": "TT"
   },
   {
     "id": "cls-722",
@@ -11701,11 +11741,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.5",
+    "section": "5",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "5"
+    "major": "TT"
   },
   {
     "id": "cls-723",
@@ -11716,11 +11756,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.6",
+    "section": "6",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "6"
+    "major": "TT"
   },
   {
     "id": "cls-724",
@@ -11731,11 +11771,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.6",
+    "section": "6",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "6"
+    "major": "TT"
   },
   {
     "id": "cls-725",
@@ -11746,11 +11786,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.7",
+    "section": "7",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "7"
+    "major": "TT"
   },
   {
     "id": "cls-726",
@@ -11761,11 +11801,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.7",
+    "section": "7",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "7"
+    "major": "TT"
   },
   {
     "id": "cls-727",
@@ -11776,11 +11816,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.8",
+    "section": "8",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "8"
+    "major": "TT"
   },
   {
     "id": "cls-728",
@@ -11791,11 +11831,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.8",
+    "section": "8",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "8"
+    "major": "TT"
   },
   {
     "id": "cls-729",
@@ -11806,11 +11846,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.9",
+    "section": "9",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "9"
+    "major": "TT"
   },
   {
     "id": "cls-730",
@@ -11821,11 +11861,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.9",
+    "section": "9",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "9"
+    "major": "TT"
   },
   {
     "id": "cls-731",
@@ -11836,11 +11876,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.10",
+    "section": "10",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "10"
+    "major": "TT"
   },
   {
     "id": "cls-732",
@@ -11851,11 +11891,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.10",
+    "section": "10",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "10"
+    "major": "TT"
   },
   {
     "id": "cls-733",
@@ -11866,11 +11906,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.11",
+    "section": "11",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "11"
+    "major": "TT"
   },
   {
     "id": "cls-734",
@@ -11881,11 +11921,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.11",
+    "section": "11",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "11"
+    "major": "TT"
   },
   {
     "id": "cls-735",
@@ -11896,11 +11936,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.12",
+    "section": "12",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "12"
+    "major": "TT"
   },
   {
     "id": "cls-736",
@@ -11911,11 +11951,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.12",
+    "section": "12",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "12"
+    "major": "TT"
   },
   {
     "id": "cls-737",
@@ -11926,11 +11966,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.13",
+    "section": "13",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "13"
+    "major": "TT"
   },
   {
     "id": "cls-738",
@@ -11941,11 +11981,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.13",
+    "section": "13",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "13"
+    "major": "TT"
   },
   {
     "id": "cls-739",
@@ -11956,11 +11996,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.14",
+    "section": "14",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "14"
+    "major": "TT"
   },
   {
     "id": "cls-740",
@@ -11971,11 +12011,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.14",
+    "section": "14",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "14"
+    "major": "TT"
   },
   {
     "id": "cls-741",
@@ -11986,11 +12026,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.15",
+    "section": "15",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "15"
+    "major": "TT"
   },
   {
     "id": "cls-742",
@@ -12001,11 +12041,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.15",
+    "section": "15",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "15"
+    "major": "TT"
   },
   {
     "id": "cls-743",
@@ -12016,11 +12056,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.16",
+    "section": "16",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "16"
+    "major": "TT"
   },
   {
     "id": "cls-744",
@@ -12031,11 +12071,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.16",
+    "section": "16",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "16"
+    "major": "TT"
   },
   {
     "id": "cls-745",
@@ -12046,11 +12086,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.17",
+    "section": "17",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "17"
+    "major": "TT"
   },
   {
     "id": "cls-746",
@@ -12061,11 +12101,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.17",
+    "section": "17",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "17"
+    "major": "TT"
   },
   {
     "id": "cls-747",
@@ -12076,11 +12116,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.18",
+    "section": "18",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "18"
+    "major": "TT"
   },
   {
     "id": "cls-748",
@@ -12091,11 +12131,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.18",
+    "section": "18",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "18"
+    "major": "TT"
   },
   {
     "id": "cls-749",
@@ -12106,11 +12146,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.19",
+    "section": "19",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "19"
+    "major": "TT"
   },
   {
     "id": "cls-750",
@@ -12121,11 +12161,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.19",
+    "section": "19",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "19"
+    "major": "TT"
   },
   {
     "id": "cls-751",
@@ -12136,11 +12176,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.20",
+    "section": "20",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "20"
+    "major": "TT"
   },
   {
     "id": "cls-752",
@@ -12151,11 +12191,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.20",
+    "section": "20",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "20"
+    "major": "TT"
   },
   {
     "id": "cls-753",
@@ -12166,11 +12206,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.21",
+    "section": "21",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "21"
+    "major": "TT"
   },
   {
     "id": "cls-754",
@@ -12181,11 +12221,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.21",
+    "section": "21",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "21"
+    "major": "TT"
   },
   {
     "id": "cls-755",
@@ -12196,11 +12236,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.22",
+    "section": "22",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "22"
+    "major": "TT"
   },
   {
     "id": "cls-756",
@@ -12211,11 +12251,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.22",
+    "section": "22",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "22"
+    "major": "TT"
   },
   {
     "id": "cls-757",
@@ -12226,11 +12266,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.23",
+    "section": "23",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "23"
+    "major": "TT"
   },
   {
     "id": "cls-758",
@@ -12241,11 +12281,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.23",
+    "section": "23",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "23"
+    "major": "TT"
   },
   {
     "id": "cls-759",
@@ -12256,11 +12296,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.24",
+    "section": "24",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "24"
+    "major": "TT"
   },
   {
     "id": "cls-760",
@@ -12271,11 +12311,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.24",
+    "section": "24",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "24"
+    "major": "TT"
   },
   {
     "id": "cls-761",
@@ -12286,11 +12326,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.25",
+    "section": "25",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "25"
+    "major": "TT"
   },
   {
     "id": "cls-762",
@@ -12301,11 +12341,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.25",
+    "section": "25",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "25"
+    "major": "TT"
   },
   {
     "id": "cls-763",
@@ -12316,11 +12356,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.26",
+    "section": "26",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "26"
+    "major": "TT"
   },
   {
     "id": "cls-764",
@@ -12331,11 +12371,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.26",
+    "section": "26",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "26"
+    "major": "TT"
   },
   {
     "id": "cls-765",
@@ -12346,11 +12386,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.27",
+    "section": "27",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "27"
+    "major": "TT"
   },
   {
     "id": "cls-766",
@@ -12361,11 +12401,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.27",
+    "section": "27",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "27"
+    "major": "TT"
   },
   {
     "id": "cls-767",
@@ -12376,11 +12416,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.28",
+    "section": "28",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "28"
+    "major": "TT"
   },
   {
     "id": "cls-768",
@@ -12391,11 +12431,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.28",
+    "section": "28",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "28"
+    "major": "TT"
   },
   {
     "id": "cls-769",
@@ -12406,11 +12446,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.29",
+    "section": "29",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "29"
+    "major": "TT"
   },
   {
     "id": "cls-770",
@@ -12421,11 +12461,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.29",
+    "section": "29",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "29"
+    "major": "TT"
   },
   {
     "id": "cls-771",
@@ -12436,11 +12476,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.30",
+    "section": "30",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "30"
+    "major": "TT"
   },
   {
     "id": "cls-772",
@@ -12451,11 +12491,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.30",
+    "section": "30",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "30"
+    "major": "TT"
   },
   {
     "id": "cls-773",
@@ -12466,11 +12506,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.31",
+    "section": "31",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "31"
+    "major": "TT"
   },
   {
     "id": "cls-774",
@@ -12481,11 +12521,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.31",
+    "section": "31",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "31"
+    "major": "TT"
   },
   {
     "id": "cls-775",
@@ -12496,11 +12536,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.32",
+    "section": "32",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "32"
+    "major": "TT"
   },
   {
     "id": "cls-776",
@@ -12511,11 +12551,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.32",
+    "section": "32",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "32"
+    "major": "TT"
   },
   {
     "id": "cls-777",
@@ -12526,11 +12566,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.33",
+    "section": "33",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "33"
+    "major": "TT"
   },
   {
     "id": "cls-778",
@@ -12541,11 +12581,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.33",
+    "section": "33",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "33"
+    "major": "TT"
   },
   {
     "id": "cls-779",
@@ -12556,11 +12596,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.34",
+    "section": "34",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "34"
+    "major": "TT"
   },
   {
     "id": "cls-780",
@@ -12571,11 +12611,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.34",
+    "section": "34",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "34"
+    "major": "TT"
   },
   {
     "id": "cls-781",
@@ -12586,11 +12626,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.35",
+    "section": "35",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "35"
+    "major": "TT"
   },
   {
     "id": "cls-782",
@@ -12601,11 +12641,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.35",
+    "section": "35",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "35"
+    "major": "TT"
   },
   {
     "id": "cls-783",
@@ -12616,11 +12656,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.36",
+    "section": "36",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "36"
+    "major": "TT"
   },
   {
     "id": "cls-784",
@@ -12631,11 +12671,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.36",
+    "section": "36",
     "cohort": "K25",
     "courseCode": "ISF0013",
-    "major": "TT",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "36"
+    "major": "TT"
   },
   {
     "id": "cls-785",
@@ -12646,11 +12686,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "LIF0011_TT_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF0004",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "1"
+    "major": "TT1"
   },
   {
     "id": "cls-786",
@@ -12661,11 +12701,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF0006",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "1"
+    "major": "TT1"
   },
   {
     "id": "cls-787",
@@ -12676,11 +12716,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "LIF0011_TT_HK1_2627_K25.2",
+    "section": "2",
     "cohort": "K25",
     "courseCode": "ISF0004",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "2"
+    "major": "TT1"
   },
   {
     "id": "cls-788",
@@ -12691,11 +12731,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.2",
+    "section": "2",
     "cohort": "K25",
     "courseCode": "ISF0006",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "2"
+    "major": "TT1"
   },
   {
     "id": "cls-789",
@@ -12706,11 +12746,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "LIF0011_TT_HK1_2627_K25.3",
+    "section": "3",
     "cohort": "K25",
     "courseCode": "ISF0004",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "3"
+    "major": "TT1"
   },
   {
     "id": "cls-790",
@@ -12721,11 +12761,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.3",
+    "section": "3",
     "cohort": "K25",
     "courseCode": "ISF0006",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "3"
+    "major": "TT1"
   },
   {
     "id": "cls-791",
@@ -12736,11 +12776,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "LIF0011_TT_HK1_2627_K25.4",
+    "section": "4",
     "cohort": "K25",
     "courseCode": "ISF0004",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "4"
+    "major": "TT1"
   },
   {
     "id": "cls-792",
@@ -12751,11 +12791,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.4",
+    "section": "4",
     "cohort": "K25",
     "courseCode": "ISF0006",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "4"
+    "major": "TT1"
   },
   {
     "id": "cls-793",
@@ -12766,11 +12806,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "LIF0011_TT_HK1_2627_K25.5",
+    "section": "5",
     "cohort": "K25",
     "courseCode": "ISF0004",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "5"
+    "major": "TT1"
   },
   {
     "id": "cls-794",
@@ -12781,11 +12821,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.5",
+    "section": "5",
     "cohort": "K25",
     "courseCode": "ISF0006",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "5"
+    "major": "TT1"
   },
   {
     "id": "cls-795",
@@ -12796,11 +12836,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "LIF0011_TT_HK1_2627_K25.6",
+    "section": "6",
     "cohort": "K25",
     "courseCode": "ISF0004",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "6"
+    "major": "TT1"
   },
   {
     "id": "cls-796",
@@ -12811,11 +12851,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 3,
     "endPeriod": 4,
+    "className": "LIF0011_TT_HK1_2627_K25.6",
+    "section": "6",
     "cohort": "K25",
     "courseCode": "ISF0006",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "6"
+    "major": "TT1"
   },
   {
     "id": "cls-797",
@@ -12826,11 +12866,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "LIF0011_TT_HK1_2627_K25.7",
+    "section": "7",
     "cohort": "K25",
     "courseCode": "ISF0004",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "7"
+    "major": "TT1"
   },
   {
     "id": "cls-798",
@@ -12841,11 +12881,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.7",
+    "section": "7",
     "cohort": "K25",
     "courseCode": "ISF0006",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "7"
+    "major": "TT1"
   },
   {
     "id": "cls-799",
@@ -12856,11 +12896,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "LIF0011_TT_HK1_2627_K25.8",
+    "section": "8",
     "cohort": "K25",
     "courseCode": "ISF0006",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "8"
+    "major": "TT1"
   },
   {
     "id": "cls-800",
@@ -12871,11 +12911,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF0005",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "1"
+    "major": "TT1"
   },
   {
     "id": "cls-801",
@@ -12886,11 +12926,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "LIF0011_TT_HK1_2627_K25.9",
+    "section": "9",
     "cohort": "K25",
     "courseCode": "ISF0006",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "9"
+    "major": "TT1"
   },
   {
     "id": "cls-802",
@@ -12901,11 +12941,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.2",
+    "section": "2",
     "cohort": "K25",
     "courseCode": "ISF0005",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "2"
+    "major": "TT1"
   },
   {
     "id": "cls-803",
@@ -12916,11 +12956,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "LIF0011_TT_HK1_2627_K25.3",
+    "section": "3",
     "cohort": "K25",
     "courseCode": "ISF0005",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "3"
+    "major": "TT1"
   },
   {
     "id": "cls-804",
@@ -12931,11 +12971,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 8,
     "endPeriod": 9,
+    "className": "LIF0011_TT_HK1_2627_K25.4",
+    "section": "4",
     "cohort": "K25",
     "courseCode": "ISF0005",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "4"
+    "major": "TT1"
   },
   {
     "id": "cls-805",
@@ -12946,11 +12986,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "LIF0011_TT_HK1_2627_K25.5",
+    "section": "5",
     "cohort": "K25",
     "courseCode": "ISF0005",
-    "major": "TT1",
-    "className": "LIF0011_TT_HK1_2627_K25",
-    "section": "5"
+    "major": "TT1"
   },
   {
     "id": "cls-806",
@@ -12961,11 +13001,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "SLF25-1006_2505QLNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-1006",
-    "major": "2505QLNA",
-    "className": "SLF25-1006_2505QLNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNA"
   },
   {
     "id": "cls-807",
@@ -12976,11 +13016,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF25-1001_2505QLNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1001",
-    "major": "2505QLNA",
-    "className": "ASF25-1001_2505QLNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNA"
   },
   {
     "id": "cls-808",
@@ -12991,11 +13031,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2019_2505QLNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF2019",
-    "major": "2505QLNA",
-    "className": "ASF2019_2505QLNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNA"
   },
   {
     "id": "cls-809",
@@ -13006,11 +13046,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF1002_2505QLNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF1002",
-    "major": "2505QLNA",
-    "className": "EMF1002_2505QLNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNA"
   },
   {
     "id": "cls-810",
@@ -13021,11 +13061,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ISF25-2002_2505QLNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2002",
-    "major": "2505QLNA",
-    "className": "ISF25-2002_2505QLNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNA"
   },
   {
     "id": "cls-811",
@@ -13036,11 +13076,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "SLF25-1006_2505QLNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-1006",
-    "major": "2505QLNB",
-    "className": "SLF25-1006_2505QLNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNB"
   },
   {
     "id": "cls-812",
@@ -13051,11 +13091,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF25-1001_2505QLNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1001",
-    "major": "2505QLNB",
-    "className": "ASF25-1001_2505QLNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNB"
   },
   {
     "id": "cls-813",
@@ -13066,11 +13106,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF2019_2505QLNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF2019",
-    "major": "2505QLNB",
-    "className": "ASF2019_2505QLNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNB"
   },
   {
     "id": "cls-814",
@@ -13081,11 +13121,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF1002_2505QLNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF1002",
-    "major": "2505QLNB",
-    "className": "EMF1002_2505QLNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNB"
   },
   {
     "id": "cls-815",
@@ -13096,11 +13136,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "ISF25-2002_2505QLNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2002",
-    "major": "2505QLNB",
-    "className": "ISF25-2002_2505QLNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNB"
   },
   {
     "id": "cls-816",
@@ -13111,11 +13151,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "SLF25-1006_2505QLNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-1006",
-    "major": "2505QLNC",
-    "className": "SLF25-1006_2505QLNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNC"
   },
   {
     "id": "cls-817",
@@ -13126,11 +13166,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF25-1001_2505QLNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1001",
-    "major": "2505QLNC",
-    "className": "ASF25-1001_2505QLNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNC"
   },
   {
     "id": "cls-818",
@@ -13141,11 +13181,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ASF25-1003_2505QLNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1003",
-    "major": "2505QLNC",
-    "className": "ASF25-1003_2505QLNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNC"
   },
   {
     "id": "cls-819",
@@ -13156,11 +13196,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2019_2505QLNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF2019",
-    "major": "2505QLNC",
-    "className": "ASF2019_2505QLNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNC"
   },
   {
     "id": "cls-820",
@@ -13171,11 +13211,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF1002_2505QLNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF1002",
-    "major": "2505QLNC",
-    "className": "EMF1002_2505QLNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNC"
   },
   {
     "id": "cls-821",
@@ -13186,11 +13226,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ISF25-2002_2505QLNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2002",
-    "major": "2505QLNC",
-    "className": "ISF25-2002_2505QLNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNC"
   },
   {
     "id": "cls-822",
@@ -13201,11 +13241,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "SLF25-1006_2505QLND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-1006",
-    "major": "2505QLND",
-    "className": "SLF25-1006_2505QLND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLND"
   },
   {
     "id": "cls-823",
@@ -13216,11 +13256,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF25-1001_2505QLND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1001",
-    "major": "2505QLND",
-    "className": "ASF25-1001_2505QLND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLND"
   },
   {
     "id": "cls-824",
@@ -13231,11 +13271,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 6,
     "endPeriod": 7,
+    "className": "ASF25-1003_2505QLND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1003",
-    "major": "2505QLND",
-    "className": "ASF25-1003_2505QLND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLND"
   },
   {
     "id": "cls-825",
@@ -13246,11 +13286,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF2019_2505QLND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF2019",
-    "major": "2505QLND",
-    "className": "ASF2019_2505QLND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLND"
   },
   {
     "id": "cls-826",
@@ -13261,11 +13301,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF1002_2505QLND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF1002",
-    "major": "2505QLND",
-    "className": "EMF1002_2505QLND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLND"
   },
   {
     "id": "cls-827",
@@ -13276,11 +13316,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "ISF25-2002_2505QLND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2002",
-    "major": "2505QLND",
-    "className": "ISF25-2002_2505QLND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLND"
   },
   {
     "id": "cls-828",
@@ -13291,11 +13331,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "SLF25-1006_2505QLNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-1006",
-    "major": "2505QLNE",
-    "className": "SLF25-1006_2505QLNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNE"
   },
   {
     "id": "cls-829",
@@ -13306,11 +13346,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF25-1001_2505QLNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1001",
-    "major": "2505QLNE",
-    "className": "ASF25-1001_2505QLNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNE"
   },
   {
     "id": "cls-830",
@@ -13321,11 +13361,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "ASF25-1003_2505QLNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1003",
-    "major": "2505QLNE",
-    "className": "ASF25-1003_2505QLNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNE"
   },
   {
     "id": "cls-831",
@@ -13336,11 +13376,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ASF2019_2505QLNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF2019",
-    "major": "2505QLNE",
-    "className": "ASF2019_2505QLNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNE"
   },
   {
     "id": "cls-832",
@@ -13351,11 +13391,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF1002_2505QLNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF1002",
-    "major": "2505QLNE",
-    "className": "EMF1002_2505QLNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNE"
   },
   {
     "id": "cls-833",
@@ -13366,11 +13406,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ISF25-2002_2505QLNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2002",
-    "major": "2505QLNE",
-    "className": "ISF25-2002_2505QLNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNE"
   },
   {
     "id": "cls-834",
@@ -13381,11 +13421,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "ASF25-1004_2505QLNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1004",
-    "major": "2505QLNA",
-    "className": "ASF25-1004_2505QLNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNA"
   },
   {
     "id": "cls-835",
@@ -13396,11 +13436,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ASF25-1004_2505QLNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1004",
-    "major": "2505QLNB",
-    "className": "ASF25-1004_2505QLNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLNB"
   },
   {
     "id": "cls-836",
@@ -13411,11 +13451,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ASF1013_2505QTNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF1013",
-    "major": "2505QTNA",
-    "className": "ASF1013_2505QTNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNA"
   },
   {
     "id": "cls-837",
@@ -13426,11 +13466,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "HRF2019_2505QTNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2019",
-    "major": "2505QTNA",
-    "className": "HRF2019_2505QTNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNA"
   },
   {
     "id": "cls-838",
@@ -13441,11 +13481,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25- 1006_2505QTNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25- 1006",
-    "major": "2505QTNA",
-    "className": "AMF25- 1006_2505QTNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNA"
   },
   {
     "id": "cls-839",
@@ -13456,11 +13496,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25-1005_2505QTNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1005",
-    "major": "2505QTNA",
-    "className": "AMF25-1005_2505QTNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNA"
   },
   {
     "id": "cls-840",
@@ -13471,11 +13511,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "HRF25-1001_2505QTNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF25-1001",
-    "major": "2505QTNA",
-    "className": "HRF25-1001_2505QTNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNA"
   },
   {
     "id": "cls-841",
@@ -13486,11 +13526,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "ASF1013_2505QTNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF1013",
-    "major": "2505QTNB",
-    "className": "ASF1013_2505QTNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNB"
   },
   {
     "id": "cls-842",
@@ -13501,11 +13541,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "HRF2019_2505QTNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2019",
-    "major": "2505QTNB",
-    "className": "HRF2019_2505QTNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNB"
   },
   {
     "id": "cls-843",
@@ -13516,11 +13556,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25- 1006_2505QTNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25- 1006",
-    "major": "2505QTNB",
-    "className": "AMF25- 1006_2505QTNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNB"
   },
   {
     "id": "cls-844",
@@ -13531,11 +13571,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-1005_2505QTNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1005",
-    "major": "2505QTNB",
-    "className": "AMF25-1005_2505QTNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNB"
   },
   {
     "id": "cls-845",
@@ -13546,11 +13586,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "HRF25-1001_2505QTNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF25-1001",
-    "major": "2505QTNB",
-    "className": "HRF25-1001_2505QTNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNB"
   },
   {
     "id": "cls-846",
@@ -13561,11 +13601,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ASF1013_2505QTNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF1013",
-    "major": "2505QTNC",
-    "className": "ASF1013_2505QTNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNC"
   },
   {
     "id": "cls-847",
@@ -13576,11 +13616,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "HRF2019_2505QTNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2019",
-    "major": "2505QTNC",
-    "className": "HRF2019_2505QTNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNC"
   },
   {
     "id": "cls-848",
@@ -13591,11 +13631,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25- 1006_2505QTNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25- 1006",
-    "major": "2505QTNC",
-    "className": "AMF25- 1006_2505QTNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNC"
   },
   {
     "id": "cls-849",
@@ -13606,11 +13646,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25-1005_2505QTNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1005",
-    "major": "2505QTNC",
-    "className": "AMF25-1005_2505QTNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNC"
   },
   {
     "id": "cls-850",
@@ -13621,11 +13661,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "HRF25-1001_2505QTNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF25-1001",
-    "major": "2505QTNC",
-    "className": "HRF25-1001_2505QTNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNC"
   },
   {
     "id": "cls-851",
@@ -13636,11 +13676,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "ASF1013_2505QTND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF1013",
-    "major": "2505QTND",
-    "className": "ASF1013_2505QTND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTND"
   },
   {
     "id": "cls-852",
@@ -13651,11 +13691,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "HRF2019_2505QTND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2019",
-    "major": "2505QTND",
-    "className": "HRF2019_2505QTND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTND"
   },
   {
     "id": "cls-853",
@@ -13666,11 +13706,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25- 1006_2505QTND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25- 1006",
-    "major": "2505QTND",
-    "className": "AMF25- 1006_2505QTND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTND"
   },
   {
     "id": "cls-854",
@@ -13681,11 +13721,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-1005_2505QTND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1005",
-    "major": "2505QTND",
-    "className": "AMF25-1005_2505QTND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTND"
   },
   {
     "id": "cls-855",
@@ -13696,11 +13736,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "HRF25-1001_2505QTND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF25-1001",
-    "major": "2505QTND",
-    "className": "HRF25-1001_2505QTND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTND"
   },
   {
     "id": "cls-856",
@@ -13711,11 +13751,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ASF1013_2505QTNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF1013",
-    "major": "2505QTNE",
-    "className": "ASF1013_2505QTNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNE"
   },
   {
     "id": "cls-857",
@@ -13726,11 +13766,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "HRF2019_2505QTNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2019",
-    "major": "2505QTNE",
-    "className": "HRF2019_2505QTNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNE"
   },
   {
     "id": "cls-858",
@@ -13741,11 +13781,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25- 1006_2505QTNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25- 1006",
-    "major": "2505QTNE",
-    "className": "AMF25- 1006_2505QTNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNE"
   },
   {
     "id": "cls-859",
@@ -13756,11 +13796,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25-1005_2505QTNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1005",
-    "major": "2505QTNE",
-    "className": "AMF25-1005_2505QTNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNE"
   },
   {
     "id": "cls-860",
@@ -13771,11 +13811,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "HRF25-1001_2505QTNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF25-1001",
-    "major": "2505QTNE",
-    "className": "HRF25-1001_2505QTNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNE"
   },
   {
     "id": "cls-861",
@@ -13786,11 +13826,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2058_2505QTNA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF2058",
-    "major": "2505QTNA",
-    "className": "AMF2058_2505QTNA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNA"
   },
   {
     "id": "cls-862",
@@ -13801,11 +13841,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF25-1002_2505QTNB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF25-1002",
-    "major": "2505QTNB",
-    "className": "HRF25-1002_2505QTNB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNB"
   },
   {
     "id": "cls-863",
@@ -13816,11 +13856,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "HRF25-1002_2505QTNC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF25-1002",
-    "major": "2505QTNC",
-    "className": "HRF25-1002_2505QTNC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNC"
   },
   {
     "id": "cls-864",
@@ -13831,11 +13871,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2058_2505QTND_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF2058",
-    "major": "2505QTND",
-    "className": "AMF2058_2505QTND_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTND"
   },
   {
     "id": "cls-865",
@@ -13846,11 +13886,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF2058_2505QTNE_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF2058",
-    "major": "2505QTNE",
-    "className": "AMF2058_2505QTNE_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTNE"
   },
   {
     "id": "cls-866",
@@ -13861,11 +13901,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SLF25-2001_2505LHOA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2001",
-    "major": "2505LHOA",
-    "className": "SLF25-2001_2505LHOA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOA"
   },
   {
     "id": "cls-867",
@@ -13876,11 +13916,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF25-2006_2505LHOA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2006",
-    "major": "2505LHOA",
-    "className": "SLF25-2006_2505LHOA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOA"
   },
   {
     "id": "cls-868",
@@ -13891,11 +13931,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SLF25-2001_2505LHOA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2001",
-    "major": "2505LHOA",
-    "className": "SLF25-2001_2505LHOA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOA"
   },
   {
     "id": "cls-869",
@@ -13906,11 +13946,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF25-2006_2505LHOA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2006",
-    "major": "2505LHOA",
-    "className": "SLF25-2006_2505LHOA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOA"
   },
   {
     "id": "cls-870",
@@ -13921,11 +13961,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SLF25-2002_2505LHOA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2002",
-    "major": "2505LHOA",
-    "className": "SLF25-2002_2505LHOA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOA"
   },
   {
     "id": "cls-871",
@@ -13936,11 +13976,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ISF0003_2505LHOA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF0003",
-    "major": "2505LHOA",
-    "className": "ISF0003_2505LHOA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOA"
   },
   {
     "id": "cls-872",
@@ -13951,11 +13991,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SLF25-2004_2505LHOA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2004",
-    "major": "2505LHOA",
-    "className": "SLF25-2004_2505LHOA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOA"
   },
   {
     "id": "cls-873",
@@ -13966,11 +14006,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SLF25-2001_2505LHOB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2001",
-    "major": "2505LHOB",
-    "className": "SLF25-2001_2505LHOB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOB"
   },
   {
     "id": "cls-874",
@@ -13981,11 +14021,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF25-2006_2505LHOB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2006",
-    "major": "2505LHOB",
-    "className": "SLF25-2006_2505LHOB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOB"
   },
   {
     "id": "cls-875",
@@ -13996,11 +14036,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SLF25-2001_2505LHOB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2001",
-    "major": "2505LHOB",
-    "className": "SLF25-2001_2505LHOB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOB"
   },
   {
     "id": "cls-876",
@@ -14011,11 +14051,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF25-2006_2505LHOB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2006",
-    "major": "2505LHOB",
-    "className": "SLF25-2006_2505LHOB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOB"
   },
   {
     "id": "cls-877",
@@ -14026,11 +14066,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SLF25-2002_2505LHOB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2002",
-    "major": "2505LHOB",
-    "className": "SLF25-2002_2505LHOB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOB"
   },
   {
     "id": "cls-878",
@@ -14041,11 +14081,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ISF0003_2505LHOB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF0003",
-    "major": "2505LHOB",
-    "className": "ISF0003_2505LHOB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOB"
   },
   {
     "id": "cls-879",
@@ -14056,11 +14096,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SLF25-2004_2505LHOB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2004",
-    "major": "2505LHOB",
-    "className": "SLF25-2004_2505LHOB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOB"
   },
   {
     "id": "cls-880",
@@ -14071,11 +14111,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SLF25-2001_2505LHOC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2001",
-    "major": "2505LHOC",
-    "className": "SLF25-2001_2505LHOC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOC"
   },
   {
     "id": "cls-881",
@@ -14086,11 +14126,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF25-2006_2505LHOC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2006",
-    "major": "2505LHOC",
-    "className": "SLF25-2006_2505LHOC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOC"
   },
   {
     "id": "cls-882",
@@ -14101,11 +14141,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SLF25-2001_2505LHOC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2001",
-    "major": "2505LHOC",
-    "className": "SLF25-2001_2505LHOC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOC"
   },
   {
     "id": "cls-883",
@@ -14116,11 +14156,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SLF25-2006_2505LHOC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2006",
-    "major": "2505LHOC",
-    "className": "SLF25-2006_2505LHOC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOC"
   },
   {
     "id": "cls-884",
@@ -14131,11 +14171,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SLF25-2002_2505LHOC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2002",
-    "major": "2505LHOC",
-    "className": "SLF25-2002_2505LHOC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOC"
   },
   {
     "id": "cls-885",
@@ -14146,11 +14186,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ISF0003_2505LHOC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF0003",
-    "major": "2505LHOC",
-    "className": "ISF0003_2505LHOC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOC"
   },
   {
     "id": "cls-886",
@@ -14161,11 +14201,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SLF25-2004_2505LHOC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2004",
-    "major": "2505LHOC",
-    "className": "SLF25-2004_2505LHOC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOC"
   },
   {
     "id": "cls-887",
@@ -14176,11 +14216,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SLF25-2001_2505LHOD_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2001",
-    "major": "2505LHOD",
-    "className": "SLF25-2001_2505LHOD_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOD"
   },
   {
     "id": "cls-888",
@@ -14191,11 +14231,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SLF25-2001_2505LHOD_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2001",
-    "major": "2505LHOD",
-    "className": "SLF25-2001_2505LHOD_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOD"
   },
   {
     "id": "cls-889",
@@ -14206,11 +14246,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SLF25-2002_2505LHOD_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2002",
-    "major": "2505LHOD",
-    "className": "SLF25-2002_2505LHOD_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOD"
   },
   {
     "id": "cls-890",
@@ -14221,11 +14261,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ISF0003_2505LHOD_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF0003",
-    "major": "2505LHOD",
-    "className": "ISF0003_2505LHOD_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOD"
   },
   {
     "id": "cls-891",
@@ -14236,11 +14276,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SLF25-2004_2505LHOD_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2004",
-    "major": "2505LHOD",
-    "className": "SLF25-2004_2505LHOD_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LHOD"
   },
   {
     "id": "cls-892",
@@ -14251,11 +14291,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SLF25-2001_2505TTRA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2001",
-    "major": "2505TTRA",
-    "className": "SLF25-2001_2505TTRA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTRA"
   },
   {
     "id": "cls-893",
@@ -14266,11 +14306,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SLF25-2002_2505TTRA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2002",
-    "major": "2505TTRA",
-    "className": "SLF25-2002_2505TTRA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTRA"
   },
   {
     "id": "cls-894",
@@ -14281,11 +14321,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ISF0003_2505TTRA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF0003",
-    "major": "2505TTRA",
-    "className": "ISF0003_2505TTRA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTRA"
   },
   {
     "id": "cls-895",
@@ -14296,11 +14336,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SLF25-2004_2505TTRA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SLF25-2004",
-    "major": "2505TTRA",
-    "className": "SLF25-2004_2505TTRA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTRA"
   },
   {
     "id": "cls-896",
@@ -14311,11 +14351,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF0003_2505QTVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505QTVA",
-    "className": "SMF0003_2505QTVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVA"
   },
   {
     "id": "cls-897",
@@ -14326,11 +14366,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "HRF2019_2505QTVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2019",
-    "major": "2505QTVA",
-    "className": "HRF2019_2505QTVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVA"
   },
   {
     "id": "cls-898",
@@ -14341,11 +14381,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF0003_2505QTVB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505QTVB",
-    "className": "SMF0003_2505QTVB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVB"
   },
   {
     "id": "cls-899",
@@ -14356,11 +14396,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "HRF2019_2505QTVB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2019",
-    "major": "2505QTVB",
-    "className": "HRF2019_2505QTVB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVB"
   },
   {
     "id": "cls-900",
@@ -14371,11 +14411,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF0003_2505QTVC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505QTVC",
-    "className": "SMF0003_2505QTVC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVC"
   },
   {
     "id": "cls-901",
@@ -14386,11 +14426,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "HRF2019_2505QTVC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2019",
-    "major": "2505QTVC",
-    "className": "HRF2019_2505QTVC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVC"
   },
   {
     "id": "cls-902",
@@ -14401,11 +14441,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF0003_2505QTVD+TKVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505QTVD+TKVA",
-    "className": "SMF0003_2505QTVD+TKVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVD+TKVA"
   },
   {
     "id": "cls-903",
@@ -14416,11 +14456,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "HRF2019_2505QTVD+TKVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2019",
-    "major": "2505QTVD+TKVA",
-    "className": "HRF2019_2505QTVD+TKVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVD+TKVA"
   },
   {
     "id": "cls-904",
@@ -14431,11 +14471,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25-1007_2505QTVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1007",
-    "major": "2505QTVA",
-    "className": "AMF25-1007_2505QTVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVA"
   },
   {
     "id": "cls-905",
@@ -14446,11 +14486,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-1007_2505QTVB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1007",
-    "major": "2505QTVB",
-    "className": "AMF25-1007_2505QTVB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVB"
   },
   {
     "id": "cls-906",
@@ -14461,11 +14501,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25-1007_2505QTVC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1007",
-    "major": "2505QTVC",
-    "className": "AMF25-1007_2505QTVC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVC"
   },
   {
     "id": "cls-907",
@@ -14476,11 +14516,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-2033_2505QTVD_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-2033",
-    "major": "2505QTVD",
-    "className": "AMF25-2033_2505QTVD_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVD"
   },
   {
     "id": "cls-908",
@@ -14491,11 +14531,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF2058_2505QTVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF2058",
-    "major": "2505QTVA",
-    "className": "AMF2058_2505QTVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVA"
   },
   {
     "id": "cls-909",
@@ -14506,11 +14546,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF2058_2505QTVB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF2058",
-    "major": "2505QTVB",
-    "className": "AMF2058_2505QTVB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVB"
   },
   {
     "id": "cls-910",
@@ -14521,11 +14561,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF2058_2505QTVC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF2058",
-    "major": "2505QTVC",
-    "className": "AMF2058_2505QTVC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVC"
   },
   {
     "id": "cls-911",
@@ -14536,11 +14576,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF2058_2505QTVD+TKVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF2058",
-    "major": "2505QTVD+TKVA",
-    "className": "AMF2058_2505QTVD+TKVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QTVD+TKVA"
   },
   {
     "id": "cls-912",
@@ -14551,11 +14591,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF2058_2505TKVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2058",
-    "major": "2505TKVA",
-    "className": "EMF2058_2505TKVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TKVA"
   },
   {
     "id": "cls-913",
@@ -14566,11 +14606,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF0003_2505KTEA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505KTEA",
-    "className": "SMF0003_2505KTEA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEA"
   },
   {
     "id": "cls-914",
@@ -14581,11 +14621,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF2002_2505KTEA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2002",
-    "major": "2505KTEA",
-    "className": "EMF2002_2505KTEA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEA"
   },
   {
     "id": "cls-915",
@@ -14596,11 +14636,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF0003_2505KTEB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505KTEB",
-    "className": "SMF0003_2505KTEB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEB"
   },
   {
     "id": "cls-916",
@@ -14611,11 +14651,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF2002_2505KTEB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2002",
-    "major": "2505KTEB",
-    "className": "EMF2002_2505KTEB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEB"
   },
   {
     "id": "cls-917",
@@ -14626,11 +14666,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF0003_2505KTEC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505KTEC",
-    "className": "SMF0003_2505KTEC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEC"
   },
   {
     "id": "cls-918",
@@ -14641,11 +14681,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF2002_2505KTEC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2002",
-    "major": "2505KTEC",
-    "className": "EMF2002_2505KTEC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEC"
   },
   {
     "id": "cls-919",
@@ -14656,11 +14696,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF0003_2505KTED+2505KDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505KTED+2505KDLA",
-    "className": "SMF0003_2505KTED+2505KDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTED+2505KDLA"
   },
   {
     "id": "cls-920",
@@ -14671,11 +14711,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF2002_2505KTED+2505KDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2002",
-    "major": "2505KTED+2505KDLA",
-    "className": "EMF2002_2505KTED+2505KDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTED+2505KDLA"
   },
   {
     "id": "cls-921",
@@ -14686,11 +14726,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF25-2015_2505KTEA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2015",
-    "major": "2505KTEA",
-    "className": "EMF25-2015_2505KTEA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEA"
   },
   {
     "id": "cls-922",
@@ -14701,11 +14741,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF25-2015_2505KTEB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2015",
-    "major": "2505KTEB",
-    "className": "EMF25-2015_2505KTEB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEB"
   },
   {
     "id": "cls-923",
@@ -14716,11 +14756,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF25-2015_2505KTEC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2015",
-    "major": "2505KTEC",
-    "className": "EMF25-2015_2505KTEC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEC"
   },
   {
     "id": "cls-924",
@@ -14731,11 +14771,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF25-2015_2505KTED_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2015",
-    "major": "2505KTED",
-    "className": "EMF25-2015_2505KTED_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTED"
   },
   {
     "id": "cls-925",
@@ -14746,11 +14786,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "EMF2030_2505KTEA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2030",
-    "major": "2505KTEA",
-    "className": "EMF2030_2505KTEA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEA"
   },
   {
     "id": "cls-926",
@@ -14761,11 +14801,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF25-2014_2505KTEB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2014",
-    "major": "2505KTEB",
-    "className": "EMF25-2014_2505KTEB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEB"
   },
   {
     "id": "cls-927",
@@ -14776,11 +14816,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF25-2011_2505KTEC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2011",
-    "major": "2505KTEC",
-    "className": "EMF25-2011_2505KTEC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTEC"
   },
   {
     "id": "cls-928",
@@ -14791,11 +14831,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF25-2011_2505KTED_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2011",
-    "major": "2505KTED",
-    "className": "EMF25-2011_2505KTED_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KTED"
   },
   {
     "id": "cls-929",
@@ -14806,11 +14846,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "EMF2082_2505KDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2082",
-    "major": "2505KDLA",
-    "className": "EMF2082_2505KDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KDLA"
   },
   {
     "id": "cls-930",
@@ -14821,11 +14861,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "AMF25-1006_2505KDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1006",
-    "major": "2505KDLA",
-    "className": "AMF25-1006_2505KDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505KDLA"
   },
   {
     "id": "cls-931",
@@ -14836,11 +14876,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "SMF0003_2505CTHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505CTHA",
-    "className": "SMF0003_2505CTHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505CTHA"
   },
   {
     "id": "cls-932",
@@ -14851,11 +14891,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF25-1001_2505CTHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1001",
-    "major": "2505CTHA",
-    "className": "ASF25-1001_2505CTHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505CTHA"
   },
   {
     "id": "cls-933",
@@ -14866,11 +14906,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "SMF0003_2505CTHB+CSCA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505CTHB+CSCA",
-    "className": "SMF0003_2505CTHB+CSCA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505CTHB+CSCA"
   },
   {
     "id": "cls-934",
@@ -14881,11 +14921,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ASF25-1001_2505CTHB+CSCA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1001",
-    "major": "2505CTHB+CSCA",
-    "className": "ASF25-1001_2505CTHB+CSCA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505CTHB+CSCA"
   },
   {
     "id": "cls-935",
@@ -14896,11 +14936,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ISF25-2003_2505CTHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2003",
-    "major": "2505CTHA",
-    "className": "ISF25-2003_2505CTHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505CTHA"
   },
   {
     "id": "cls-936",
@@ -14911,11 +14951,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "ISF25-2004_2505CTHB+CSCA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2004",
-    "major": "2505CTHB+CSCA",
-    "className": "ISF25-2004_2505CTHB+CSCA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505CTHB+CSCA"
   },
   {
     "id": "cls-937",
@@ -14926,11 +14966,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ISF2001_2505CTHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF2001",
-    "major": "2505CTHA",
-    "className": "ISF2001_2505CTHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505CTHA"
   },
   {
     "id": "cls-938",
@@ -14941,11 +14981,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 8,
     "endPeriod": 10,
+    "className": "ISF2002_2505CTHB+CSCA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF2002",
-    "major": "2505CTHB+CSCA",
-    "className": "ISF2002_2505CTHB+CSCA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505CTHB+CSCA"
   },
   {
     "id": "cls-939",
@@ -14956,11 +14996,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF25-1005_2505QLVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1005",
-    "major": "2505QLVA",
-    "className": "SMF25-1005_2505QLVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLVA"
   },
   {
     "id": "cls-940",
@@ -14971,11 +15011,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF1004_2505QLVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF1004",
-    "major": "2505QLVA",
-    "className": "SMF1004_2505QLVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLVA"
   },
   {
     "id": "cls-941",
@@ -14986,11 +15026,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF25-1005_2505QLVB+QDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1005",
-    "major": "2505QLVB+QDLA",
-    "className": "SMF25-1005_2505QLVB+QDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLVB+QDLA"
   },
   {
     "id": "cls-942",
@@ -15001,11 +15041,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF1004_2505QLVB+QDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF1004",
-    "major": "2505QLVB+QDLA",
-    "className": "SMF1004_2505QLVB+QDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLVB+QDLA"
   },
   {
     "id": "cls-943",
@@ -15016,11 +15056,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF25-1007_2505QLVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1007",
-    "major": "2505QLVA",
-    "className": "SMF25-1007_2505QLVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLVA"
   },
   {
     "id": "cls-944",
@@ -15031,11 +15071,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF25-1007_2505QLVB+QDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1007",
-    "major": "2505QLVB+QDLA",
-    "className": "SMF25-1007_2505QLVB+QDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLVB+QDLA"
   },
   {
     "id": "cls-945",
@@ -15046,11 +15086,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "EMF2055_2505QLVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2055",
-    "major": "2505QLVA",
-    "className": "EMF2055_2505QLVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLVA"
   },
   {
     "id": "cls-946",
@@ -15061,11 +15101,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SMF2030_2505QLVB+QDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF2030",
-    "major": "2505QLVB+QDLA",
-    "className": "SMF2030_2505QLVB+QDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505QLVB+QDLA"
   },
   {
     "id": "cls-947",
@@ -15076,11 +15116,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF2006_2505VTTA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF2006",
-    "major": "2505VTTA",
-    "className": "SMF2006_2505VTTA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTA"
   },
   {
     "id": "cls-948",
@@ -15091,11 +15131,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF25-1005_2505VTTA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1005",
-    "major": "2505VTTA",
-    "className": "SMF25-1005_2505VTTA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTA"
   },
   {
     "id": "cls-949",
@@ -15106,11 +15146,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF25-2002_2505VTTA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-2002",
-    "major": "2505VTTA",
-    "className": "SMF25-2002_2505VTTA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTA"
   },
   {
     "id": "cls-950",
@@ -15121,11 +15161,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF2006_2505VTTB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF2006",
-    "major": "2505VTTB",
-    "className": "SMF2006_2505VTTB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTB"
   },
   {
     "id": "cls-951",
@@ -15136,11 +15176,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF25-1005_2505VTTB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1005",
-    "major": "2505VTTB",
-    "className": "SMF25-1005_2505VTTB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTB"
   },
   {
     "id": "cls-952",
@@ -15151,11 +15191,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF25-2002_2505VTTB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-2002",
-    "major": "2505VTTB",
-    "className": "SMF25-2002_2505VTTB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTB"
   },
   {
     "id": "cls-953",
@@ -15166,11 +15206,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF2006_2505VTTC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF2006",
-    "major": "2505VTTC",
-    "className": "SMF2006_2505VTTC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTC"
   },
   {
     "id": "cls-954",
@@ -15181,11 +15221,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF25-1005_2505VTTC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1005",
-    "major": "2505VTTC",
-    "className": "SMF25-1005_2505VTTC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTC"
   },
   {
     "id": "cls-955",
@@ -15196,11 +15236,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF25-2002_2505VTTC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-2002",
-    "major": "2505VTTC",
-    "className": "SMF25-2002_2505VTTC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTC"
   },
   {
     "id": "cls-956",
@@ -15211,11 +15251,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF25-1009_2505VTTA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1009",
-    "major": "2505VTTA",
-    "className": "SMF25-1009_2505VTTA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTA"
   },
   {
     "id": "cls-957",
@@ -15226,11 +15266,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SMF25-1011_2505VTTA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1011",
-    "major": "2505VTTA",
-    "className": "SMF25-1011_2505VTTA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTA"
   },
   {
     "id": "cls-958",
@@ -15241,11 +15281,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF25-1009_2505VTTB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1009",
-    "major": "2505VTTB",
-    "className": "SMF25-1009_2505VTTB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTB"
   },
   {
     "id": "cls-959",
@@ -15256,11 +15296,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "SMF25-1011_2505VTTB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1011",
-    "major": "2505VTTB",
-    "className": "SMF25-1011_2505VTTB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTB"
   },
   {
     "id": "cls-960",
@@ -15271,11 +15311,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF25-1009_2505VTTC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1009",
-    "major": "2505VTTC",
-    "className": "SMF25-1009_2505VTTC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTC"
   },
   {
     "id": "cls-961",
@@ -15286,11 +15326,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "SMF25-1011_2505VTTC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1011",
-    "major": "2505VTTC",
-    "className": "SMF25-1011_2505VTTC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTTC"
   },
   {
     "id": "cls-962",
@@ -15301,11 +15341,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2006_2505VDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF2006",
-    "major": "2505VDLA",
-    "className": "SMF2006_2505VDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VDLA"
   },
   {
     "id": "cls-963",
@@ -15316,11 +15356,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF25-1005_2505VDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1005",
-    "major": "2505VDLA",
-    "className": "SMF25-1005_2505VDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VDLA"
   },
   {
     "id": "cls-964",
@@ -15331,11 +15371,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF25-2002_2505VDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-2002",
-    "major": "2505VDLA",
-    "className": "SMF25-2002_2505VDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VDLA"
   },
   {
     "id": "cls-965",
@@ -15346,11 +15386,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF25-1009_2505VDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1009",
-    "major": "2505VDLA",
-    "className": "SMF25-1009_2505VDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VDLA"
   },
   {
     "id": "cls-966",
@@ -15361,11 +15401,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF2020_2505VDLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF2020",
-    "major": "2505VDLA",
-    "className": "SMF2020_2505VDLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VDLA"
   },
   {
     "id": "cls-967",
@@ -15376,11 +15416,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF25-2029_2505DLHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2029",
-    "major": "2505DLHA",
-    "className": "EMF25-2029_2505DLHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505DLHA"
   },
   {
     "id": "cls-968",
@@ -15391,11 +15431,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF2072_2505DLHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2072",
-    "major": "2505DLHA",
-    "className": "EMF2072_2505DLHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505DLHA"
   },
   {
     "id": "cls-969",
@@ -15406,11 +15446,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF25-2029_2505DLHB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2029",
-    "major": "2505DLHB",
-    "className": "EMF25-2029_2505DLHB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505DLHB"
   },
   {
     "id": "cls-970",
@@ -15421,11 +15461,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF2072_2505DLHB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2072",
-    "major": "2505DLHB",
-    "className": "EMF2072_2505DLHB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505DLHB"
   },
   {
     "id": "cls-971",
@@ -15436,11 +15476,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF2102_2505DLHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2102",
-    "major": "2505DLHA",
-    "className": "EMF2102_2505DLHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505DLHA"
   },
   {
     "id": "cls-972",
@@ -15451,11 +15491,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF2102_2505DLHB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF2102",
-    "major": "2505DLHB",
-    "className": "EMF2102_2505DLHB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505DLHB"
   },
   {
     "id": "cls-973",
@@ -15466,11 +15506,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "EMF25-2044_2505DLHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2044",
-    "major": "2505DLHA",
-    "className": "EMF25-2044_2505DLHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505DLHA"
   },
   {
     "id": "cls-974",
@@ -15481,11 +15521,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "EMF25-2044_2505DLHB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "EMF25-2044",
-    "major": "2505DLHB",
-    "className": "EMF25-2044_2505DLHB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505DLHB"
   },
   {
     "id": "cls-975",
@@ -15496,11 +15536,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF0003_2505LTHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505LTHA",
-    "className": "SMF0003_2505LTHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHA"
   },
   {
     "id": "cls-976",
@@ -15511,11 +15551,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-1006_2505LTHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1006",
-    "major": "2505LTHA",
-    "className": "AMF25-1006_2505LTHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHA"
   },
   {
     "id": "cls-977",
@@ -15526,11 +15566,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25-2031_2505LTHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-2031",
-    "major": "2505LTHA",
-    "className": "AMF25-2031_2505LTHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHA"
   },
   {
     "id": "cls-978",
@@ -15541,11 +15581,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF0003_2505LTHB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505LTHB",
-    "className": "SMF0003_2505LTHB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHB"
   },
   {
     "id": "cls-979",
@@ -15556,11 +15596,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25-1006_2505LTHB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1006",
-    "major": "2505LTHB",
-    "className": "AMF25-1006_2505LTHB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHB"
   },
   {
     "id": "cls-980",
@@ -15571,11 +15611,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-2031_2505LTHB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-2031",
-    "major": "2505LTHB",
-    "className": "AMF25-2031_2505LTHB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHB"
   },
   {
     "id": "cls-981",
@@ -15586,11 +15626,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-2031_2505LTHC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-2031",
-    "major": "2505LTHC",
-    "className": "AMF25-2031_2505LTHC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHC"
   },
   {
     "id": "cls-982",
@@ -15601,11 +15641,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF0003_2505LTHC+VTLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505LTHC+VTLA",
-    "className": "SMF0003_2505LTHC+VTLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHC+VTLA"
   },
   {
     "id": "cls-983",
@@ -15616,11 +15656,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-1006_2505LTHC+VTLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1006",
-    "major": "2505LTHC+VTLA",
-    "className": "AMF25-1006_2505LTHC+VTLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHC+VTLA"
   },
   {
     "id": "cls-984",
@@ -15631,11 +15671,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25-1007_2505LTHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1007",
-    "major": "2505LTHA",
-    "className": "AMF25-1007_2505LTHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHA"
   },
   {
     "id": "cls-985",
@@ -15646,11 +15686,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-1009_2505LTHB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1009",
-    "major": "2505LTHB",
-    "className": "AMF25-1009_2505LTHB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHB"
   },
   {
     "id": "cls-986",
@@ -15661,11 +15701,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-1009_2505LTHC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1009",
-    "major": "2505LTHC",
-    "className": "AMF25-1009_2505LTHC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHC"
   },
   {
     "id": "cls-987",
@@ -15676,11 +15716,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "ASF2078_2505LTHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF2078",
-    "major": "2505LTHA",
-    "className": "ASF2078_2505LTHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHA"
   },
   {
     "id": "cls-988",
@@ -15691,11 +15731,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ASF2078_2505LTHB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF2078",
-    "major": "2505LTHB",
-    "className": "ASF2078_2505LTHB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHB"
   },
   {
     "id": "cls-989",
@@ -15706,11 +15746,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ASF2078_2505LTHC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF2078",
-    "major": "2505LTHC",
-    "className": "ASF2078_2505LTHC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHC"
   },
   {
     "id": "cls-990",
@@ -15721,11 +15761,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "HRF2062_2505LTHA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2062",
-    "major": "2505LTHA",
-    "className": "HRF2062_2505LTHA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHA"
   },
   {
     "id": "cls-991",
@@ -15736,11 +15776,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "HRF2062_2505LTHB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2062",
-    "major": "2505LTHB",
-    "className": "HRF2062_2505LTHB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHB"
   },
   {
     "id": "cls-992",
@@ -15751,11 +15791,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "HRF2062_2505LTHC_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "HRF2062",
-    "major": "2505LTHC",
-    "className": "HRF2062_2505LTHC_HK1_2627_K25",
-    "section": "1"
+    "major": "2505LTHC"
   },
   {
     "id": "cls-993",
@@ -15766,11 +15806,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25-2016_2505VTLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-2016",
-    "major": "2505VTLA",
-    "className": "AMF25-2016_2505VTLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTLA"
   },
   {
     "id": "cls-994",
@@ -15781,11 +15821,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 1,
     "endPeriod": 2,
+    "className": "AMF25-2016_2505VTLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-2016",
-    "major": "2505VTLA",
-    "className": "AMF25-2016_2505VTLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTLA"
   },
   {
     "id": "cls-995",
@@ -15796,11 +15836,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 3,
     "endPeriod": 5,
+    "className": "AMF25-2030_2505VTLA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-2030",
-    "major": "2505VTLA",
-    "className": "AMF25-2030_2505VTLA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505VTLA"
   },
   {
     "id": "cls-996",
@@ -15811,11 +15851,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ASF25-1001_2505XDDA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1001",
-    "major": "2505XDDA",
-    "className": "ASF25-1001_2505XDDA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505XDDA"
   },
   {
     "id": "cls-997",
@@ -15826,11 +15866,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "ISF25-2022_2505XDDA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2022",
-    "major": "2505XDDA",
-    "className": "ISF25-2022_2505XDDA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505XDDA"
   },
   {
     "id": "cls-998",
@@ -15841,11 +15881,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF25-2020_2505XDDA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2020",
-    "major": "2505XDDA",
-    "className": "ISF25-2020_2505XDDA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505XDDA"
   },
   {
     "id": "cls-999",
@@ -15856,11 +15896,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "ASF25-1001_2505XDDB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-1001",
-    "major": "2505XDDB",
-    "className": "ASF25-1001_2505XDDB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505XDDB"
   },
   {
     "id": "cls-1000",
@@ -15871,11 +15911,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "ISF25-2022_2505XDDB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2022",
-    "major": "2505XDDB",
-    "className": "ISF25-2022_2505XDDB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505XDDB"
   },
   {
     "id": "cls-1001",
@@ -15886,11 +15926,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISF25-2020_2505XDDB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2020",
-    "major": "2505XDDB",
-    "className": "ISF25-2020_2505XDDB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505XDDB"
   },
   {
     "id": "cls-1002",
@@ -15901,11 +15941,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "ASF25-2023_2505XDDA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ASF25-2023",
-    "major": "2505XDDA",
-    "className": "ASF25-2023_2505XDDA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505XDDA"
   },
   {
     "id": "cls-1003",
@@ -15916,11 +15956,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "ISF25-2018_2505XDDB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2018",
-    "major": "2505XDDB",
-    "className": "ISF25-2018_2505XDDB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505XDDB"
   },
   {
     "id": "cls-1004",
@@ -15931,11 +15971,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 4,
     "endPeriod": 5,
+    "className": "ISF25-2017_2505XDDA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISF25-2017",
-    "major": "2505XDDA",
-    "className": "ISF25-2017_2505XDDA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505XDDA"
   },
   {
     "id": "cls-1005",
@@ -15946,11 +15986,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 2,
     "startPeriod": 9,
     "endPeriod": 10,
+    "className": "AMF25-1009_2505XDDB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1009",
-    "major": "2505XDDB",
-    "className": "AMF25-1009_2505XDDB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505XDDB"
   },
   {
     "id": "cls-1006",
@@ -15961,11 +16001,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "SMF0003_2505NNAA+B_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF0003",
-    "major": "2505NNAA+B",
-    "className": "SMF0003_2505NNAA+B_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAA+B"
   },
   {
     "id": "cls-1007",
@@ -15976,11 +16016,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISFE25-2001_2505NNAA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISFE25-2001",
-    "major": "2505NNAA",
-    "className": "ISFE25-2001_2505NNAA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAA"
   },
   {
     "id": "cls-1008",
@@ -15991,11 +16031,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISFE25-2001_2505NNAA_HK1_2627_K25.2",
+    "section": "2",
     "cohort": "K25",
     "courseCode": "ISFE25-2001",
-    "major": "2505NNAA",
-    "className": "ISFE25-2001_2505NNAA_HK1_2627_K25",
-    "section": "2"
+    "major": "2505NNAA"
   },
   {
     "id": "cls-1009",
@@ -16006,11 +16046,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISFE25-2002_2505NNAA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISFE25-2002",
-    "major": "2505NNAA",
-    "className": "ISFE25-2002_2505NNAA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAA"
   },
   {
     "id": "cls-1010",
@@ -16021,11 +16061,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISFE25-2002_2505NNAA_HK1_2627_K25.2",
+    "section": "2",
     "cohort": "K25",
     "courseCode": "ISFE25-2002",
-    "major": "2505NNAA",
-    "className": "ISFE25-2002_2505NNAA_HK1_2627_K25",
-    "section": "2"
+    "major": "2505NNAA"
   },
   {
     "id": "cls-1011",
@@ -16036,11 +16076,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISFE25-2001_2505NNAB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISFE25-2001",
-    "major": "2505NNAB",
-    "className": "ISFE25-2001_2505NNAB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAB"
   },
   {
     "id": "cls-1012",
@@ -16051,11 +16091,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISFE25-2001_2505NNAB_HK1_2627_K25.2",
+    "section": "2",
     "cohort": "K25",
     "courseCode": "ISFE25-2001",
-    "major": "2505NNAB",
-    "className": "ISFE25-2001_2505NNAB_HK1_2627_K25",
-    "section": "2"
+    "major": "2505NNAB"
   },
   {
     "id": "cls-1013",
@@ -16066,11 +16106,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISFE25-2002_2505NNAB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISFE25-2002",
-    "major": "2505NNAB",
-    "className": "ISFE25-2002_2505NNAB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAB"
   },
   {
     "id": "cls-1014",
@@ -16081,11 +16121,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISFE25-2002_2505NNAB_HK1_2627_K25.2",
+    "section": "2",
     "cohort": "K25",
     "courseCode": "ISFE25-2002",
-    "major": "2505NNAB",
-    "className": "ISFE25-2002_2505NNAB_HK1_2627_K25",
-    "section": "2"
+    "major": "2505NNAB"
   },
   {
     "id": "cls-1015",
@@ -16096,11 +16136,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISFE25-0014_2505NNAA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISFE25-0014",
-    "major": "2505NNAA",
-    "className": "ISFE25-0014_2505NNAA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAA"
   },
   {
     "id": "cls-1016",
@@ -16111,11 +16151,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "ISFE25-0014_2505NNAA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISFE25-0014",
-    "major": "2505NNAA",
-    "className": "ISFE25-0014_2505NNAA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAA"
   },
   {
     "id": "cls-1017",
@@ -16126,11 +16166,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISFE25-0014_2505NNAB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISFE25-0014",
-    "major": "2505NNAB",
-    "className": "ISFE25-0014_2505NNAB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAB"
   },
   {
     "id": "cls-1018",
@@ -16141,11 +16181,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "ISFE25-0014_2505NNAB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "ISFE25-0014",
-    "major": "2505NNAB",
-    "className": "ISFE25-0014_2505NNAB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAB"
   },
   {
     "id": "cls-1019",
@@ -16156,11 +16196,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 6,
     "endPeriod": 9,
+    "className": "LIF1030_2505NNAA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "LIF1030",
-    "major": "2505NNAA",
-    "className": "LIF1030_2505NNAA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAA"
   },
   {
     "id": "cls-1020",
@@ -16171,11 +16211,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 4,
     "startPeriod": 1,
     "endPeriod": 4,
+    "className": "LIF1030_2505NNAB_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "LIF1030",
-    "major": "2505NNAB",
-    "className": "LIF1030_2505NNAB_HK1_2627_K25",
-    "section": "1"
+    "major": "2505NNAB"
   },
   {
     "id": "cls-1021",
@@ -16186,11 +16226,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "AMF25-1003_2505TTVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1003",
-    "major": "2505TTVA",
-    "className": "AMF25-1003_2505TTVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTVA"
   },
   {
     "id": "cls-1022",
@@ -16201,11 +16241,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF25-1018_2505TTVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1018",
-    "major": "2505TTVA",
-    "className": "SMF25-1018_2505TTVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTVA"
   },
   {
     "id": "cls-1023",
@@ -16216,11 +16256,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF2155_2505TTVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF2155",
-    "major": "2505TTVA",
-    "className": "SMF2155_2505TTVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTVA"
   },
   {
     "id": "cls-1024",
@@ -16231,11 +16271,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "AMF25-1003_2505TTVB+QTTA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "AMF25-1003",
-    "major": "2505TTVB+QTTA",
-    "className": "AMF25-1003_2505TTVB+QTTA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTVB+QTTA"
   },
   {
     "id": "cls-1025",
@@ -16246,11 +16286,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF25-1018_2505TTVB+QTTA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1018",
-    "major": "2505TTVB+QTTA",
-    "className": "SMF25-1018_2505TTVB+QTTA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTVB+QTTA"
   },
   {
     "id": "cls-1026",
@@ -16261,11 +16301,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 6,
     "endPeriod": 8,
+    "className": "SMF2155_2505TTVB+QTTA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF2155",
-    "major": "2505TTVB+QTTA",
-    "className": "SMF2155_2505TTVB+QTTA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTVB+QTTA"
   },
   {
     "id": "cls-1027",
@@ -16276,11 +16316,11 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 1,
     "endPeriod": 3,
+    "className": "SMF25-1020_2505TTVA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF25-1020",
-    "major": "2505TTVA",
-    "className": "SMF25-1020_2505TTVA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTVA"
   },
   {
     "id": "cls-1028",
@@ -16291,10 +16331,3216 @@ export const SHEET_CLASSES: ClassInfo[] = [
     "periods": 3,
     "startPeriod": 11,
     "endPeriod": 13,
+    "className": "SMF1021_2505TTVB+QTTA_HK1_2627_K25.1",
+    "section": "1",
     "cohort": "K25",
     "courseCode": "SMF1021",
-    "major": "2505TTVB+QTTA",
-    "className": "SMF1021_2505TTVB+QTTA_HK1_2627_K25",
-    "section": "1"
+    "major": "2505TTVB+QTTA"
+  },
+  {
+    "id": "cls-1029",
+    "name": "Triết học Mác - Lênin",
+    "size": 15,
+    "day": 2,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNAA - Tiếng Anh.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1030",
+    "name": "Pháp luật đại cương",
+    "size": 15,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNAA - Tiếng Anh.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1031",
+    "name": "Chính trị học đại cương",
+    "size": 15,
+    "day": 4,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNAA - Tiếng Anh.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1032",
+    "name": "Tổ chức học",
+    "size": 15,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNAA - Tiếng Anh.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1033",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 15,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNAA - Tiếng Anh.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1034",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 70,
+    "day": 2,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1035",
+    "name": "Triết học Mác - Lênin",
+    "size": 70,
+    "day": 3,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1036",
+    "name": "Pháp luật đại cương",
+    "size": 70,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1037",
+    "name": "Chính trị học đại cương",
+    "size": 70,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1038",
+    "name": "Tổ chức học",
+    "size": 70,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1039",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 71,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1040",
+    "name": "Triết học Mác - Lênin",
+    "size": 71,
+    "day": 4,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1041",
+    "name": "Pháp luật đại cương",
+    "size": 71,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1042",
+    "name": "Chính trị học đại cương",
+    "size": 71,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1043",
+    "name": "Tổ chức học",
+    "size": 71,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1044",
+    "name": "Chính trị học đại cương",
+    "size": 72,
+    "day": 2,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1045",
+    "name": "Tổ chức học",
+    "size": 72,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1046",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 72,
+    "day": 4,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1047",
+    "name": "Triết học Mác - Lênin",
+    "size": 72,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1048",
+    "name": "Pháp luật đại cương",
+    "size": 72,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1049",
+    "name": "Triết học Mác - Lênin",
+    "size": 73,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NND.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1050",
+    "name": "Pháp luật đại cương",
+    "size": 73,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NND.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1051",
+    "name": "Chính trị học đại cương",
+    "size": 73,
+    "day": 3,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NND.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1052",
+    "name": "Tổ chức học",
+    "size": 73,
+    "day": 3,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5NND.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1053",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 73,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NND.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1054",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 71,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1055",
+    "name": "Pháp luật đại cương",
+    "size": 71,
+    "day": 4,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5NNE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1056",
+    "name": "Chính trị học đại cương",
+    "size": 71,
+    "day": 5,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5NNE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1057",
+    "name": "Tổ chức học",
+    "size": 71,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1058",
+    "name": "Triết học Mác - Lênin",
+    "size": 71,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước"
+  },
+  {
+    "id": "cls-1059",
+    "name": "Triết học Mác - Lênin",
+    "size": 26,
+    "day": 2,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5NNTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước\nCN Quản trị tổ chức"
+  },
+  {
+    "id": "cls-1060",
+    "name": "Pháp luật đại cương",
+    "size": 26,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước\nCN Quản trị tổ chức"
+  },
+  {
+    "id": "cls-1061",
+    "name": "Chính trị học đại cương",
+    "size": 26,
+    "day": 4,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5NNTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước\nCN Quản trị tổ chức"
+  },
+  {
+    "id": "cls-1062",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 26,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NNTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước\nCN Quản trị tổ chức"
+  },
+  {
+    "id": "cls-1063",
+    "name": "Tổ chức học",
+    "size": 26,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NNTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý nhà nước\nCN Quản trị tổ chức"
+  },
+  {
+    "id": "cls-1064",
+    "name": "Triết học Mác - Lênin",
+    "size": 76,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1065",
+    "name": "Pháp luật đại cương",
+    "size": 76,
+    "day": 3,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1066",
+    "name": "Kinh tế học",
+    "size": 76,
+    "day": 2,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1067",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 76,
+    "day": 4,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1068",
+    "name": "Quản lý học",
+    "size": 76,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1069",
+    "name": "Quản lý học",
+    "size": 74,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1070",
+    "name": "Triết học Mác - Lênin",
+    "size": 74,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1071",
+    "name": "Kinh tế học",
+    "size": 74,
+    "day": 3,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1072",
+    "name": "Pháp luật đại cương",
+    "size": 74,
+    "day": 4,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1073",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 74,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1074",
+    "name": "Quản lý học",
+    "size": 74,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1075",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 74,
+    "day": 2,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1076",
+    "name": "Triết học Mác - Lênin",
+    "size": 74,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1077",
+    "name": "Kinh tế học",
+    "size": 74,
+    "day": 4,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5NLC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1078",
+    "name": "Pháp luật đại cương",
+    "size": 74,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1079",
+    "name": "Triết học Mác - Lênin",
+    "size": 71,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1080",
+    "name": "Kinh tế học",
+    "size": 71,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1081",
+    "name": "Quản lý học",
+    "size": 71,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1082",
+    "name": "Pháp luật đại cương",
+    "size": 71,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1083",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 71,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1084",
+    "name": "Quản lý học",
+    "size": 70,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1085",
+    "name": "Pháp luật đại cương",
+    "size": 70,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1086",
+    "name": "Triết học Mác - Lênin",
+    "size": 70,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1087",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 70,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5NLE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1088",
+    "name": "Kinh tế học",
+    "size": 70,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5NLE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị nhân lực"
+  },
+  {
+    "id": "cls-1089",
+    "name": "Lý luận về Nhà nước và Pháp luật",
+    "size": 74,
+    "day": 2,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LHA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1090",
+    "name": "Lý luận về Nhà nước và Pháp luật",
+    "size": 74,
+    "day": 3,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LHA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1091",
+    "name": "Luật Hiến pháp",
+    "size": 74,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LHA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1092",
+    "name": "Triết học Mác - Lênin",
+    "size": 74,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LHA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1093",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 74,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 2,
+    "startPeriod": 9,
+    "endPeriod": 10,
+    "className": "26H5LHA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1094",
+    "name": "Luật Hiến pháp",
+    "size": 74,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LHA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1095",
+    "name": "Lý luận về Nhà nước và Pháp luật",
+    "size": 73,
+    "day": 4,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LHB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1096",
+    "name": "Lý luận về Nhà nước và Pháp luật",
+    "size": 73,
+    "day": 6,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LHB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1097",
+    "name": "Luật Hiến pháp",
+    "size": 73,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5LHB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1098",
+    "name": "Luật Hiến pháp",
+    "size": 73,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LHB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1099",
+    "name": "Triết học Mác - Lênin",
+    "size": 73,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LHB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1100",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 73,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 2,
+    "startPeriod": 9,
+    "endPeriod": 10,
+    "className": "26H5LHB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1101",
+    "name": "Lý luận về Nhà nước và Pháp luật",
+    "size": 78,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LHC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1102",
+    "name": "Lý luận về Nhà nước và Pháp luật",
+    "size": 78,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LHC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1103",
+    "name": "Luật Hiến pháp",
+    "size": 78,
+    "day": 2,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LHC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1104",
+    "name": "Luật Hiến pháp",
+    "size": 78,
+    "day": 3,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LHC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1105",
+    "name": "Triết học Mác - Lênin",
+    "size": 78,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LHC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1106",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 78,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 2,
+    "startPeriod": 9,
+    "endPeriod": 10,
+    "className": "26H5LHC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Luật"
+  },
+  {
+    "id": "cls-1107",
+    "name": "Lý luận về Nhà nước và Pháp luật",
+    "size": 96,
+    "day": 2,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5LHTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Thanh tra"
+  },
+  {
+    "id": "cls-1108",
+    "name": "Triết học Mác - Lênin",
+    "size": 96,
+    "day": 3,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5LHTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Thanh tra"
+  },
+  {
+    "id": "cls-1109",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 96,
+    "day": 3,
+    "shift": "morning",
+    "periods": 2,
+    "startPeriod": 4,
+    "endPeriod": 5,
+    "className": "26H5LHTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Thanh tra"
+  },
+  {
+    "id": "cls-1110",
+    "name": "Luật Hiến pháp",
+    "size": 96,
+    "day": 4,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5LHTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Thanh tra"
+  },
+  {
+    "id": "cls-1111",
+    "name": "Lý luận về Nhà nước và Pháp luật",
+    "size": 96,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5LHTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Thanh tra"
+  },
+  {
+    "id": "cls-1112",
+    "name": "Luật Hiến pháp",
+    "size": 96,
+    "day": 6,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5LHTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Thanh tra"
+  },
+  {
+    "id": "cls-1113",
+    "name": "Tâm lý học quản lý",
+    "size": 68,
+    "day": 2,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5VPA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1114",
+    "name": "Triết học Mác - Lênin",
+    "size": 68,
+    "day": 4,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5VPA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1115",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 68,
+    "day": 4,
+    "shift": "morning",
+    "periods": 2,
+    "startPeriod": 4,
+    "endPeriod": 5,
+    "className": "26H5VPA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1116",
+    "name": "Pháp luật đại cương",
+    "size": 68,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5VPA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1117",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 34,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VPA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1118",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 34,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VPA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1119",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 34,
+    "day": 6,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5VPA.2",
+    "section": "2",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1120",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 34,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VPA.2",
+    "section": "2",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1121",
+    "name": "Tâm lý học quản lý",
+    "size": 70,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5VPB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1122",
+    "name": "Triết học Mác - Lênin",
+    "size": 70,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5VPB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1123",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 70,
+    "day": 5,
+    "shift": "morning",
+    "periods": 2,
+    "startPeriod": 4,
+    "endPeriod": 5,
+    "className": "26H5VPB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1124",
+    "name": "Pháp luật đại cương",
+    "size": 70,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5VPB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1125",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 35,
+    "day": 6,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5VPB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1126",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 35,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VPB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1127",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 35,
+    "day": 3,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5VPB.2",
+    "section": "2",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1128",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 35,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VPB.2",
+    "section": "2",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1129",
+    "name": "Pháp luật đại cương",
+    "size": 73,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5VPC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1130",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 73,
+    "day": 6,
+    "shift": "morning",
+    "periods": 2,
+    "startPeriod": 4,
+    "endPeriod": 5,
+    "className": "26H5VPC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1131",
+    "name": "Triết học Mác - Lênin",
+    "size": 73,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5VPC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1132",
+    "name": "Tâm lý học quản lý",
+    "size": 73,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5VPC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1133",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 37,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VPC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1134",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 37,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VPC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1135",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 36,
+    "day": 4,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5VPC.2",
+    "section": "2",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1136",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 36,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VPC.2",
+    "section": "2",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1137",
+    "name": "Triết học Mác - Lênin",
+    "size": 73,
+    "day": 2,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5VPD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1138",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 73,
+    "day": 2,
+    "shift": "morning",
+    "periods": 2,
+    "startPeriod": 4,
+    "endPeriod": 5,
+    "className": "26H5VPD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1139",
+    "name": "Pháp luật đại cương",
+    "size": 73,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5VPD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1140",
+    "name": "Tâm lý học quản lý",
+    "size": 73,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5VPD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1141",
+    "name": "Pháp luật đại cương",
+    "size": 78,
+    "day": 2,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5VPE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1142",
+    "name": "Triết học Mác - Lênin",
+    "size": 78,
+    "day": 3,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5VPE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1143",
+    "name": "Tâm lý học quản lý",
+    "size": 78,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5VPE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1144",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 78,
+    "day": 3,
+    "shift": "morning",
+    "periods": 2,
+    "startPeriod": 4,
+    "endPeriod": 5,
+    "className": "26H5VPE.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản trị văn phòng"
+  },
+  {
+    "id": "cls-1145",
+    "name": "Cơ sở văn hóa Việt Nam",
+    "size": 67,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5QLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý văn hóa"
+  },
+  {
+    "id": "cls-1146",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 67,
+    "day": 3,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5QLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý văn hóa"
+  },
+  {
+    "id": "cls-1147",
+    "name": "Triết học Mác - Lênin",
+    "size": 67,
+    "day": 4,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5QLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý văn hóa"
+  },
+  {
+    "id": "cls-1148",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 67,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5QLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý văn hóa"
+  },
+  {
+    "id": "cls-1149",
+    "name": "Cơ sở văn hóa Việt Nam",
+    "size": 67,
+    "day": 2,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5QLB+26H5QLVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý văn hóa + CN QL di sản văn hóa & PT du lịch"
+  },
+  {
+    "id": "cls-1150",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 67,
+    "day": 3,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5QLB+26H5QLVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý văn hóa + CN QL di sản văn hóa & PT du lịch"
+  },
+  {
+    "id": "cls-1151",
+    "name": "Triết học Mác - Lênin",
+    "size": 67,
+    "day": 4,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5QLB+26H5QLVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý văn hóa + CN QL di sản văn hóa & PT du lịch"
+  },
+  {
+    "id": "cls-1152",
+    "name": "Lịch sử Đảng Cộng sản Việt Nam",
+    "size": 67,
+    "day": 5,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5QLB+26H5QLVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Quản lý văn hóa + CN QL di sản văn hóa & PT du lịch"
+  },
+  {
+    "id": "cls-1153",
+    "name": "Tư tưởng Hồ Chí Minh",
+    "size": 76,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VHTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông"
+  },
+  {
+    "id": "cls-1154",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 76,
+    "day": 5,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5VHTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông"
+  },
+  {
+    "id": "cls-1155",
+    "name": "Triết học Mác - Lênin",
+    "size": 76,
+    "day": 6,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5VHTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông"
+  },
+  {
+    "id": "cls-1156",
+    "name": "Cơ sở văn hóa Việt Nam",
+    "size": 76,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VHTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông"
+  },
+  {
+    "id": "cls-1157",
+    "name": "Triết học Mác - Lênin",
+    "size": 74,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VHTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông"
+  },
+  {
+    "id": "cls-1158",
+    "name": "Tư tưởng Hồ Chí Minh",
+    "size": 74,
+    "day": 2,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5VHTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông"
+  },
+  {
+    "id": "cls-1159",
+    "name": "Cơ sở văn hóa Việt Nam",
+    "size": 74,
+    "day": 3,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5VHTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông"
+  },
+  {
+    "id": "cls-1160",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 74,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5VHTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông"
+  },
+  {
+    "id": "cls-1161",
+    "name": "Tư tưởng Hồ Chí Minh",
+    "size": 75,
+    "day": 3,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5VHTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông + CN Văn hóa du lịch"
+  },
+  {
+    "id": "cls-1162",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 75,
+    "day": 4,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5VHTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông + CN Văn hóa du lịch"
+  },
+  {
+    "id": "cls-1163",
+    "name": "Triết học Mác - Lênin",
+    "size": 75,
+    "day": 2,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5VHTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông + CN Văn hóa du lịch"
+  },
+  {
+    "id": "cls-1164",
+    "name": "Cơ sở văn hóa Việt Nam",
+    "size": 75,
+    "day": 6,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5VHTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn hóa truyền thông + CN Văn hóa du lịch"
+  },
+  {
+    "id": "cls-1165",
+    "name": "Thông tin học",
+    "size": 82,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5TVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Thông tin thư viện"
+  },
+  {
+    "id": "cls-1166",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 82,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5TVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Thông tin thư viện"
+  },
+  {
+    "id": "cls-1167",
+    "name": "Triết học Mác - Lênin",
+    "size": 82,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5TVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Thông tin thư viện"
+  },
+  {
+    "id": "cls-1168",
+    "name": "Tư tưởng Hồ Chí Minh",
+    "size": 82,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5TVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Thông tin thư viện"
+  },
+  {
+    "id": "cls-1169",
+    "name": "Kinh tế vi mô",
+    "size": 72,
+    "day": 2,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5KTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1170",
+    "name": "Pháp luật đại cương",
+    "size": 72,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5KTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1171",
+    "name": "Triết học Mác - Lênin",
+    "size": 72,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5KTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1172",
+    "name": "Tổ chức học",
+    "size": 72,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5KTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1173",
+    "name": "Nguyên lý thống kê kinh tế",
+    "size": 72,
+    "day": 4,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5KTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1174",
+    "name": "Pháp luật đại cương",
+    "size": 75,
+    "day": 3,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5KTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1175",
+    "name": "Triết học Mác - Lênin",
+    "size": 75,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5KTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1176",
+    "name": "Tổ chức học",
+    "size": 75,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5KTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1177",
+    "name": "Nguyên lý thống kê kinh tế",
+    "size": 75,
+    "day": 4,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5KTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1178",
+    "name": "Kinh tế vi mô",
+    "size": 75,
+    "day": 5,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5KTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1179",
+    "name": "Triết học Mác - Lênin",
+    "size": 70,
+    "day": 2,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5KTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1180",
+    "name": "Tổ chức học",
+    "size": 70,
+    "day": 3,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5KTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1181",
+    "name": "Pháp luật đại cương",
+    "size": 70,
+    "day": 4,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5KTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1182",
+    "name": "Nguyên lý thống kê kinh tế",
+    "size": 70,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5KTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1183",
+    "name": "Kinh tế vi mô",
+    "size": 70,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5KTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Kinh tế"
+  },
+  {
+    "id": "cls-1184",
+    "name": "Triết học Mác - Lênin",
+    "size": 70,
+    "day": 2,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5KTD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Kinh tế du lịch"
+  },
+  {
+    "id": "cls-1185",
+    "name": "Nguyên lý thống kê kinh tế",
+    "size": 70,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5KTD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Kinh tế du lịch"
+  },
+  {
+    "id": "cls-1186",
+    "name": "Tổ chức học",
+    "size": 70,
+    "day": 3,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5KTD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Kinh tế du lịch"
+  },
+  {
+    "id": "cls-1187",
+    "name": "Pháp luật đại cương",
+    "size": 70,
+    "day": 4,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5KTD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Kinh tế du lịch"
+  },
+  {
+    "id": "cls-1188",
+    "name": "Kinh tế vi mô",
+    "size": 70,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5KTD.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Kinh tế du lịch"
+  },
+  {
+    "id": "cls-1189",
+    "name": "Giao tiếp trong du lịch",
+    "size": 77,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5DLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1190",
+    "name": "Nhập môn du lịch",
+    "size": 77,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5DLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1191",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 39,
+    "day": 2,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5DLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1192",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 39,
+    "day": 3,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5DLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1193",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 38,
+    "day": 4,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5DLA.2",
+    "section": "2",
+    "cohort": "K26",
+    "major": "QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1194",
+    "name": "Kỹ năng số và ứng dụng trí tuệ nhân tạo",
+    "size": 38,
+    "day": 5,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5DLA.2",
+    "section": "2",
+    "cohort": "K26",
+    "major": "QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1195",
+    "name": "Pháp luật đại cương",
+    "size": 77,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5DLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1196",
+    "name": "Triết học Mác - Lênin",
+    "size": 77,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5DLA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1197",
+    "name": "Giao tiếp trong du lịch",
+    "size": 79,
+    "day": 3,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5DLB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1198",
+    "name": "Nhập môn du lịch",
+    "size": 79,
+    "day": 4,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5DLB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1199",
+    "name": "Pháp luật đại cương",
+    "size": 79,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5DLB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1200",
+    "name": "Triết học Mác - Lênin",
+    "size": 79,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5DLB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN QT dịch vụ du lịch & lữ hành"
+  },
+  {
+    "id": "cls-1201",
+    "name": "Chính trị học đại cương",
+    "size": 68,
+    "day": 2,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5CTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1202",
+    "name": "Kinh tế học",
+    "size": 68,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5CTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1203",
+    "name": "Pháp luật đại cương",
+    "size": 68,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5CTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1204",
+    "name": "Tổ chức học",
+    "size": 68,
+    "day": 5,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5CTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1205",
+    "name": "Triết học Mác - Lênin",
+    "size": 68,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5CTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1206",
+    "name": "Triết học Mác - Lênin",
+    "size": 62,
+    "day": 2,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5CTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1207",
+    "name": "Chính trị học đại cương",
+    "size": 62,
+    "day": 3,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5CTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1208",
+    "name": "Kinh tế học",
+    "size": 62,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5CTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1209",
+    "name": "Pháp luật đại cương",
+    "size": 62,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5CTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1210",
+    "name": "Tổ chức học",
+    "size": 62,
+    "day": 6,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5CTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1211",
+    "name": "Triết học Mác - Lênin",
+    "size": 67,
+    "day": 3,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5CTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1212",
+    "name": "Tổ chức học",
+    "size": 67,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5CTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1213",
+    "name": "Chính trị học đại cương",
+    "size": 67,
+    "day": 4,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5CTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1214",
+    "name": "Pháp luật đại cương",
+    "size": 67,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5CTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1215",
+    "name": "Kinh tế học",
+    "size": 67,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5CTC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Chính trị học"
+  },
+  {
+    "id": "cls-1216",
+    "name": "Chính trị học đại cương",
+    "size": 59,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5XDA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1217",
+    "name": "Tổ chức học",
+    "size": 59,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5XDA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1218",
+    "name": "Triết học Mác - Lênin",
+    "size": 59,
+    "day": 4,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5XDA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1219",
+    "name": "Pháp luật đại cương",
+    "size": 59,
+    "day": 5,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5XDA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1220",
+    "name": "Kinh tế học",
+    "size": 59,
+    "day": 6,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5XDA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1221",
+    "name": "Tổ chức học",
+    "size": 67,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5XDB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1222",
+    "name": "Kinh tế học",
+    "size": 67,
+    "day": 4,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5XDB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1223",
+    "name": "Pháp luật đại cương",
+    "size": 67,
+    "day": 3,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5XDB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1224",
+    "name": "Triết học Mác - Lênin",
+    "size": 67,
+    "day": 5,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5XDB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1225",
+    "name": "Chính trị học đại cương",
+    "size": 67,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5XDB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1226",
+    "name": "Pháp luật đại cương",
+    "size": 61,
+    "day": 2,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5XDC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1227",
+    "name": "Triết học Mác - Lênin",
+    "size": 61,
+    "day": 6,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5XDC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1228",
+    "name": "Kinh tế học",
+    "size": 61,
+    "day": 5,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5XDC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1229",
+    "name": "Chính trị học đại cương",
+    "size": 61,
+    "day": 3,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5XDC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1230",
+    "name": "Tổ chức học",
+    "size": 61,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5XDC.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Xây dựng đảng & CQ nhà nước"
+  },
+  {
+    "id": "cls-1231",
+    "name": "Triết học Mác - Lênin",
+    "size": 69,
+    "day": 2,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5LTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Lưu trữ học"
+  },
+  {
+    "id": "cls-1232",
+    "name": "Pháp luật đại cương",
+    "size": 69,
+    "day": 3,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Lưu trữ học"
+  },
+  {
+    "id": "cls-1233",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 69,
+    "day": 4,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Lưu trữ học"
+  },
+  {
+    "id": "cls-1234",
+    "name": "Kỹ năng giao tiếp",
+    "size": 69,
+    "day": 5,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5LTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Lưu trữ học"
+  },
+  {
+    "id": "cls-1235",
+    "name": "Thông tin học",
+    "size": 69,
+    "day": 6,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5LTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Lưu trữ học"
+  },
+  {
+    "id": "cls-1236",
+    "name": "Triết học Mác - Lênin",
+    "size": 73,
+    "day": 5,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Lưu trữ học"
+  },
+  {
+    "id": "cls-1237",
+    "name": "Pháp luật đại cương",
+    "size": 73,
+    "day": 3,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Lưu trữ học"
+  },
+  {
+    "id": "cls-1238",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 73,
+    "day": 4,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Lưu trữ học"
+  },
+  {
+    "id": "cls-1239",
+    "name": "Kỹ năng giao tiếp",
+    "size": 73,
+    "day": 6,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Lưu trữ học"
+  },
+  {
+    "id": "cls-1240",
+    "name": "Thông tin học",
+    "size": 73,
+    "day": 2,
+    "shift": "evening",
+    "periods": 3,
+    "startPeriod": 11,
+    "endPeriod": 13,
+    "className": "26H5LTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Lưu trữ học"
+  },
+  {
+    "id": "cls-1241",
+    "name": "Thông tin học",
+    "size": 62,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LTVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn thư lưu trữ"
+  },
+  {
+    "id": "cls-1242",
+    "name": "Triết học Mác - Lênin",
+    "size": 62,
+    "day": 3,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5LTVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn thư lưu trữ"
+  },
+  {
+    "id": "cls-1243",
+    "name": "Pháp luật đại cương",
+    "size": 62,
+    "day": 4,
+    "shift": "morning",
+    "periods": 3,
+    "startPeriod": 1,
+    "endPeriod": 3,
+    "className": "26H5LTVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn thư lưu trữ"
+  },
+  {
+    "id": "cls-1244",
+    "name": "Đạo đức và trách nhiệm xã hội",
+    "size": 62,
+    "day": 5,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LTVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn thư lưu trữ"
+  },
+  {
+    "id": "cls-1245",
+    "name": "Kỹ năng giao tiếp",
+    "size": 62,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 3,
+    "startPeriod": 6,
+    "endPeriod": 8,
+    "className": "26H5LTVA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Văn thư lưu trữ"
+  },
+  {
+    "id": "cls-1246",
+    "name": "Triết học Mác - Lênin",
+    "size": 62,
+    "day": 4,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5HTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Hệ thống thông tin"
+  },
+  {
+    "id": "cls-1247",
+    "name": "Pháp luật đại cương",
+    "size": 62,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5HTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Hệ thống thông tin"
+  },
+  {
+    "id": "cls-1248",
+    "name": "Giải tích",
+    "size": 62,
+    "day": 3,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5HTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Hệ thống thông tin"
+  },
+  {
+    "id": "cls-1249",
+    "name": "Đại số tuyến tính",
+    "size": 62,
+    "day": 5,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5HTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Hệ thống thông tin"
+  },
+  {
+    "id": "cls-1250",
+    "name": "Triết học Mác - Lênin",
+    "size": 56,
+    "day": 5,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5HTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Hệ thống thông tin"
+  },
+  {
+    "id": "cls-1251",
+    "name": "Pháp luật đại cương",
+    "size": 56,
+    "day": 6,
+    "shift": "morning",
+    "periods": 4,
+    "startPeriod": 1,
+    "endPeriod": 4,
+    "className": "26H5HTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Hệ thống thông tin"
+  },
+  {
+    "id": "cls-1252",
+    "name": "Giải tích",
+    "size": 52,
+    "day": 3,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 10,
+    "endPeriod": 13,
+    "className": "26H5HTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Hệ thống thông tin"
+  },
+  {
+    "id": "cls-1253",
+    "name": "Đại số tuyến tính",
+    "size": 52,
+    "day": 5,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 9,
+    "endPeriod": 12,
+    "className": "26H5HTB.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "Hệ thống thông tin"
+  },
+  {
+    "id": "cls-1254",
+    "name": "Pháp luật đại cương",
+    "size": 79,
+    "day": 2,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5HTTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Hệ thống thông tin thương mại điện tử"
+  },
+  {
+    "id": "cls-1255",
+    "name": "Triết học Mác - Lênin",
+    "size": 79,
+    "day": 6,
+    "shift": "afternoon",
+    "periods": 4,
+    "startPeriod": 6,
+    "endPeriod": 9,
+    "className": "26H5HTTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Hệ thống thông tin thương mại điện tử"
+  },
+  {
+    "id": "cls-1256",
+    "name": "Giải tích",
+    "size": 79,
+    "day": 5,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 9,
+    "endPeriod": 12,
+    "className": "26H5HTTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Hệ thống thông tin thương mại điện tử"
+  },
+  {
+    "id": "cls-1257",
+    "name": "Đại số tuyến tính",
+    "size": 79,
+    "day": 4,
+    "shift": "evening",
+    "periods": 4,
+    "startPeriod": 9,
+    "endPeriod": 12,
+    "className": "26H5HTTA.1",
+    "section": "1",
+    "cohort": "K26",
+    "major": "CN Hệ thống thông tin thương mại điện tử"
   }
-]
+]`) as ClassInfo[]
