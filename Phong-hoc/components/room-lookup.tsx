@@ -29,7 +29,7 @@ import { SHEET_CLASSES, SHEET_ROOMS } from "@/lib/schedule-data"
 
 type RoomStatus = "available" | "in-class" | "booked"
 
-type ClassBlock = { start: string; end: string; name: string }
+type ClassBlock = { start: string; end: string; name: string; className?: string }
 
 type RoomBase = {
   id: string
@@ -65,14 +65,14 @@ const WEEKDAY_LABELS = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "T
  * Trạng thái phòng (trống / đang có lớp) được tính theo GIỜ THỰC hiện tại
  * so với các khối giờ này.
  */
-function createRoomSchedules(cohort: CohortFilter): RoomBase[] {
+function createRoomSchedules(cohort: CohortFilter, weekDay: number): RoomBase[] {
   const classes = cohort === "all" ? SHEET_CLASSES : SHEET_CLASSES.filter((item) => item.cohort === cohort)
   const result = autoSchedule(classes, SHEET_ROOMS)
   const classById = new Map(classes.map((item) => [item.id, item]))
   const roomById = new Map(SHEET_ROOMS.map((item) => [item.id, item]))
   const blocksByRoom = new Map<string, ClassBlock[]>()
 
-  for (const assignment of result.assignments) {
+  for (const assignment of result.assignments.filter((item) => item.day === weekDay)) {
     const cls = classById.get(assignment.classId)
     if (!cls) continue
     const blocks = blocksByRoom.get(assignment.roomId) ?? []
@@ -80,6 +80,7 @@ function createRoomSchedules(cohort: CohortFilter): RoomBase[] {
       start: rangeTime(assignment.startPeriod, assignment.startPeriod).split(" - ")[0],
       end: rangeTime(assignment.startPeriod, assignment.endPeriod).split(" - ")[1],
       name: cls.name,
+      className: cls.className,
     })
     blocksByRoom.set(assignment.roomId, blocks)
   }
@@ -141,7 +142,7 @@ function computeRoomView(base: RoomBase, nowMin: number, booking?: Booking): Roo
       building: base.building,
       campus: base.campus,
       status: "in-class",
-      className: current.name,
+      className: current.className ? `${current.name} · Lớp ${current.className}` : current.name,
       classEnd: current.end,
       nextClass: nextClassAfter(base, nowMin),
     }
@@ -168,7 +169,7 @@ type Filter = "all" | "available" | "in-class" | "booked"
 type BuildingFilter = "all" | string
 
 function campusOrder(campus?: RoomInfo["campus"]): number {
-  return campus === "36 Xuân La" ? 0 : campus === "371 Nguyễn Hoàng Tôn" ? 1 : 2
+  return campus === "36 Xuân La" ? 0 : campus === "371 Nguyễn Hoàng Tôn" ? 1 : campus === "77 Nguyễn Chí Thanh" ? 2 : 3
 }
 
 function buildingOrder(building?: string): string {
@@ -176,6 +177,13 @@ function buildingOrder(building?: string): string {
   if (building === "HoiTruong") return "ZZZ"
   if (building.includes("-")) return building.split("-").at(-1) ?? building
   return building
+}
+
+function buildingLabel(building?: string): string {
+  if (!building) return "Chưa xác định tòa"
+  if (building === "HoiTruong") return "Hội trường"
+  const suffix = buildingOrder(building)
+  return suffix.length === 1 ? `Tòa ${suffix}` : `Tòa ${suffix}`
 }
 
 function roomOrder(a: RoomView, b: RoomView): number {
@@ -188,7 +196,6 @@ function roomOrder(a: RoomView, b: RoomView): number {
 
 export function RoomLookup() {
   const [cohort, setCohort] = useState<CohortFilter>("all")
-  const schedules = useMemo(() => createRoomSchedules(cohort), [cohort])
   const [now, setNow] = useState<Date | null>(null)
   const [bookings, setBookings] = useState<Record<string, Booking>>({})
   const [activeRoomId, setActiveRoomId] = useState<string | null>(null)
@@ -203,6 +210,11 @@ export function RoomLookup() {
     return () => clearInterval(id)
   }, [])
 
+  const currentWeekDay = now?.getDay() ?? 0
+  const schedules = useMemo(
+    () => createRoomSchedules(cohort, currentWeekDay),
+    [cohort, currentWeekDay],
+  )
   const nowMin = now ? now.getHours() * 60 + now.getMinutes() : 0
 
   const views = useMemo(
@@ -239,6 +251,7 @@ export function RoomLookup() {
       [
         { campus: "36 Xuân La" as const, label: "Cơ sở 36 Xuân La" },
         { campus: "371 Nguyễn Hoàng Tôn" as const, label: "Cơ sở 371 Nguyễn Hoàng Tôn" },
+        { campus: "77 Nguyễn Chí Thanh" as const, label: "Cơ sở 77 Nguyễn Chí Thanh" },
       ].map((group) => ({
         ...group,
         buildings: [...new Set(
@@ -411,7 +424,7 @@ export function RoomLookup() {
                 <div className="flex flex-wrap gap-2">
                   {group.buildings.map((item) => (
                     <BuildingChip key={item} active={building === item} onClick={() => setBuilding(item)}>
-                      {item === "HoiTruong" ? "Hội trường" : `Tòa ${buildingOrder(item)}`}
+                      {buildingLabel(item)}
                     </BuildingChip>
                   ))}
                 </div>
@@ -632,6 +645,11 @@ function GroupedRoomGrid({
       label: "Cơ sở 371 Nguyễn Hoàng Tôn",
       tone: "border-violet-200 bg-violet-50/70",
     },
+    {
+      campus: "77 Nguyễn Chí Thanh" as const,
+      label: "Cơ sở 77 Nguyễn Chí Thanh",
+      tone: "border-violet-200 bg-violet-50/70",
+    },
   ]
 
   return (
@@ -672,7 +690,7 @@ function RoomCard({ room, onOpen, onCancel }: { room: RoomView; onOpen: () => vo
             {room.capacity} chỗ
           </div>
           <div className="mt-1 text-[11px] text-muted-foreground">
-            {room.campus} · {room.building}
+            {room.campus} · {buildingLabel(room.building)}
           </div>
         </div>
         <span className={`flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold ${style.badge}`}>

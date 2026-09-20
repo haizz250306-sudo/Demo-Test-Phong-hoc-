@@ -7,7 +7,7 @@ export type RoomInfo = {
   name: string
   capacity: number
   building?: string
-  campus?: "36 Xuân La" | "371 Nguyễn Hoàng Tôn"
+  campus?: "36 Xuân La" | "371 Nguyễn Hoàng Tôn" | "77 Nguyễn Chí Thanh"
   kind?: "classroom" | "hall"
 }
 
@@ -95,6 +95,7 @@ export const CAMPUS_LABELS = {
   all: "Tất cả cơ sở",
   "36 Xuân La": "Cơ sở 36 Xuân La",
   "371 Nguyễn Hoàng Tôn": "Cơ sở 371 Nguyễn Hoàng Tôn",
+  "77 Nguyễn Chí Thanh": "Cơ sở 77 Nguyễn Chí Thanh",
 } as const
 
 export type CampusFilter = keyof typeof CAMPUS_LABELS

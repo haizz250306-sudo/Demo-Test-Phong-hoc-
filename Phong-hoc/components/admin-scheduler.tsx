@@ -82,6 +82,11 @@ const CAMPUS_SCHEDULE_GROUPS = [
     label: "Cơ sở 371 Nguyễn Hoàng Tôn",
     tone: "border-violet-200 bg-violet-50/70 text-violet-800",
   },
+  {
+    campus: "77 Nguyễn Chí Thanh" as const,
+    label: "Cơ sở 77 Nguyễn Chí Thanh",
+    tone: "border-emerald-200 bg-emerald-50/70 text-emerald-800",
+  },
 ]
 
 export function AdminScheduler() {
@@ -114,7 +119,12 @@ export function AdminScheduler() {
   const classById = useMemo(() => new Map(classes.map((c) => [c.id, c])), [classes])
 
   function handleSchedule() {
-    setResult(autoSchedule(classes, ROOMS))
+    const nextResult = autoSchedule(classes, ROOMS)
+    setResult(nextResult)
+    setSelectedDay(nextResult.assignments[0]?.day ?? 2)
+    setSelectedCampus("all")
+    setSelectedBuilding("all")
+    setSelectedCohort("all")
   }
 
   function handleAddClass(cls: Omit<ClassInfo, "id">): string | null {
@@ -257,6 +267,7 @@ export function AdminScheduler() {
       [
         { campus: "36 Xuân La" as const, label: "Cơ sở 36 Xuân La" },
         { campus: "371 Nguyễn Hoàng Tôn" as const, label: "Cơ sở 371 Nguyễn Hoàng Tôn" },
+        { campus: "77 Nguyễn Chí Thanh" as const, label: "Cơ sở 77 Nguyễn Chí Thanh" },
       ].map((group) => ({
         ...group,
         buildings: [...new Set(
@@ -977,6 +988,9 @@ function NewClassesPanel({
             <li key={classInfo.id} className="flex items-center justify-between gap-3 rounded-xl border border-sky-200 bg-white/70 px-3 py-2.5">
               <div className="min-w-0">
                 <p className="truncate text-sm font-semibold text-foreground">{classInfo.name}</p>
+                {classInfo.className && (
+                  <p className="break-words text-xs font-medium text-sky-700">Lớp: {classInfo.className}</p>
+                )}
                 <p className="text-xs text-muted-foreground">
                   {classInfo.size} SV · {DAY_SHORT[classInfo.day]} · {SHIFT_LABELS[classInfo.shift]} · {classInfo.periods} tiết
                 </p>
@@ -1348,6 +1362,9 @@ function ClassListPanel({ classes, onRemove }: { classes: ClassInfo[]; onRemove:
                 <li key={c.id} className="flex items-center justify-between gap-2 rounded-lg bg-background/60 px-2.5 py-2">
                   <div className="min-w-0">
                     <p className="truncate text-sm font-medium text-foreground">{c.name}</p>
+                    {c.className && (
+                      <p className="break-words text-xs font-medium text-sky-700">Lớp: {c.className}</p>
+                    )}
                     <p className="text-xs text-muted-foreground">
                       {c.size} SV · {SHIFT_LABELS[c.shift]} · {c.periods} tiết
                     </p>
