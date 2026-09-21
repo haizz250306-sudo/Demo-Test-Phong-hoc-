@@ -23,6 +23,8 @@ export type ClassInfo = {
   shift: Shift
   /** Số tiết học liên tục (mỗi tiết 50 phút) */
   periods: number
+  /** Số tín chỉ của môn học */
+  credits?: number
   /** TKB ban hành: khi có, thuật toán bắt buộc giữ nguyên khung tiết này. */
   startPeriod?: number
   endPeriod?: number
@@ -430,4 +432,41 @@ export function findAlternatives(
     }
   }
   return results
+}
+
+/** Bổ sung một lớp vào lịch đã xếp mà không thay đổi các assignment hiện có. */
+export function assignClassToSchedule(
+  cls: ClassInfo,
+  rooms: RoomInfo[],
+  assignments: Assignment[],
+): Assignment | null {
+  const occupancy = buildOccupancy(assignments)
+  const shiftPeriods = periodsForClass(cls)
+  if (cls.periods > shiftPeriods.length) return null
+
+  const eligibleRooms = [...rooms]
+    .filter((room) => room.capacity >= cls.size && (cls.size >= 150 || !isHallRoom(room)))
+    .sort((a, b) => a.capacity - b.capacity || a.id.localeCompare(b.id))
+
+  for (const room of eligibleRooms) {
+    const used = occupancy.get(occKey(cls.day, room.id)) ?? new Set<number>()
+    const start = cls.startPeriod ?? findFreeBlock(used, shiftPeriods, cls.periods)
+    const end = cls.endPeriod ?? (start === null ? null : start + cls.periods - 1)
+    if (
+      start !== null &&
+      end !== null &&
+      [...Array(end - start + 1)].every((_, index) => !used.has(start + index))
+    ) {
+      return {
+        classId: cls.id,
+        roomId: room.id,
+        day: cls.day,
+        shift: cls.shift,
+        startPeriod: start,
+        endPeriod: end,
+      }
+    }
+  }
+
+  return null
 }

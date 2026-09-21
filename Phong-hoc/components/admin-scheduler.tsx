@@ -37,6 +37,7 @@ import {
   SHIFT_PERIODS,
   createClassId,
   autoSchedule,
+  assignClassToSchedule,
   findAlternatives,
   rangeTime,
   CAMPUS_LABELS,
@@ -62,6 +63,12 @@ function capacityTone(capacity: number): string {
   if (capacity >= 100) return "bg-primary/10 text-primary"
   if (capacity >= 60) return "bg-sky-500/10 text-sky-700"
   return "bg-emerald-500/10 text-emerald-700"
+}
+
+function classPeriodRange(classInfo: ClassInfo): string {
+  const start = classInfo.startPeriod ?? SHIFT_PERIODS[classInfo.shift][0]
+  const end = classInfo.endPeriod ?? start + classInfo.periods - 1
+  return `Tiết ${start}${end !== start ? `–${end}` : ""}`
 }
 
 function buildingOrder(building?: string): string {
@@ -95,6 +102,7 @@ export function AdminScheduler() {
   const [selectedDay, setSelectedDay] = useState<number>(2)
   const [editingClassId, setEditingClassId] = useState<string | null>(null)
   const [newClassIds, setNewClassIds] = useState<string[]>([])
+  const [addNotice, setAddNotice] = useState<string | null>(null)
   const [selectedCampus, setSelectedCampus] = useState<CampusFilter>("all")
   const [selectedBuilding, setSelectedBuilding] = useState<string>("all")
   const [selectedCohort, setSelectedCohort] = useState<CohortFilter>("all")
@@ -128,9 +136,12 @@ export function AdminScheduler() {
   }
 
   function handleAddClass(cls: Omit<ClassInfo, "id">): string | null {
-    const normalizedName = cls.name.trim().toLocaleLowerCase()
-    if (classes.some((item) => item.name.trim().toLocaleLowerCase() === normalizedName)) {
-      return `Môn "${cls.name.trim()}" đã có trong danh sách lớp. Vui lòng nhập môn khác.`
+    const normalizedClassName = cls.className?.trim().toLocaleLowerCase()
+    if (
+      normalizedClassName &&
+      classes.some((item) => item.className?.trim().toLocaleLowerCase() === normalizedClassName)
+    ) {
+      return `Mã lớp "${cls.className?.trim()}" đã tồn tại. Vui lòng nhập mã lớp khác.`
     }
 
     let newClassId = createClassId()
@@ -140,7 +151,28 @@ export function AdminScheduler() {
     const newClass = { ...cls, id: newClassId }
     const nextClasses = [...classes, newClass]
     setClasses(nextClasses)
-    setResult(autoSchedule(nextClasses, ROOMS))
+    if (result) {
+      const assignment = assignClassToSchedule(newClass, ROOMS, result.assignments)
+      if (assignment) {
+        setResult({
+          ...result,
+          assignments: [...result.assignments, assignment],
+        })
+        setAddNotice(`Đã thêm lớp "${newClass.name}" (${newClass.className}) và xếp vào ${assignment.roomId}.`)
+      } else {
+        setResult({
+          ...result,
+          unassigned: [...result.unassigned, {
+            classInfo: newClass,
+            reason: `Không còn phòng đủ sức chứa trong ${DAY_LABELS[newClass.day]} ca ${SHIFT_LABELS[newClass.shift]} mà không thay đổi các lớp đã xếp.`,
+          }],
+        })
+        setAddNotice(`Đã thêm lớp "${newClass.name}" (${newClass.className}) nhưng chưa có phòng phù hợp. Hãy tìm slot thay thế.`)
+      }
+    } else {
+      setResult(autoSchedule(nextClasses, ROOMS))
+      setAddNotice(`Đã thêm lớp "${newClass.name}" (${newClass.className}) vào thời khóa biểu.`)
+    }
     setNewClassIds((prev) => [...prev, newClass.id])
     return null
   }
@@ -157,6 +189,7 @@ export function AdminScheduler() {
     setResult(null)
     setEditingClassId(null)
     setNewClassIds([])
+    setAddNotice(null)
   }
 
   // Xếp thủ công 1 lớp bị đẩy ra ngoài vào phòng đủ điều kiện đã chọn.
@@ -516,8 +549,8 @@ export function AdminScheduler() {
           <NewClassesPanel
             classes={newClassIds.map((id) => classById.get(id)).filter((item): item is ClassInfo => Boolean(item))}
             result={result}
-            onSchedule={handleSchedule}
             onShowAssignment={showAssignment}
+            notice={addNotice}
           />
           {/* Bộ chọn thứ trong tuần */}
           <div className="flex flex-wrap gap-2" role="tablist" aria-label="Thứ trong tuần">
@@ -714,6 +747,7 @@ export function AdminScheduler() {
                                         <Users className="size-3.5" />
                                         {cls.size}/{room.capacity} chỗ
                                       </span>
+                                      <span>{cls.credits ?? "—"} tín chỉ</span>
                                       <span className="inline-flex items-center gap-1">
                                         <CalendarDays className="size-3.5" />
                                         Tiết {a.startPeriod}
@@ -794,7 +828,9 @@ function ResultStat({
 
 function AddClassForm({ onAdd }: { onAdd: (cls: Omit<ClassInfo, "id">) => string | null }) {
   const [name, setName] = useState("")
+  const [className, setClassName] = useState("")
   const [size, setSize] = useState("50")
+  const [credits, setCredits] = useState("3")
   const [day, setDay] = useState<number>(2)
   const [shift, setShift] = useState<Shift>("morning")
   const [periods, setPeriods] = useState("2")
@@ -805,18 +841,29 @@ function AddClassForm({ onAdd }: { onAdd: (cls: Omit<ClassInfo, "id">) => string
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     const parsedSize = Number.parseInt(size, 10)
+    const parsedCredits = Number.parseInt(credits, 10)
     const parsedPeriods = Number.parseInt(periods, 10)
     if (!name.trim()) {
-      setError("Vui lòng nhập tên môn/lớp.")
+      setError("Vui lòng nhập tên môn.")
+      return
+    }
+    if (!className.trim()) {
+      setError("Vui lòng nhập mã lớp/tên lớp học phần.")
       return
     }
     if (!Number.isFinite(parsedSize) || parsedSize <= 0) {
       setError("Sĩ số phải là số lớn hơn 0.")
       return
     }
+    if (!Number.isFinite(parsedCredits) || parsedCredits < 1 || parsedCredits > 10) {
+      setError("Số tín chỉ phải là số từ 1 đến 10.")
+      return
+    }
     const addError = onAdd({
       name: name.trim(),
+      className: className.trim(),
       size: parsedSize,
+      credits: parsedCredits,
       day,
       shift,
       periods: Math.min(Math.max(parsedPeriods || 1, 1), maxPeriods),
@@ -827,7 +874,9 @@ function AddClassForm({ onAdd }: { onAdd: (cls: Omit<ClassInfo, "id">) => string
     }
     setError(null)
     setName("")
+    setClassName("")
     setSize("50")
+    setCredits("3")
     setPeriods("2")
   }
 
@@ -850,15 +899,48 @@ function AddClassForm({ onAdd }: { onAdd: (cls: Omit<ClassInfo, "id">) => string
       </div>
 
       <div className="grid gap-3 md:grid-cols-12">
-        <div className="md:col-span-4">
+        <div className="md:col-span-3">
           <label htmlFor="cls-name" className="mb-1 block text-xs font-semibold text-foreground">
-            Tên lớp / học phần
+            Tên môn
           </label>
           <input
             id="cls-name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="VD: Luật Hành chính"
+            className={inputClass}
+          />
+        </div>
+
+        <div className="md:col-span-2">
+          <label htmlFor="cls-credits" className="mb-1 block text-xs font-semibold text-foreground">
+            Số tín chỉ
+          </label>
+          <input
+            id="cls-credits"
+            type="number"
+            min={1}
+            max={10}
+            list="credit-options"
+            value={credits}
+            onChange={(e) => setCredits(e.target.value)}
+            placeholder="VD: 3"
+            className={inputClass}
+          />
+          <datalist id="credit-options">
+            {[1, 2, 3, 4, 5, 6].map((credit) => <option key={credit} value={credit} />)}
+          </datalist>
+        </div>
+
+        <div className="md:col-span-3">
+          <label htmlFor="cls-class-name" className="mb-1 block text-xs font-semibold text-foreground">
+            Mã lớp / tên lớp học phần
+          </label>
+          <input
+            id="cls-class-name"
+            value={className}
+            onChange={(e) => setClassName(e.target.value)}
+            placeholder="VD: HC24.1"
             className={inputClass}
           />
         </div>
@@ -946,13 +1028,13 @@ function AddClassForm({ onAdd }: { onAdd: (cls: Omit<ClassInfo, "id">) => string
 function NewClassesPanel({
   classes,
   result,
-  onSchedule,
   onShowAssignment,
+  notice,
 }: {
   classes: ClassInfo[]
   result: ScheduleResult
-  onSchedule: () => void
   onShowAssignment: (assignment: import("@/lib/scheduling").Assignment) => void
+  notice: string | null
 }) {
   if (classes.length === 0) return null
 
@@ -970,15 +1052,15 @@ function NewClassesPanel({
             </p>
           </div>
         </div>
-        <button
-          type="button"
-          onClick={onSchedule}
-          className="flex shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-4 py-2 text-sm font-bold text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-        >
-          <Wand2 className="size-4" />
-          Xếp phòng tự động
-        </button>
+        <p className="max-w-xs text-right text-xs text-muted-foreground">
+          Lớp mới được bổ sung vào phòng còn trống, không làm thay đổi các lớp đã xếp.
+        </p>
       </div>
+      {notice && (
+        <p className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm font-semibold text-emerald-800">
+          {notice}
+        </p>
+      )}
       <ul className="mt-4 grid gap-2 md:grid-cols-2">
         {classes.map((classInfo) => {
           const assignment = result.assignments.find((item) => item.classId === classInfo.id)
@@ -992,8 +1074,13 @@ function NewClassesPanel({
                   <p className="break-words text-xs font-medium text-sky-700">Lớp: {classInfo.className}</p>
                 )}
                 <p className="text-xs text-muted-foreground">
-                  {classInfo.size} SV · {DAY_SHORT[classInfo.day]} · {SHIFT_LABELS[classInfo.shift]} · {classInfo.periods} tiết
+                  {classInfo.size} SV · {classInfo.credits !== undefined ? `${classInfo.credits} tín chỉ` : "Tín chỉ chưa cập nhật"} · {DAY_SHORT[classInfo.day]} · {SHIFT_LABELS[classInfo.shift]} · {classInfo.periods} tiết
                 </p>
+                {assignment && (
+                  <p className="text-xs font-medium text-primary">
+                    Tiết {assignment.startPeriod}{assignment.endPeriod !== assignment.startPeriod ? `–${assignment.endPeriod}` : ""} · {rangeTime(assignment.startPeriod, assignment.endPeriod)}
+                  </p>
+                )}
               </div>
               <div className="flex shrink-0 flex-col items-end gap-1">
                 <span className={`rounded-full px-2 py-1 text-xs font-bold ${isAssigned ? "bg-emerald-100 text-emerald-700" : "bg-red-100 text-red-700"}`}>
@@ -1272,7 +1359,7 @@ function UnassignedItem({
               {classInfo.size} SV
             </span>
             <span className="rounded-md bg-muted px-2 py-0.5 text-xs font-medium text-muted-foreground">
-              {DAY_SHORT[classInfo.day]} · {SHIFT_LABELS[classInfo.shift]} · {classInfo.periods} tiết
+              {classInfo.credits !== undefined ? `${classInfo.credits} tín chỉ` : "Tín chỉ chưa cập nhật"} · {DAY_SHORT[classInfo.day]} · {SHIFT_LABELS[classInfo.shift]} · {classInfo.periods} tiết · {classPeriodRange(classInfo)}
             </span>
           </div>
           <p className="mt-1 text-xs text-red-700">{reason}</p>
@@ -1366,8 +1453,9 @@ function ClassListPanel({ classes, onRemove }: { classes: ClassInfo[]; onRemove:
                       <p className="break-words text-xs font-medium text-sky-700">Lớp: {c.className}</p>
                     )}
                     <p className="text-xs text-muted-foreground">
-                      {c.size} SV · {SHIFT_LABELS[c.shift]} · {c.periods} tiết
+                      {c.size} SV · {c.credits !== undefined ? `${c.credits} tín chỉ` : "Tín chỉ chưa cập nhật"} · {SHIFT_LABELS[c.shift]} · {c.periods} tiết
                     </p>
+                    <p className="text-xs font-medium text-primary">{classPeriodRange(c)}</p>
                   </div>
                   <button
                     type="button"
