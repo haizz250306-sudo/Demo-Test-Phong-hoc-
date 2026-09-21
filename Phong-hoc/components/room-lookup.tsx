@@ -60,6 +60,11 @@ const DURATION_OPTIONS = [30, 60, 75, 90]
 
 const WEEKDAY_LABELS = ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"]
 
+function sheetWeekDay(date: Date): number {
+  const javascriptDay = date.getDay()
+  return javascriptDay === 0 ? 1 : javascriptDay + 1
+}
+
 /**
  * Thời khóa biểu chính khóa trong NGÀY của từng phòng.
  * Trạng thái phòng (trống / đang có lớp) được tính theo GIỜ THỰC hiện tại
@@ -210,7 +215,7 @@ export function RoomLookup() {
     return () => clearInterval(id)
   }, [])
 
-  const currentWeekDay = now?.getDay() ?? 0
+  const currentWeekDay = now ? sheetWeekDay(now) : 1
   const schedules = useMemo(
     () => createRoomSchedules(cohort, currentWeekDay),
     [cohort, currentWeekDay],
